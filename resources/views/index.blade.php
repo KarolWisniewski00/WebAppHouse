@@ -15,18 +15,16 @@
     <section>
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-4 border-bottom">
-                <a href="/"
-                    class="d-flex align-items-center justify-content-center me-md-auto text-dark text-decoration-none">
+                <a href="{{route('index')}}" class="d-flex align-items-center justify-content-center me-md-auto text-dark text-decoration-none">
                     <span class="fs-4">LOGO</span>
                 </a>
                 <ul class="nav nav-pills">
                     <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Strona główna</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Inwestycje</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Inwestycje</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Nowe</a>
-                            <a class="dropdown-item" href="#">Ukończone</a>
+                            <a class="dropdown-item" href="{{route('page')}}">Nowe</a>
+                            <a class="dropdown-item" href="{{route('page')}}">Ukończone</a>
                         </div>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link">O nas</a></li>
@@ -58,16 +56,13 @@
         <section>
             <div id="slider" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators d-none d-xl-flex justify-content-end align-items-end">
-                    <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;"
-                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
-                            focusable="false">
+                        <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <rect width="100%" height="100%" fill="#777" />
                         </svg>
 
@@ -80,9 +75,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;"
-                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
-                            focusable="false">
+                        <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <rect width="100%" height="100%" fill="#777" />
                         </svg>
 
@@ -95,9 +88,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;"
-                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
-                            focusable="false">
+                        <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <rect width="100%" height="100%" fill="#777" />
                         </svg>
 
@@ -124,8 +115,7 @@
         <!--FORM APART-->
         <section>
             <div class="position-relative" id="card-form-apart-container">
-                <div class="card border-primary mb-3 position-absolute top-0 start-50 translate-middle"
-                    id="card-form-apart">
+                <div class="card border-primary mb-3 position-absolute top-0 start-50 translate-middle" id="card-form-apart">
                     <div class="d-flex justify-content-center align-items-center flex-wrap">
                         <div class="card-body">
                             <div class="d-flex justify-content-center align-items-center">
@@ -160,8 +150,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body"><button class="btn btn-primary" type="submit"><i
-                                    class="fa-solid fa-magnifying-glass me-2"></i>Szukaj aparamentu</button></div>
+                        <div class="card-body"><button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass me-2"></i>Szukaj aparamentu</button></div>
                     </div>
                 </div>
             </div>
@@ -185,8 +174,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="d-flex flex-column justify-content-center align-items-start my-4">
-                                    <a href="" class="btn btn-primary mb-4" type="button"><i
-                                            class="fa-solid fa-location-dot"></i></a>
+                                    <a href="" class="btn btn-primary mb-4" type="button"><i class="fa-solid fa-location-dot"></i></a>
                                     <h3>Heading</h3>
                                     <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry.</p>
@@ -194,8 +182,7 @@
                             </div>
                             <div class="col-6">
                                 <div class="d-flex flex-column justify-content-center align-items-start my-4">
-                                    <a href="" class="btn btn-primary mb-4" type="button"><i
-                                            class="fa-solid fa-heart"></i></a>
+                                    <a href="" class="btn btn-primary mb-4" type="button"><i class="fa-solid fa-heart"></i></a>
                                     <h3>Heading</h3>
                                     <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry.</p>
@@ -204,14 +191,12 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <svg class="img-fluid h-100 w-100" style="min-height: 30em;" width="100%" height="100%"
-                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
-                            focusable="false">
+                        <svg class="img-fluid h-100 w-100" style="min-height: 30em;" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <rect width="100%" height="100%" fill="#777" />
                         </svg>
                     </div>
                 </div>
-                <div class="text-end m-0 p-0 pt-1 opacity-75">
+                <div class="text-end m-0 p-0 pt-1 opacity-50">
                     <p class="text-muted lead">01</p>
                 </div>
             </div>
@@ -225,8 +210,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="d-flex flex-column justify-content-center align-items-start my-4">
-                                    <a href="" class="btn btn-primary mb-4" type="button"><i
-                                            class="fa-solid fa-bell-slash"></i></a>
+                                    <a href="" class="btn btn-primary mb-4" type="button"><i class="fa-solid fa-bell-slash"></i></a>
                                     <h3>Heading</h3>
                                     <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry.</p>
@@ -234,8 +218,7 @@
                             </div>
                             <div class="col-6">
                                 <div class="d-flex flex-column justify-content-center align-items-start my-4">
-                                    <a href="" class="btn btn-primary mb-4" type="button"><i
-                                            class="fa-solid fa-people-roof"></i></a>
+                                    <a href="" class="btn btn-primary mb-4" type="button"><i class="fa-solid fa-people-roof"></i></a>
                                     <h3>Heading</h3>
                                     <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry.</p>
@@ -243,8 +226,7 @@
                             </div>
                             <div class="col-6">
                                 <div class="d-flex flex-column justify-content-center align-items-start my-4">
-                                    <a href="" class="btn btn-primary mb-4" type="button"><i
-                                            class="fa-solid fa-key"></i></a>
+                                    <a href="" class="btn btn-primary mb-4" type="button"><i class="fa-solid fa-key"></i></a>
                                     <h3>Heading</h3>
                                     <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry.</p>
@@ -252,8 +234,7 @@
                             </div>
                             <div class="col-6">
                                 <div class="d-flex flex-column justify-content-center align-items-start my-4">
-                                    <a href="" class="btn btn-primary mb-4" type="button"><i
-                                            class="fa-solid fa-flag"></i></a>
+                                    <a href="" class="btn btn-primary mb-4" type="button"><i class="fa-solid fa-flag"></i></a>
                                     <h3>Heading</h3>
                                     <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry.</p>
@@ -262,14 +243,12 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <svg class="img-fluid h-100 w-100" style="min-height: 30em;" width="100%" height="100%"
-                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
-                            focusable="false">
+                        <svg class="img-fluid h-100 w-100" style="min-height: 30em;" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <rect width="100%" height="100%" fill="#777" />
                         </svg>
                     </div>
                 </div>
-                <div class="text-end m-0 p-0 pt-1 opacity-75">
+                <div class="text-end m-0 p-0 pt-1 opacity-50">
                     <p class="text-muted lead">02</p>
                 </div>
             </div>
@@ -281,45 +260,34 @@
                 <div class="row">
                     <div class="col-12">
                         <!--SLIDER-->
-                        <div id="slider1" class="carousel slide" data-bs-ride="carousel">
+                        <div id="slider1" class="carousel slide" data-bs-ride="carousel" style="z-index: -1;">
                             <div class="carousel-indicators d-none d-xl-flex justify-content-start align-items-end">
-                                <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#slider" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#slider" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;"
-                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                         <rect width="100%" height="100%" fill="#777" />
                                     </svg>
                                 </div>
                                 <div class="carousel-item">
-                                    <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;"
-                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                         <rect width="100%" height="100%" fill="#777" />
                                     </svg>
                                 </div>
                                 <div class="carousel-item">
-                                    <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;"
-                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                         <rect width="100%" height="100%" fill="#777" />
                                     </svg>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#slider1"
-                                data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#slider1"
-                                data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#slider1" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
@@ -329,8 +297,7 @@
                 </div>
             </div>
             <div class="position-relative" id="card-info-container">
-                <div class="card text-white bg-primary mb-3 position-absolute top-0 translate-middle"
-                    style="left:75%!important" id="card-info">
+                <div class="card text-white bg-primary mb-3 position-absolute top-0 translate-middle" style="left:75%!important" id="card-info">
                     <div class="card-header">Header</div>
                     <div class="card-body">
                         <h4 class="card-title">Primary card title</h4>
@@ -340,7 +307,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="text-end m-0 p-0 pt-1 opacity-75">
+                <div class="text-end m-0 p-0 pt-1 opacity-50">
                     <p class="text-muted lead">03</p>
                 </div>
             </div>
@@ -357,113 +324,99 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-5">
                         <div class="list-group h-100">
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
                         </div>
-                        <div class="text-end m-0 p-0 pt-1 opacity-75">
+                        <div class="text-end m-0 p-0 pt-1 opacity-50">
                             <p class="text-muted lead">01</p>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-5">
                         <div class="list-group h-100">
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
                         </div>
-                        <div class="text-end m-0 p-0 pt-1 opacity-75">
+                        <div class="text-end m-0 p-0 pt-1 opacity-50">
                             <p class="text-muted lead">02</p>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-5">
                         <div class="list-group h-100">
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
                         </div>
-                        <div class="text-end m-0 p-0 pt-1 opacity-75">
+                        <div class="text-end m-0 p-0 pt-1 opacity-50">
                             <p class="text-muted lead">03</p>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-5">
                         <div class="list-group h-100">
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
-                            <a href="#"
-                                class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">List group item heading</h5>
                                 </div>
                             </a>
                         </div>
-                        <div class="text-end m-0 p-0 pt-1 opacity-75">
+                        <div class="text-end m-0 p-0 pt-1 opacity-50">
                             <p class="text-muted lead">04</p>
                         </div>
                     </div>
@@ -554,7 +507,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-end m-0 p-0 pt-1 opacity-75">
+                <div class="text-end m-0 p-0 pt-1 opacity-50">
                     <p class="text-muted lead">04</p>
                 </div>
             </div>
@@ -563,8 +516,7 @@
         <!--FORM CONTACT-->
         <section>
             <div class="position-relative" id="card-form-contact-container">
-                <div class="card border-primary mb-3 position-absolute top-100 start-50 translate-middle"
-                    id="card-form-contact">
+                <div class="card border-primary mb-3 position-absolute top-100 start-50 translate-middle" id="card-form-contact">
                     <div class="card-header">Kontakt</div>
                     <div class="card-body">
                         <div class="d-flex flex-column justify-content-center align-items-start mb-4 mx-2">
@@ -617,32 +569,27 @@
         <div class="container">
             <footer class="py-3">
                 <ul class="nav justify-content-center pb-3 mb-3 fpt">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Strona główna</a></li>
+                    <li class="nav-item"><a href="{{route('index')}}" class="nav-link px-2 text-white">Strona główna</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Inwestycje</a>
+                        <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Inwestycje</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Nowe</a>
-                            <a class="dropdown-item" href="#">Ukończone</a>
+                            <a class="dropdown-item" href="{{route('page')}}">Nowe</a>
+                            <a class="dropdown-item" href="{{route('page')}}">Ukończone</a>
                         </div>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-white">O nas</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i
-                                class="fa-brands fa-facebook"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i
-                                class="fa-brands fa-instagram"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
                 <p class="text-center text-white">&copy; 2022 Company, Inc</p>
             </footer>
         </div>
     </section>
     <!--END FOOTER-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script>
         //ON RESIZE
-        $(window).resize(function () {
+        $(window).resize(function() {
             //APART
             $('#card-form-apart-container').height($('#card-form-apart').height() / 2)
             $('.fpb').css('padding-bottom', $('#card-form-apart').height() / 2)
@@ -651,9 +598,11 @@
             $('.fpt').css('padding-top', $('#card-form-contact').height() / 2)
             //INFO
             $('#card-info-container').height($('#card-info').height() / 2)
+            //SVG
+            $('#card-svg-container').height($('#card-svg').height() / 2)
         });
         //ON LOAD
-        $(document).ready(function () {
+        $(document).ready(function() {
             //APART
             $('#card-form-apart-container').height($('#card-form-apart').height() / 2)
             $('.fpb').css('padding-bottom', $('#card-form-apart').height() / 2)
@@ -662,6 +611,8 @@
             $('.fpt').css('padding-top', $('#card-form-contact').height() / 2)
             //INFO
             $('#card-info-container').height($('#card-info').height() / 2)
+            //SVG
+            $('#card-svg-container').height($('#card-svg').height() / 2)
         });
     </script>
 </body>
