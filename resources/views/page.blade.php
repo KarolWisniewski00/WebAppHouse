@@ -15,7 +15,7 @@
     <section>
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-4 border-bottom">
-                <a href="/" class="d-flex align-items-center justify-content-center me-md-auto text-dark text-decoration-none">
+                <a href="{{route('index')}}" class="d-flex align-items-center justify-content-center me-md-auto text-dark text-decoration-none">
                     <span class="fs-4">LOGO</span>
                 </a>
                 <ul class="nav nav-pills">
@@ -23,8 +23,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Inwestycje</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Nowe</a>
-                            <a class="dropdown-item" href="#">Ukończone</a>
+                            <a class="dropdown-item" href="{{route('page')}}">Nowe</a>
+                            <a class="dropdown-item" href="{{route('page')}}">Ukończone</a>
                         </div>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link">O nas</a></li>
@@ -191,12 +191,12 @@
         <div class="container">
             <footer class="py-3">
                 <ul class="nav justify-content-center pb-3 mb-3 fpt">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Strona główna</a></li>
+                    <li class="nav-item"><a href="{{route('index')}}" class="nav-link px-2 text-white">Strona główna</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Inwestycje</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Nowe</a>
-                            <a class="dropdown-item" href="#">Ukończone</a>
+                            <a class="dropdown-item" href="{{route('page')}}">Nowe</a>
+                            <a class="dropdown-item" href="{{route('page')}}">Ukończone</a>
                         </div>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-white">O nas</a></li>
