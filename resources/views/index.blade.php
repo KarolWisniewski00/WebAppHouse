@@ -16,21 +16,43 @@
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-4 border-bottom">
                 <a href="{{route('index')}}" class="d-flex align-items-center justify-content-center me-md-auto text-dark text-decoration-none">
-                    <span class="fs-4">LOGO</span>
+                    <img alt="logo" src="{{asset('asset/photo/logo.png')}}" class="img-fluid bg-transparent" style="max-width: 10em;">
                 </a>
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Strona główna</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Inwestycje</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="{{route('page')}}">Nowe</a>
-                            <a class="dropdown-item" href="{{route('page')}}">Ukończone</a>
+                <ul class="nav nav-pills d-flex flex-row justify-content-center align-items-center flex-wrap">
+                    <li class="nav-item">
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <a href="#" class="nav-link active" aria-current="page">Strona główna</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="#" class="nav-link">O nas</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="nav-item dropdown">
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Inwestycje</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{route('page')}}">Nowe</a>
+                                <a class="dropdown-item" href="{{route('page')}}">Ukończone</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <a href="#" class="nav-link">O nas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <a href="#" class="nav-link">Kontakt</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <a href="#" class="nav-link"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <a href="#" class="nav-link"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </li>
                 </ul>
             </header>
         </div>
