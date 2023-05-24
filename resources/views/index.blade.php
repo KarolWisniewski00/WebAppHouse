@@ -21,7 +21,7 @@
                 <ul class="nav nav-pills d-flex flex-row justify-content-center align-items-center flex-wrap">
                     <li class="nav-item">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="#" class="nav-link active" aria-current="page">Strona główna</a>
+                            <a href="#" class="nav-link active" aria-current="page"><i class="fa-solid fa-house me-2"></i>Strona główna</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -84,8 +84,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em;">
-                            <img alt="slider-1" src="{{asset('asset/photo/slider-1.jpeg')}}" class="img-fluid" style="filter: brightness(0.75) saturate(1.4);">
+                        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/slider-1.jpeg')}});    background-position: center;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                         </div>
                         <div class="container">
                             <div class="carousel-caption text-end fpb">
@@ -96,8 +95,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em;">
-                            <img alt="slider-2" src="{{asset('asset/photo/slider-2.jpeg')}}" class="img-fluid" style="filter: brightness(0.75) saturate(1.4);">
+                        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/slider-2.jpeg')}});    background-repeat: no-repeat;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                         </div>
 
                         <div class="container">
@@ -109,8 +107,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em;">
-                            <img alt="slider-3" src="{{asset('asset/photo/slider-3.jpeg')}}" class="img-fluid" style="filter: brightness(0.75) saturate(1.4);">
+                        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/slider-3.jpeg')}});    background-size: cover;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                         </div>
 
                         <div class="container">
@@ -181,40 +178,34 @@
         <section>
             <div class="container">
                 <div class="row my-4 py-4">
-                    <div class="col-12 col-md-6">
-                        <div class="my-4">
-                            <h1 class="mb-2">
-                                Heading
-                                <small class="text-muted">with muted text</small>
-                            </h1>
-                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem
-                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-                        <div class="row">
+                    <div class="col-12 col-xl-5">
+                        <div class="row d-flex flex-row justify-content-center align-items-start flex-wrap">
                             <div class="col-6">
-                                <div class="d-flex flex-column justify-content-center align-items-start my-4">
-                                    <a href="" class="btn btn-primary mb-4" type="button"><i class="fa-solid fa-location-dot"></i></a>
-                                    <h3>Heading</h3>
-                                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.</p>
+                                <div class="d-flex flex-column justify-content-center align-items-center text-center my-4">
+                                    <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-house p-2"></i></a>
+                                    <h3>Zankomita lokalizacja</h3>
+                                    <p class="lead">Szybki i łatwy dojazd do Katowic, Chorzowa, Tarnowskich Gór, Piekar Śląskich, Siemianowic Śląskich i innych miast ościennych.</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="d-flex flex-column justify-content-center align-items-start my-4">
-                                    <a href="" class="btn btn-primary mb-4" type="button"><i class="fa-solid fa-heart"></i></a>
-                                    <h3>Heading</h3>
-                                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.</p>
+                                <div class="d-flex flex-column justify-content-center align-items-center text-center my-4">
+                                    <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-brands fa-pagelines p-2"></i></a>
+                                    <h3>Ogród lub balkon</h3>
+                                    <p class="lead">Lokale na parterze mają indywidualne ogródki, mieszkania na piętrze posiadają balkon i dodatkowo poddasze z oknem dachowym.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-column justify-content-center align-items-center text-center my-4">
+                                    <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-building p-2"></i></a>
+                                    <h3>Funkcjonalny układ</h3>
+                                    <p class="lead">Osiedle 2 budynków mieszkalnych jednorodzinnych dwulokalowych, mieszkania na parterze o powierzchni 55,12 m² i na piętrze o powierzchni 45,96m² dodatkowo duży strych o powierzchni 15 m².</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <svg class="img-fluid h-100 w-100" style="min-height: 30em;" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="#777" />
-                        </svg>
+                    <div class="col-12 col-xl-7">
+                        <div class="d-flex flex-column justify-content-center align-items-center h-100" style="min-height: 30em; background-image: url({{asset('asset/photo/info-1.jpg')}});    background-size: cover;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
+                        </div>
                     </div>
                 </div>
                 <div class="text-end m-0 p-0 pt-1 opacity-50">
@@ -227,46 +218,117 @@
         <section>
             <div class="container">
                 <div class="row my-4 py-4 flex-row-reverse">
-                    <div class="col-12 col-md-6">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="d-flex flex-column justify-content-center align-items-start my-4">
-                                    <a href="" class="btn btn-primary mb-4" type="button"><i class="fa-solid fa-bell-slash"></i></a>
-                                    <h3>Heading</h3>
-                                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.</p>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex flex-column justify-content-center align-items-start my-4">
-                                    <a href="" class="btn btn-primary mb-4" type="button"><i class="fa-solid fa-people-roof"></i></a>
-                                    <h3>Heading</h3>
-                                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.</p>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex flex-column justify-content-center align-items-start my-4">
-                                    <a href="" class="btn btn-primary mb-4" type="button"><i class="fa-solid fa-key"></i></a>
-                                    <h3>Heading</h3>
-                                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.</p>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex flex-column justify-content-center align-items-start my-4">
-                                    <a href="" class="btn btn-primary mb-4" type="button"><i class="fa-solid fa-flag"></i></a>
-                                    <h3>Heading</h3>
-                                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.</p>
-                                </div>
+                    <div class="col-12 col-xl-5">
+                        <div class="row text-center">
+                            <div class="my-4">
+                                <h1 class="mb-2">
+                                    Zacisze
+                                    <small class="text-muted">Bobrowniki</small>
+                                </h1>
+                                <p class="lead">Zacisze Bobrowniki zlokalizowane jest w Bobrownikach, na granicy z Rogożnikiem te obydwie miejscowości wyróżniają się terenami zielonymi, placami zabaw, zalewem kąpielowym, skateparkiem, trasami rowerowymi oraz pieszymi. Blisko do Parku w Świerklańcu który też posiada swój akwen. Spokój cisza brak hałasu samochodów. Zacisze Bobrowniki wyróżniaja się szybkim przemieszczeniem do innych miejscowości, takich jak Tarnowskie Góry, Chorzów, Siemianowice, Piekary Ślaskie, Wymysłów, Katowice.</p>
+                                <p class="lead">Droga do dużych miast Chorzów ok 15 min, Katowice ok 20 min, Siemianowice ok 15 min.</p>
+                                <p class="lead">Ta doskonała lokalizacja jest dla osób które pracują lub uczą się w większych miastach ościennych.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <svg class="img-fluid h-100 w-100" style="min-height: 30em;" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="#777" />
-                        </svg>
+                    <div class="col-12 col-xl-7">
+                        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                            <img alt="info-2" src="{{asset('asset/photo/info-2.jpg')}}" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row text-center">
+                            <div class="col-12 col-md-4">
+                                <div class="d-flex flex-column justify-content-center align-items-center my-4">
+                                    <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-location-dot p-2"></i></a>
+                                    <h3 class="fs-2">Tereny rekreacyjne</h3>
+                                    <p class="lead">
+                                    <div class="list-group h-100">
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                <h5 class="mb-1 fs-3">Park Rogoźnik</h5>
+                                                <h5 class="mb-1">2 min</h5>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                <h5 class="mb-1 fs-3">Jeziora Rogoźnik I i II</h5>
+                                                <h5 class="mb-1">4 min</h5>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                <h5 class="mb-1 fs-3">Park Świerklaniec</h5>
+                                                <h5 class="mb-1">10 min</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="d-flex flex-column justify-content-center align-items-center my-4">
+                                    <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-location-dot p-2"></i></a>
+                                    <h3 class="fs-2">Duże miasta</h3>
+                                    <p class="lead">
+                                    <div class="list-group h-100">
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                <h5 class="mb-1 fs-3">Siemianowice</h5>
+                                                <h5 class="mb-1">15 min</h5>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                <h5 class="mb-1 fs-3">Katowice</h5>
+                                                <h5 class="mb-1">20 min</h5>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                <h5 class="mb-1 fs-3">Chorzów</h5>
+                                                <h5 class="mb-1">15 min</h5>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                <h5 class="mb-1 fs-3">Piekary Śląskie</h5>
+                                                <h5 class="mb-1">15 min</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="d-flex flex-column justify-content-center align-items-center my-4">
+                                    <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-location-dot p-2"></i></a>
+                                    <h3 class="fs-2">Kluczowe trasy</h3>
+                                    <p class="lead">
+                                    <div class="list-group h-100">
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                <h5 class="mb-1 fs-3">Autostrada A1</h5>
+                                                <h5 class="mb-1">15 min</h5>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                <h5 class="mb-1 fs-3">Droga 86</h5>
+                                                <h5 class="mb-1">10 min</h5>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
+                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                <h5 class="mb-1 fs-3">Droga 94</h5>
+                                                <h5 class="mb-1">10 min</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="text-end m-0 p-0 pt-1 opacity-50">
@@ -319,11 +381,9 @@
             </div>
             <div class="position-relative" id="card-info-container">
                 <div class="card text-white bg-primary mb-3 position-absolute top-0 translate-middle" style="left:75%!important" id="card-info">
-                    <div class="card-header">Header</div>
+                    <div class="card-header">Z nami możesz więcej</div>
                     <div class="card-body">
-                        <h4 class="card-title">Primary card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h4 class="card-title">Możliwość wykończenia pod klucz</h4>
                     </div>
                 </div>
             </div>
@@ -639,3 +699,4 @@
 </body>
 
 </html>
+<!--<img alt="slider-2" src="{{asset('asset/photo/slider-2.jpeg')}}" class="img-fluid" style="filter: brightness(0.75) saturate(1.4);">-->
