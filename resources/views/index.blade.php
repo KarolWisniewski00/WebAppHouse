@@ -84,39 +84,38 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="#777" />
-                        </svg>
-
+                        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em;">
+                            <img alt="slider-1" src="{{asset('asset/photo/slider-1.jpeg')}}" class="img-fluid" style="filter: brightness(0.75) saturate(1.4);">
+                        </div>
                         <div class="container">
                             <div class="carousel-caption text-end fpb">
-                                <h1>Example headline.</h1>
+                                <h1 class="text-white">Example headline.</h1>
                                 <p>Some representative placeholder content for the first slide of the carousel.</p>
                                 <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="#777" />
-                        </svg>
+                        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em;">
+                            <img alt="slider-2" src="{{asset('asset/photo/slider-2.jpeg')}}" class="img-fluid" style="filter: brightness(0.75) saturate(1.4);">
+                        </div>
 
                         <div class="container">
                             <div class="carousel-caption text-end fpb">
-                                <h1>Another example headline.</h1>
+                                <h1 class="text-white">Another example headline.</h1>
                                 <p>Some representative placeholder content for the second slide of the carousel.</p>
                                 <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="#777" />
-                        </svg>
+                        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em;">
+                            <img alt="slider-3" src="{{asset('asset/photo/slider-3.jpeg')}}" class="img-fluid" style="filter: brightness(0.75) saturate(1.4);">
+                        </div>
 
                         <div class="container">
                             <div class="carousel-caption text-end fpb">
-                                <h1>One more for good measure.</h1>
+                                <h1 class="text-white">One more for good measure.</h1>
                                 <p>Some representative placeholder content for the third slide of this carousel.</p>
                                 <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
                             </div>
