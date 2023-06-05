@@ -8,6 +8,51 @@
     <link href="https://bootswatch.com/5/lux/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e37acf9c2e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .accordion {
+            --bs-accordion-active-bg: transparent !important;
+        }
+
+        .segment {
+            transition: background-color 0.3s ease;
+        }
+
+        #segment-A1 {
+            top: 29%;
+            left: 8%;
+            width: 21%;
+            height: 37%;
+        }
+
+        #segment-A2 {
+            top: 29%;
+            left: 29%;
+            width: 21%;
+            height: 37%;
+        }
+
+        #segment-B1 {
+            top: 29%;
+            left: 50%;
+            width: 18%;
+            height: 37%;
+        }
+
+        #segment-B2 {
+            top: 29%;
+            left: 68%;
+            width: 19%;
+            height: 37%;
+        }
+
+        .segment:hover {
+            background-color: rgba(255, 255, 0, 0.8);
+        }
+
+        .p-1px {
+            padding: 1px;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,36 +64,32 @@
                     <img alt="logo" src="{{asset('asset/photo/logo.png')}}" class="img-fluid bg-transparent" style="max-width: 10em;">
                 </a>
                 <ul class="nav nav-pills d-flex flex-row justify-content-center align-items-center flex-wrap">
-                    <li class="nav-item">
+                    <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
                             <a href="#" class="nav-link active" aria-current="page"><i class="fa-solid fa-house me-2"></i>Strona główna</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Inwestycje</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="{{route('page')}}">Nowe</a>
-                                <a class="dropdown-item" href="{{route('page')}}">Ukończone</a>
-                            </div>
+                            <a href="{{route('page')}}" class="nav-link">Inwestycja</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
                             <a href="#" class="nav-link">O nas</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
                             <a href="#" class="nav-link">Kontakt</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="#" class="nav-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/people/Nowe-Inspiracje/100063527142284/" class="nav-link"><i class="fa-brands fa-facebook"></i></a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
                             <a href="#" class="nav-link"><i class="fa-brands fa-instagram"></i></a>
                         </div>
@@ -76,11 +117,11 @@
         <!--END ALERTS-->
         <!--SLIDER-->
         <section>
-            <div id="slider" class="carousel slide" data-bs-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators d-none d-xl-flex justify-content-end align-items-end">
-                    <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -88,9 +129,9 @@
                         </div>
                         <div class="container">
                             <div class="carousel-caption text-end fpb">
-                                <h1 class="text-white">Example headline.</h1>
-                                <p>Some representative placeholder content for the first slide of the carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                                <h1 class="text-white">Fenomenalna lokalizacja</h1>
+                                <p>ul.Żurawia 4/2, 42-583 Bobrowniki</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Zobacz na mapie</a></p>
                             </div>
                         </div>
                     </div>
@@ -119,11 +160,11 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -238,94 +279,219 @@
                     </div>
                     <div class="col-12">
                         <div class="row text-center">
-                            <div class="col-12 col-md-4">
-                                <div class="d-flex flex-column justify-content-center align-items-center my-4">
-                                    <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-location-dot p-2"></i></a>
-                                    <h3 class="fs-2">Tereny rekreacyjne</h3>
-                                    <p class="lead">
-                                    <div class="list-group h-100">
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                                                <h5 class="mb-1 fs-3">Park Rogoźnik</h5>
-                                                <h5 class="mb-1">2 min</h5>
+                            <div class="col-12 col-xl-4">
+                                <div class="d-flex flex-column justify-content-center align-items-start my-4">
+                                    <div class="accordion w-100 boredr-0" id="accordion-1">
+                                        <div class="accordion-item w-100 border-0">
+                                            <h2 class="accordion-header w-100 border-0" id="panel-1">
+                                                <a href="" class="btn btn-primary mb-3 fs-2" type="button"><i class="fa-solid fa-tree p-2"></i></a>
+                                                <button class="accordion-button border-0 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panel-1-collapseOne" aria-expanded="true" aria-controls="panel-1-collapseOne">
+                                                    Tereny rekreacyjne
+                                                </button>
+                                            </h2>
+                                            <div id="panel-1-collapseOne" class="accordion-collapse collapse show border-0" aria-labelledby="panel-1">
+                                                <div class="accordion-body border-0">
+                                                    <p class="lead">
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                            <h5 class="mb-1 fs-3">Park Rogoźnik</h5>
+                                                            <h5 class="mb-1">2 min</h5>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                            <h5 class="mb-1 fs-3">Jeziora Rogoźnik I i II</h5>
+                                                            <h5 class="mb-1">4 min</h5>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                                            <h5 class="mb-1 fs-3">Park Świerklaniec</h5>
+                                                            <h5 class="mb-1">10 min</h5>
+                                                        </div>
+                                                    </div>
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                                                <h5 class="mb-1 fs-3">Jeziora Rogoźnik I i II</h5>
-                                                <h5 class="mb-1">4 min</h5>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                                                <h5 class="mb-1 fs-3">Park Świerklaniec</h5>
-                                                <h5 class="mb-1">10 min</h5>
-                                            </div>
-                                        </a>
+                                        </div>
                                     </div>
-                                    </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4">
-                                <div class="d-flex flex-column justify-content-center align-items-center my-4">
-                                    <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-location-dot p-2"></i></a>
-                                    <h3 class="fs-2">Duże miasta</h3>
-                                    <p class="lead">
-                                    <div class="list-group h-100">
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                                                <h5 class="mb-1 fs-3">Siemianowice</h5>
-                                                <h5 class="mb-1">15 min</h5>
+                            <div class="col-12 col-xl-4">
+                                <div class="d-flex flex-column justify-content-center align-items-start my-4">
+                                    <div class="accordion w-100" id="accordion-2">
+                                        <div class="accordion-item w-100 border-0">
+                                            <h2 class="accordion-header w-100 border-0" id="panel-2">
+                                                <a href="" class="btn btn-primary mb-4 fs-2 border-0" type="button"><i class="fa-solid fa-city p-2"></i></a>
+                                                <button class="accordion-button w-100 border-0 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panel-2-collapseOne" aria-expanded="true" aria-controls="panel-2-collapseOne">
+                                                    Duże miasta
+                                                </button>
+                                            </h2>
+                                            <div id="panel-2-collapseOne" class="accordion-collapse collapse show border-0" aria-labelledby="panel-2">
+                                                <div class="accordion-body border-0">
+                                                    <p class="lead">
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Siemianowice</h5>
+                                                        <h5 class="mb-1">15 min</h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Katowice</h5>
+                                                        <h5 class="mb-1">20 min</h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Chorzów</h5>
+                                                        <h5 class="mb-1">15 min</h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Piekary Śląskie</h5>
+                                                        <h5 class="mb-1">15 min</h5>
+                                                    </div>
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                                                <h5 class="mb-1 fs-3">Katowice</h5>
-                                                <h5 class="mb-1">20 min</h5>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                                                <h5 class="mb-1 fs-3">Chorzów</h5>
-                                                <h5 class="mb-1">15 min</h5>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                                                <h5 class="mb-1 fs-3">Piekary Śląskie</h5>
-                                                <h5 class="mb-1">15 min</h5>
-                                            </div>
-                                        </a>
+                                        </div>
                                     </div>
-                                    </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4">
-                                <div class="d-flex flex-column justify-content-center align-items-center my-4">
-                                    <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-location-dot p-2"></i></a>
-                                    <h3 class="fs-2">Kluczowe trasy</h3>
-                                    <p class="lead">
-                                    <div class="list-group h-100">
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                                                <h5 class="mb-1 fs-3">Autostrada A1</h5>
-                                                <h5 class="mb-1">15 min</h5>
+                            <div class="col-12 col-xl-4">
+                                <div class="d-flex flex-column justify-content-center align-items-start my-4">
+                                    <div class="accordion w-100 border-0" id="accordion-3">
+                                        <div class="accordion-item w-100 border-0">
+                                            <h2 class="accordion-header w-100 border-0" id="panel-3">
+                                                <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-road p-2"></i></a>
+                                                <button class="accordion-button w-100 border-0 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panel-3-collapseOne" aria-expanded="true" aria-controls="panel-3-collapseOne">
+                                                    Kluczowe trasy
+                                                </button>
+                                            </h2>
+                                            <div id="panel-3-collapseOne" class="accordion-collapse collapse show border-0" aria-labelledby="panel-3">
+                                                <div class="accordion-body border-0">
+                                                    <p class="lead">
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Autostrada A1</h5>
+                                                        <h5 class="mb-1">15 min</h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Droga 86</h5>
+                                                        <h5 class="mb-1">10 min</h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Droga 94</h5>
+                                                        <h5 class="mb-1">10 min</h5>
+                                                    </div>
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                                                <h5 class="mb-1 fs-3">Droga 86</h5>
-                                                <h5 class="mb-1">10 min</h5>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                            <div class="d-flex flex-column justify-content-center align-items-center w-100">
-                                                <h5 class="mb-1 fs-3">Droga 94</h5>
-                                                <h5 class="mb-1">10 min</h5>
-                                            </div>
-                                        </a>
+                                        </div>
                                     </div>
-                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <div class="d-flex flex-column justify-content-center align-items-start my-4">
+                                    <div class="accordion w-100 border-0" id="accordion-4">
+                                        <div class="accordion-item w-100 border-0">
+                                            <h2 class="accordion-header w-100 border-0" id="panel-4">
+                                                <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-truck-medical p-2"></i></a>
+                                                <button class="accordion-button w-100 border-0 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panel-4-collapseOne" aria-expanded="true" aria-controls="panel-4-collapseOne">
+                                                    Ośrodki zdrowia
+                                                </button>
+                                            </h2>
+                                            <div id="panel-4-collapseOne" class="accordion-collapse collapse show border-0" aria-labelledby="panel-4">
+                                                <div class="accordion-body border-0">
+                                                    <p class="lead">
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Apteka</h5>
+                                                        <h5 class="mb-1">4 min</h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Przychodnia</h5>
+                                                        <h5 class="mb-1">5 min</h5>
+                                                    </div>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <div class="d-flex flex-column justify-content-center align-items-start my-4">
+                                    <div class="accordion w-100 border-0" id="accordion-5">
+                                        <div class="accordion-item w-100 border-0">
+                                            <h2 class="accordion-header w-100 border-0" id="panel-5">
+                                                <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-graduation-cap p-2"></i></a>
+                                                <button class="accordion-button w-100 border-0 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panel-5-collapseOne" aria-expanded="true" aria-controls="panel-5-collapseOne">
+                                                    Placówki edukacyjne
+                                                </button>
+                                            </h2>
+                                            <div id="panel-5-collapseOne" class="accordion-collapse collapse show border-0" aria-labelledby="panel-5">
+                                                <div class="accordion-body border-0">
+                                                    <p class="lead">
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Żłobek</h5>
+                                                        <h5 class="mb-1">4 min</h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Publiczne przedszkole</h5>
+                                                        <h5 class="mb-1">3 min</h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Szkoła podstawowa</h5>
+                                                        <h5 class="mb-1">5 min</h5>
+                                                    </div>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <div class="d-flex flex-column justify-content-center align-items-start my-4">
+                                    <div class="accordion w-100 border-0" id="accordion-6">
+                                        <div class="accordion-item w-100 border-0">
+                                            <h2 class="accordion-header w-100 border-0" id="panel-6">
+                                                <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-basket-shopping p-2"></i></a>
+                                                <button class="accordion-button w-100 border-0 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panel-6-collapseOne" aria-expanded="true" aria-controls="panel-6-collapseOne">
+                                                    Usługi
+                                                </button>
+                                            </h2>
+                                            <div id="panel-6-collapseOne" class="accordion-collapse collapse show border-0" aria-labelledby="panel-6">
+                                                <div class="accordion-body border-0">
+                                                    <p class="lead">
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Biedronka</h5>
+                                                        <h5 class="mb-1">2 min</h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Lewiatan</h5>
+                                                        <h5 class="mb-1">2 min</h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Fryzjer</h5>
+                                                        <h5 class="mb-1">2 min</h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="flex-column align-items-start h-100 w-100">
+                                                        <h5 class="mb-1 fs-3">Siłownia</h5>
+                                                        <h5 class="mb-1">3 min</h5>
+                                                    </div>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -339,184 +505,196 @@
         <!--END INFO RVERSED-->
         <!--ALBUM-->
         <section>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 mb-3">
                         <!--SLIDER-->
-                        <div id="slider1" class="carousel slide" data-bs-ride="carousel" style="z-index: -1;">
-                            <div class="carousel-indicators d-none d-xl-flex justify-content-start align-items-end">
-                                <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
+                            <div class="carousel-indicators d-none d-xl-flex justify-content-center align-items-end">
+                                @for($x = 0; $x <= 12; $x++) @if($x==0) <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" class="active" aria-current="true" aria-label="Slide {{$x+1}}"></button>
+                                    @else
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" aria-label="Slide {{$x+1}}"></button>
+                                    @endif
+                                    @endfor
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                        <rect width="100%" height="100%" fill="#777" />
-                                    </svg>
-                                </div>
-                                <div class="carousel-item">
-                                    <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                        <rect width="100%" height="100%" fill="#777" />
-                                    </svg>
-                                </div>
-                                <div class="carousel-item">
-                                    <svg class="bd-placeholder-img" width="100%" style="min-height: 50em;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                        <rect width="100%" height="100%" fill="#777" />
-                                    </svg>
-                                </div>
+                                @for($x = 1; $x <= 12; $x++) @if($x==1) <div class="carousel-item active text-center">
+                                    <img class="img-fluid" alt="" src="{{asset('asset/photo/album/'.$x.'.jpg')}}">
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#slider1" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                            @else
+                            <div class="carousel-item text-center">
+                                <img class="img-fluid" alt="" src="{{asset('asset/photo/album/'.$x.'.jpg')}}">
+                            </div>
+                            @endif
+                            @endfor
                         </div>
-                        <!--END SLIDER-->
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                            <span class="bg-black p-2 px-4 fs-1" aria-hidden="true"><i class="fa-solid fa-chevron-left text-white"></i></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                            <span class="bg-black p-2 px-4 fs-1" aria-hidden="true"><i class="fa-solid fa-chevron-right text-whitet"></i></span>
+                        </button>
+                    </div>
+                    <!--END SLIDER-->
+                </div>
+                <div class="col-6 offset-3">
+                    <div>
+                        <a href="" class="btn btn-primary w-100"><i class="fa-solid fa-image me-2"></i>Zobacz wszystkie zdjęcia</a>
                     </div>
                 </div>
             </div>
-            <div class="position-relative" id="card-info-container">
-                <div class="card text-white bg-primary mb-3 position-absolute top-0 translate-middle" style="left:75%!important" id="card-info">
-                    <div class="card-header">Z nami możesz więcej</div>
-                    <div class="card-body">
-                        <h4 class="card-title">Możliwość wykończenia pod klucz</h4>
-                    </div>
-                </div>
+            <div class="text-end m-0 p-0 pt-1 opacity-50">
+                <p class="text-muted lead">03</p>
             </div>
-            <div class="container">
-                <div class="text-end m-0 p-0 pt-1 opacity-50">
-                    <p class="text-muted lead">03</p>
-                </div>
             </div>
         </section>
         <!--END ALBUM-->
-        <!--INFO-->
+        <!--COUNTER-->
+        <section>
+            <div class="container">
+                <div class="row my-4 py-4">
+                    <div class="col-6 col-md-3">
+                        <div class="h-100 pb-4">
+                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
+                                <div class="mx-4 my-2">
+                                    <h1 class="text-white m-0 p-0" style="font-size: 3.2em;"><i class="fa-solid fa-location-dot"></i></h1>
+                                </div>
+                                <div class="mx-4 my-2">
+                                    <h6 class="text-white m-0 p-0 text-center">Doskonała lokalizacja</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="h-100 pb-4">
+                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
+                                <div class="mx-4 my-2">
+                                    <h1 class="text-white m-0 p-0" style="font-size: 3.2em;"><i class="fa-solid fa-bell-slash"></i></h1>
+                                </div>
+                                <div class="mx-4 my-2">
+                                    <h6 class="text-white m-0 p-0 text-center">Cicha okolica</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="h-100 pb-4">
+                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
+                                <div class="mx-4 my-2">
+                                    <h1 class="text-white m-0 p-0" style="font-size: 3.2em;"><i class="fa-solid fa-shield"></i></h1>
+                                </div>
+                                <div class="mx-4 my-2">
+                                    <h6 class="text-white m-0 p-0 text-center">pewna inwestycja</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="h-100 pb-4">
+                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
+                                <div class="mx-4 my-2">
+                                    <h1 class="text-white m-0 p-0" style="font-size: 3.2em;"><i class="fa-solid fa-coins"></i></h1>
+                                </div>
+                                <div class="mx-4 my-2">
+                                    <h6 class="text-white m-0 p-0 text-center">VAT i amortyzacja</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="h-100 pb-4">
+                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
+                                <div class="mx-4 my-2">
+                                    <h1 class="text-white m-0 p-0" style="font-size: 3.2em;"><i class="fa-solid fa-maximize"></i></h1>
+                                </div>
+                                <div class="mx-4 my-2">
+                                    <h6 class="text-white m-0 p-0 text-center">poszukiwane metraże</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="h-100 pb-4">
+                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
+                                <div class="mx-4 my-2">
+                                    <h1 class="text-white m-0 p-0" style="font-size: 3.2em;"><i class="fa-solid fa-wallet"></i></h1>
+                                </div>
+                                <div class="mx-4 my-2">
+                                    <h6 class="text-white m-0 p-0 text-center">najlepsza cena</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="h-100 pb-4">
+                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
+                                <div class="mx-4 my-2">
+                                    <h1 class="text-white m-0 p-0" style="font-size: 3.2em;"><i class="fa-solid fa-user-tag"></i></h1>
+                                </div>
+                                <div class="mx-4 my-2">
+                                    <h6 class="text-white m-0 p-0 text-center">idealne pod wynajem</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="h-100 pb-4">
+                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
+                                <div class="mx-4 my-2">
+                                    <h1 class="text-white m-0 p-0" style="font-size: 3.2em;"><i class="fa-solid fa-scale-balanced"></i></h1>
+                                </div>
+                                <div class="mx-4 my-2">
+                                    <h6 class="text-white m-0 p-0 text-center">przejrzysta prawna sytuacja inwestora</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-end m-0 p-0 pt-1 opacity-50">
+                    <p class="text-muted lead">04</p>
+                </div>
+            </div>
+        </section>
+        <!--END COUNTER-->
+        <!--SEARCH PHOTO-->
         <section>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="my-4">
-                            <h1>Title</h1>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 mb-5">
-                        <div class="list-group h-100">
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="position-relative">
+                                <img class="img-fluid segment-img" alt="" src="{{asset('asset/photo/search.jpg')}}">
+                                <div class="position-absolute p-1px" id="segment-A1">
+                                    <div class="segment h-100 w-100"></div>
                                 </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
+                                <div class="position-absolute p-1px" id="segment-A2">
+                                    <div class="segment h-100 w-100"></div>
                                 </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
+                                <div class="position-absolute p-1px" id="segment-B1">
+                                    <div class="segment h-100 w-100"></div>
                                 </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
+                                <div class="position-absolute p-1px" id="segment-B2">
+                                    <div class="segment h-100 w-100"></div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="text-end m-0 p-0 pt-1 opacity-50">
-                            <p class="text-muted lead">01</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 mb-5">
-                        <div class="list-group h-100">
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="text-end m-0 p-0 pt-1 opacity-50">
-                            <p class="text-muted lead">02</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 mb-5">
-                        <div class="list-group h-100">
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="text-end m-0 p-0 pt-1 opacity-50">
-                            <p class="text-muted lead">03</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 mb-5">
-                        <div class="list-group h-100">
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start h-100">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="text-end m-0 p-0 pt-1 opacity-50">
-                            <p class="text-muted lead">04</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="text-end m-0 p-0 pt-1 opacity-50">
+                    <p class="text-muted lead">05</p>
+                </div>
             </div>
         </section>
-        <!--END INFO-->
+        <!--END SEARCH PHOTO-->
         <!--INFO-->
         <section>
             <div class="container">
                 <div class="row my-4 py-4">
                     <div class="col-12">
                         <div class="my-4">
-                            <h1>Some title</h1>
-                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown printer took a galley of type and scrambled it to make a type specimen book. It
-                                has survived not only five centuries, but also the leap into electronic typesetting,
-                                remaining essentially unchanged.</p>
+                            <h1>Komfort w doskonałym stylu</h1>
+                            <p class="lead">Zacisze Bobrowniki to nie tylko lokalizacja, ale również przyjazny klimat. Inwestycja obejmuje dwa budynki jednorodzinne dwulokalowe w zabudowie szeregowej. Mieszkania na parterze mają powierzchnię 55,12 m², natomiast na piętrze – 45,96 m² dodatkowo strych do własnej adaptacji ok. 15 m2 . Budynki wyróżnia atrakcyjna, nowoczesna architekturą, czystymi i prostymi liniami, szczególnie widocznymi w elementach zewnętrznych. Nasze budynki są zaprojektowane tak, aby wpisywały się idealnie w sąsiedztwo i zielone tereny. Stawiamy na połączenie elegancji z naturą zarówno przy doborze materiałów wykończeniowych jak i przy projekcie samej konstrukcji domu. Od samego początku zamysłem była prostota i funkcjonalność, bez nadmiernych ekstrawagancji. Nasze nieruchomości spełniają wszystkie warunki idealnego domu rodzinnego.</p>
                         </div>
                     </div>
                 </div>
@@ -527,69 +705,54 @@
         <section>
             <div class="container">
                 <div class="row my-4 py-4">
-                    <div class="col-6 col-md-3">
-                        <div class="h-100 pb-4">
-                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
-                                <div class="mx-4 my-2">
-                                    <h1 class="text-white m-0 p-0"><i class="fa-solid fa-building"></i></h1>
-                                </div>
-                                <div class="mx-4 my-2">
-                                    <h2 class="text-white m-0 p-0">2</h2>
-                                </div>
-                                <div class="mx-4 my-2">
-                                    <p class="text-white lead m-0 p-0 text-center">Budynki</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="h-100 pb-4">
-                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
-                                <div class="mx-4 my-2">
-                                    <h1 class="text-white m-0 p-0"><i class="fa-solid fa-layer-group"></i></h1>
-                                </div>
-                                <div class="mx-4 my-2">
-                                    <h2 class="text-white m-0 p-0">4</h2>
-                                </div>
-                                <div class="mx-4 my-2">
-                                    <p class="text-white lead m-0 p-0 text-center">Piętra</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
+                    <div class="col-12 col-md-4">
                         <div class="h-100 pb-4">
                             <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
                                 <div class="mx-4 my-2">
                                     <h1 class="text-white m-0 p-0"><i class="fa-solid fa-house"></i></h1>
                                 </div>
                                 <div class="mx-4 my-2">
-                                    <h2 class="text-white m-0 p-0">48</h2>
+                                    <h2 class="text-white m-0 p-0 text-center">Wysoki standard</h2>
                                 </div>
                                 <div class="mx-4 my-2">
-                                    <p class="text-white lead m-0 p-0 text-center">Mieszkań</p>
+                                    <p class="text-white lead m-0 p-0 text-center">Do budowy domów stosujemy sprawdzone materiały i technologie, które zapewniają wieloletnie użytkowanie.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3">
+                    <div class="col-12 col-md-4">
                         <div class="h-100 pb-4">
                             <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
                                 <div class="mx-4 my-2">
-                                    <h1 class="text-white m-0 p-0"><i class="fa-solid fa-car"></i></h1>
+                                    <h1 class="text-white m-0 p-0"><i class="fa-solid fa-key"></i></h1>
                                 </div>
                                 <div class="mx-4 my-2">
-                                    <h2 class="text-white m-0 p-0">77</h2>
+                                    <h2 class="text-white m-0 p-0 text-center">PRYWATNOŚĆ ORAZ SPOKÓJ</h2>
                                 </div>
                                 <div class="mx-4 my-2">
-                                    <p class="text-white lead m-0 p-0 text-center">Miejsc parkingowych</p>
+                                    <p class="text-white lead m-0 p-0 text-center">Osobne wejścia do budynków, odzielenie ścianą akustyczą garażową, przekładają się na codzienny komfort mieszkańców.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="h-100 pb-4">
+                            <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
+                                <div class="mx-4 my-2">
+                                    <h1 class="text-white m-0 p-0"><i class="fa-brands fa-hotjar"></i></h1>
+                                </div>
+                                <div class="mx-4 my-2">
+                                    <h2 class="text-white m-0 p-0 text-center">ORZEWANIE</h2>
+                                </div>
+                                <div class="mx-4 my-2">
+                                    <p class="text-white lead m-0 p-0 text-center">Mieszkania mają ogrzewanie gazowe podłogowe, co gwarantuje szybsze ogrzewanie i lepszy komfort w użytkowaniu.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="text-end m-0 p-0 pt-1 opacity-50">
-                    <p class="text-muted lead">04</p>
+                    <p class="text-muted lead">06</p>
                 </div>
             </div>
         </section>
@@ -635,9 +798,10 @@
                             <button class="btn btn-primary mb-3 w-100" type="submit">Wyślij</button>
                         </div>
                         <div class="d-flex justify-content-center align-items-center my-4 flex-wrap">
-                            <p class="card-text m-0 p-0 mx-4 my-2 text-nowrap">+48 123 456 789</p>
-                            <p class="card-text m-0 p-0 mx-4 my-2">przykład@przykład.pl</p>
-                            <p class="card-text m-0 p-0 mx-4 my-2">Piekary Śląskie Ul.Przykładowa 3</p>
+                            <a href="tel:+48503517499" class="card-text m-0 p-0 mx-4 my-2 text-nowrap" style="text-decoration: none;">503-517-499</a>
+                            <a href="tel:+48731518516" class="card-text m-0 p-0 mx-4 my-2 text-nowrap" style="text-decoration: none;">731-518-516</a>
+                            <a href="mailto:zaciszebobrowniki@gmail.com" class="card-text m-0 p-0 mx-4 my-2" style="text-decoration: none;">zaciszebobrowniki@gmail.com</a>
+                            <p class="card-text m-0 p-0 mx-4 my-2">ul.Żurawia 4/2, 42-583 Bobrowniki</p>
                         </div>
                     </div>
                 </div>
@@ -651,18 +815,13 @@
             <footer class="py-3">
                 <ul class="nav justify-content-center pb-3 mb-3 fpt">
                     <li class="nav-item"><a href="{{route('index')}}" class="nav-link px-2 text-white">Strona główna</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Inwestycje</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="{{route('page')}}">Nowe</a>
-                            <a class="dropdown-item" href="{{route('page')}}">Ukończone</a>
-                        </div>
-                    </li>
+                    <li class="nav-item"><a href="{{route('page')}}" class="nav-link px-2 text-white">Inwestycja</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-white">O nas</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Kontakt</a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/people/Nowe-Inspiracje/100063527142284/" class="nav-link px-2 text-white"><i class="fa-brands fa-facebook"></i></a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
-                <p class="text-center text-white">&copy; 2022 Company, Inc</p>
+                <p class="text-center text-white">&copy; 2023 Nowe Inspiracje, desinged by Karol Wiśniewski</p>
             </footer>
         </div>
     </section>
@@ -677,10 +836,6 @@
             //CONTACT
             $('#card-form-contact-container').height($('#card-form-contact').height() / 2)
             $('.fpt').css('padding-top', $('#card-form-contact').height() / 2)
-            //INFO
-            $('#card-info-container').height($('#card-info').height() / 2)
-            //SVG
-            $('#card-svg-container').height($('#card-svg').height() / 2)
         });
         //ON LOAD
         $(document).ready(function() {
@@ -690,10 +845,16 @@
             //CONTACT
             $('#card-form-contact-container').height($('#card-form-contact').height() / 2)
             $('.fpt').css('padding-top', $('#card-form-contact').height() / 2)
-            //INFO
-            $('#card-info-container').height($('#card-info').height() / 2)
-            //SVG
-            $('#card-svg-container').height($('#card-svg').height() / 2)
+        });
+
+        //SEARCH
+        $(document).ready(function() {
+            $('.segment').mouseenter(function() {
+                $(this).css('background-color', 'rgba(255, 255, 0, 0.8)');
+            });
+            $('.segment').mouseleave(function() {
+                $(this).css('background-color', 'transparent');
+            });
         });
     </script>
 </body>
