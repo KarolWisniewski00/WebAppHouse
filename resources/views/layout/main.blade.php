@@ -15,14 +15,14 @@
     <!--NAV-->
     <section>
         <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-4 border-bottom">
+            <header class="d-flex flex-wrap justify-content-center py-4">
                 <a href="{{route('index')}}" class="d-flex align-items-center justify-content-center me-md-auto text-dark text-decoration-none">
                     <img alt="logo" src="{{asset('asset/photo/logo.png')}}" class="img-fluid bg-transparent" style="max-width: 10em;">
                 </a>
                 <ul class="nav nav-pills d-flex flex-row justify-content-center align-items-center flex-wrap">
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="#" class="nav-link active" aria-current="page"><i class="fa-solid fa-house me-2"></i>Strona główna</a>
+                            <a href="{{route('index')}}" class="nav-link active" aria-current="page"><i class="fa-solid fa-house me-2"></i>Strona główna</a>
                         </div>
                     </li>
                     <li class="nav-item mx-auto">

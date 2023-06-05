@@ -4,39 +4,30 @@
         <div class="card border-primary mb-3 position-absolute top-0 start-50 translate-middle" id="card-form-apart">
             <div class="d-flex justify-content-center align-items-center flex-wrap">
                 <div class="card-body">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-start align-items-center">
                         <div class="form-group">
-                            <label for="exampleSelect1" class="form-label">Powierzchnia</label>
+                            <label for="exampleSelect1" class="form-label">Segmenty</label>
                             <select class="form-select" id="exampleSelect1">
-                                <option>1</option>
-                                <option>2</option>
+                                <option>A1</option>
+                                <option>A2</option>
+                                <option>B1</option>
+                                <option>B2</option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-start align-items-center">
                         <div class="form-group">
-                            <label for="exampleSelect2" class="form-label">Liczba pokoi</label>
+                            <label for="exampleSelect2" class="form-label">Sypialnie</label>
                             <select class="form-select" id="exampleSelect2">
-                                <option>1</option>
-                                <option>2</option>
+                                <option>3 + Garaż</option>
+                                <option>4</option>
                             </select>
                         </div>
                     </div>
                 </div>
-                <div class="card-body">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="form-group">
-                            <label for="exampleSelect3" class="form-label">Piętro</label>
-                            <select class="form-select" id="exampleSelect3">
-                                <option>1</option>
-                                <option>2</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body"><button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass me-2"></i>Szukaj aparamentu</button></div>
+                <div class="card-body"><button class="btn btn-primary w-100" type="submit"><i class="fa-solid fa-magnifying-glass me-2"></i>Szukaj</button></div>
             </div>
         </div>
     </div>
