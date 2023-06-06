@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-body"><button class="btn btn-primary w-100" type="submit"><i class="fa-solid fa-magnifying-glass me-2"></i>Szukaj</button></div>
+                <div class="card-body"><a href="{{route('invest')}}" class="btn btn-primary w-100" type="submit"><i class="fa-solid fa-magnifying-glass me-2"></i>Szukaj</a></div>
             </div>
         </div>
     </div>

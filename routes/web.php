@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\InvestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +18,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name('index');
-Route::get('/page', function () {
-    return view('page');
-})->name('page');
+Route::get('/', [IndexController::class, 'index'])->name('index');
+Route::prefix('invest')->group(function () {
+    Route::get('/',[InvestController::class, 'index'])->name('invest');
+    Route::get('/show/{slug}',[InvestController::class, 'show'])->name('invest.show');
+});
+Route::get('/about',[AboutController::class, 'index'])->name('about');
+Route::get('/contact',[ContactController::class, 'index'])->name('contact');
 

@@ -12,9 +12,9 @@
                 </div>
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
-                        <h1 class="text-white">Fenomenalna lokalizacja</h1>
-                        <p>ul.Żurawia 4/2, 42-583 Bobrowniki</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Zobacz na mapie</a></p>
+                        <h1 class="text-white">Inwestycja Zacisze Bobrowniki</h1>
+                        <p>ETAP II</p>
+                        <p><a class="btn btn-lg btn-primary" href="{{route('invest')}}">Sprawdź dostępność</a></p>
                     </div>
                 </div>
             </div>
@@ -24,9 +24,9 @@
 
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
-                        <h1 class="text-white">Another example headline.</h1>
-                        <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    <h1 class="text-white">Fenomenalna lokalizacja</h1>
+                        <p>ul.Żurawia 4/2, 42-583 Bobrowniki</p>
+                        <p><a class="btn btn-lg btn-primary" href="https://goo.gl/maps/AkdQmxacJpGsmX6r6">Zobacz na mapie</a></p>
                     </div>
                 </div>
             </div>
