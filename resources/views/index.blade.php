@@ -2,7 +2,7 @@
 @section('content')
 @include('module.slider.main')
 @include('module.search.main')
-@include('module.info')
+@include('module.info.main')
 @include('module.location')
 @include('module.slider.photo')
 @include('module.icons')

@@ -35,7 +35,7 @@
         </div>
         <div class="col-6 offset-3">
             <div>
-                <a href="" class="btn btn-primary w-100"><i class="fa-solid fa-image me-2"></i>Zobacz wszystkie zdjęcia</a>
+                <a href="{{route('about')}}#gallery" class="btn btn-primary w-100"><i class="fa-solid fa-image me-2"></i>Zobacz wszystkie zdjęcia</a>
             </div>
         </div>
     </div>

@@ -14,4 +14,6 @@
     </div>
 </section>
 <!--END BREADCRUMBS + FILTER-->
+@include('module.info.about')
+@include('module.gallery')
 @endsection
