@@ -8,32 +8,32 @@
                         <img class="img-fluid segment-img" alt="" src="{{asset('asset/photo/search.jpg')}}">
                         <div class="position-absolute p-1px" id="segment-A1">
                             <div class="segment-danger h-100 w-100">
-                                <div class="d-flex flex-column justify-content-center align-items-center text-center h-100 btn-d">
-                                    <button type="button" class="btn btn-primary mb-3 btn-sm"><i class="fa-solid fa-file-pdf"></i></button>
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <button type="button" class="btn btn-primary me-3 btn-sm"><i class="fa-solid fa-file-pdf"></i></button>
                                     <a href="{{route('invest.show','A1')}}" class="btn btn-primary btn-sm"><i class="fa-solid fa-magnifying-glass"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="position-absolute p-1px" id="segment-A2">
                             <div class="segment-success h-100 w-100">
-                                <div class="d-flex flex-column justify-content-center align-items-center text-center h-100 btn-d">
-                                    <button type="button" class="btn btn-primary mb-3 btn-sm"><i class="fa-solid fa-file-pdf"></i></button>
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <button type="button" class="btn btn-primary me-3 btn-sm"><i class="fa-solid fa-file-pdf"></i></button>
                                     <a href="{{route('invest.show','A2')}}" class="btn btn-primary btn-sm"><i class="fa-solid fa-magnifying-glass"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="position-absolute p-1px" id="segment-B1">
                             <div class="segment-danger h-100 w-100">
-                                <div class="d-flex flex-column justify-content-center align-items-center text-center h-100 btn-d">
-                                    <button type="button" class="btn btn-primary mb-3 btn-sm"><i class="fa-solid fa-file-pdf"></i></button>
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <button type="button" class="btn btn-primary me-3 btn-sm"><i class="fa-solid fa-file-pdf"></i></button>
                                     <a href="{{route('invest.show','B1')}}" class="btn btn-primary btn-sm"><i class="fa-solid fa-magnifying-glass"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="position-absolute p-1px" id="segment-B2">
                             <div class="segment-danger h-100 w-100">
-                                <div class="d-flex flex-column justify-content-center align-items-center text-center h-100 btn-d">
-                                    <button type="button" class="btn btn-primary mb-3 btn-sm"><i class="fa-solid fa-file-pdf"></i></button>
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <button type="button" class="btn btn-primary me-3 btn-sm"><i class="fa-solid fa-file-pdf"></i></button>
                                     <a href="{{route('invest.show','B2')}}" class="btn btn-primary btn-sm"><i class="fa-solid fa-magnifying-glass"></i></a>
                                 </div>
                             </div>

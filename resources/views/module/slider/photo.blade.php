@@ -6,14 +6,14 @@
                 <!--SLIDER-->
                 <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
                     <div class="carousel-indicators d-none d-xl-flex justify-content-center align-items-end">
-                        @for($x = 0; $x <= 12; $x++) @if($x==0) <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" class="active" aria-current="true" aria-label="Slide {{$x+1}}"></button>
+                        @for($x = 0; $x <= 9; $x++) @if($x==0) <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" class="active" aria-current="true" aria-label="Slide {{$x+1}}"></button>
                             @else
                             <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" aria-label="Slide {{$x+1}}"></button>
                             @endif
                             @endfor
                     </div>
                     <div class="carousel-inner">
-                        @for($x = 1; $x <= 12; $x++) @if($x==1) <div class="carousel-item active text-center">
+                        @for($x = 1; $x <= 9; $x++) @if($x==1) <div class="carousel-item active text-center">
                             <img class="img-fluid" alt="" src="{{asset('asset/photo/album/'.$x.'.jpg')}}">
                     </div>
                     @else

@@ -3,31 +3,31 @@
 }
 
 #segment-A1 {
-    top: 21%;
-    left: 1%;
-    width: 26.5%;
-    height: 45%;
+    top: 75%;
+    left: 9%;
+    width: 80.5%;
+    height: 10%;
 }
 
 #segment-A2 {
-    top: 21%;
-    left: 27.5%;
-    width: 24.75%;
-    height: 45%;
+    top: 64%;
+    left: 8.75%;
+    width: 80.75%;
+    height: 11%;
 }
 
 #segment-B1 {
-    top: 21%;
-    left: 52.25%;
-    width: 24%;
-    height: 45%;
+    top: 54%;
+    left: 8.75%;
+    width: 80.75%;
+    height: 10%;
 }
 
 #segment-B2 {
-    top: 21%;
-    left: 76.25%;
-    width: 23%;
-    height: 45%;
+    top: 41.5%;
+    left: 8.75%;
+    width: 80.75%;
+    height: 12.5%;
 }
 
 .btn-d {
