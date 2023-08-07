@@ -16,7 +16,7 @@
             </div>
             <div class="col-6 col-md-3">
                 <div class="h-100 pb-4">
-                    <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
+                    <div class="d-flex flex-column justify-content-center align-items-center bg-extra h-100">
                         <div class="mx-4 my-2">
                             <h1 class="text-white m-0 p-0" style="font-size: 3.2em;"><i class="fa-solid fa-bell-slash"></i></h1>
                         </div>
@@ -76,7 +76,7 @@
             </div>
             <div class="col-6 col-md-3">
                 <div class="h-100 pb-4">
-                    <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
+                    <div class="d-flex flex-column justify-content-center align-items-center bg-extra h-100">
                         <div class="mx-4 my-2">
                             <h1 class="text-white m-0 p-0" style="font-size: 3.2em;"><i class="fa-solid fa-user-tag"></i></h1>
                         </div>

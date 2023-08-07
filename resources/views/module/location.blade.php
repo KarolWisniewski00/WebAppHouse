@@ -6,7 +6,7 @@
                 <div class="row text-center">
                     <div class="my-4">
                         <h1 class="mb-2">
-                            Zacisze
+                            <span>Zacisze</span>
                             <small class="text-muted">Bobrowniki</small>
                         </h1>
                         <p class="lead">Zacisze Bobrowniki zlokalizowane jest w Bobrownikach, na granicy z Rogożnikiem te obydwie miejscowości wyróżniają się terenami zielonymi, placami zabaw, zalewem kąpielowym, skateparkiem, trasami rowerowymi oraz pieszymi. Blisko do Parku w Świerklańcu który też posiada swój akwen. Spokój cisza brak hałasu samochodów. Zacisze Bobrowniki wyróżniaja się szybkim przemieszczeniem do innych miejscowości, takich jak Tarnowskie Góry, Chorzów, Siemianowice, Piekary Ślaskie, Wymysłów, Katowice.</p>
@@ -27,7 +27,7 @@
                             <div class="accordion w-100 boredr-0" id="accordion-1">
                                 <div class="accordion-item w-100 border-0">
                                     <h2 class="accordion-header w-100 border-0" id="panel-1">
-                                        <a href="" class="btn btn-primary mb-3 fs-2" type="button"><i class="fa-solid fa-tree p-2"></i></a>
+                                        <a href="" class="btn btn-extra mb-3 fs-2" type="button"><i class="fa-solid fa-tree p-2"></i></a>
                                         <button class="accordion-button border-0 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panel-1-collapseOne" aria-expanded="true" aria-controls="panel-1-collapseOne">
                                             Tereny rekreacyjne
                                         </button>
@@ -38,21 +38,21 @@
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <div class="d-flex flex-column justify-content-center align-items-center w-100">
                                                     <h5 class="mb-1 fs-3">Park Rogoźnik</h5>
-                                                    <h5 class="mb-1">2 min</h5>
+                                                    <h5 class="mb-1 color-extra">2 min</h5>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <div class="d-flex flex-column justify-content-center align-items-center w-100">
                                                     <h5 class="mb-1 fs-3">Jeziora Rogoźnik I i II</h5>
-                                                    <h5 class="mb-1">4 min</h5>
+                                                    <h5 class="mb-1 color-extra">4 min</h5>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <div class="d-flex flex-column justify-content-center align-items-center w-100">
                                                     <h5 class="mb-1 fs-3">Park Świerklaniec</h5>
-                                                    <h5 class="mb-1">10 min</h5>
+                                                    <h5 class="mb-1 color-extra">10 min</h5>
                                                 </div>
                                             </div>
                                             </p>
@@ -77,22 +77,22 @@
                                             <p class="lead">
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Siemianowice</h5>
-                                                <h5 class="mb-1">15 min</h5>
+                                                <h5 class="mb-1 color-extra">15 min</h5>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Katowice</h5>
-                                                <h5 class="mb-1">20 min</h5>
+                                                <h5 class="mb-1 color-extra">20 min</h5>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Chorzów</h5>
-                                                <h5 class="mb-1">15 min</h5>
+                                                <h5 class="mb-1 color-extra">15 min</h5>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Piekary Śląskie</h5>
-                                                <h5 class="mb-1">15 min</h5>
+                                                <h5 class="mb-1 color-extra">15 min</h5>
                                             </div>
                                             </p>
                                         </div>
@@ -106,7 +106,7 @@
                             <div class="accordion w-100 border-0" id="accordion-3">
                                 <div class="accordion-item w-100 border-0">
                                     <h2 class="accordion-header w-100 border-0" id="panel-3">
-                                        <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-road p-2"></i></a>
+                                        <a href="" class="btn btn-extra mb-4 fs-2" type="button"><i class="fa-solid fa-road p-2"></i></a>
                                         <button class="accordion-button w-100 border-0 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panel-3-collapseOne" aria-expanded="true" aria-controls="panel-3-collapseOne">
                                             Kluczowe trasy
                                         </button>
@@ -116,17 +116,17 @@
                                             <p class="lead">
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Autostrada A1</h5>
-                                                <h5 class="mb-1">15 min</h5>
+                                                <h5 class="mb-1 color-extra">15 min</h5>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Droga 86</h5>
-                                                <h5 class="mb-1">10 min</h5>
+                                                <h5 class="mb-1 color-extra">10 min</h5>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Droga 94</h5>
-                                                <h5 class="mb-1">10 min</h5>
+                                                <h5 class="mb-1 color-extra">10 min</h5>
                                             </div>
                                             </p>
                                         </div>
@@ -150,12 +150,12 @@
                                             <p class="lead">
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Apteka</h5>
-                                                <h5 class="mb-1">4 min</h5>
+                                                <h5 class="mb-1 color-extra">4 min</h5>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Przychodnia</h5>
-                                                <h5 class="mb-1">5 min</h5>
+                                                <h5 class="mb-1 color-extra">5 min</h5>
                                             </div>
                                             </p>
                                         </div>
@@ -169,7 +169,7 @@
                             <div class="accordion w-100 border-0" id="accordion-5">
                                 <div class="accordion-item w-100 border-0">
                                     <h2 class="accordion-header w-100 border-0" id="panel-5">
-                                        <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-graduation-cap p-2"></i></a>
+                                        <a href="" class="btn btn-extra mb-4 fs-2" type="button"><i class="fa-solid fa-graduation-cap p-2"></i></a>
                                         <button class="accordion-button w-100 border-0 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panel-5-collapseOne" aria-expanded="true" aria-controls="panel-5-collapseOne">
                                             Placówki edukacyjne
                                         </button>
@@ -179,17 +179,17 @@
                                             <p class="lead">
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Żłobek</h5>
-                                                <h5 class="mb-1">4 min</h5>
+                                                <h5 class="mb-1 color-extra">4 min</h5>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Publiczne przedszkole</h5>
-                                                <h5 class="mb-1">3 min</h5>
+                                                <h5 class="mb-1 color-extra">3 min</h5>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Szkoła podstawowa</h5>
-                                                <h5 class="mb-1">5 min</h5>
+                                                <h5 class="mb-1 color-extra">5 min</h5>
                                             </div>
                                             </p>
                                         </div>
@@ -213,22 +213,22 @@
                                             <p class="lead">
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Biedronka</h5>
-                                                <h5 class="mb-1">2 min</h5>
+                                                <h5 class="mb-1 color-extra">2 min</h5>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Lewiatan</h5>
-                                                <h5 class="mb-1">2 min</h5>
+                                                <h5 class="mb-1 color-extra">2 min</h5>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Fryzjer</h5>
-                                                <h5 class="mb-1">2 min</h5>
+                                                <h5 class="mb-1 color-extra">2 min</h5>
                                             </div>
                                             <hr>
                                             <div class="flex-column align-items-start h-100 w-100">
                                                 <h5 class="mb-1 fs-3">Siłownia</h5>
-                                                <h5 class="mb-1">3 min</h5>
+                                                <h5 class="mb-1 color-extra">3 min</h5>
                                             </div>
                                             </p>
                                         </div>

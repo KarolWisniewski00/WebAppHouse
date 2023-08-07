@@ -52,3 +52,26 @@
 .p-1px {
     padding: 1px;
 }
+.color-extra{
+    color:#9cca36;
+}
+.bg-extra{
+    background-color:#9cca36;
+}
+.btn-extra {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9cca36;
+    --bs-btn-border-color: #9cca36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8dbd2b;
+    --bs-btn-hover-border-color: #7ead27;
+    --bs-btn-focus-shadow-rgb: 120, 166, 54;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #7ead27;
+    --bs-btn-active-border-color: #6d9c23;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #9cca36;
+    --bs-btn-disabled-border-color: #9cca36;
+  }
+  

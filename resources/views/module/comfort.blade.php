@@ -33,7 +33,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="h-100 pb-4">
-                    <div class="d-flex flex-column justify-content-center align-items-center bg-primary h-100">
+                    <div class="d-flex flex-column justify-content-center align-items-center bg-extra h-100">
                         <div class="mx-4 my-2">
                             <h1 class="text-white m-0 p-0"><i class="fa-solid fa-key"></i></h1>
                         </div>

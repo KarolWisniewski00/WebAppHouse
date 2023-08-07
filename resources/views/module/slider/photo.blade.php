@@ -33,11 +33,6 @@
             </div>
             <!--END SLIDER-->
         </div>
-        <div class="col-6 offset-3">
-            <div>
-                <a href="{{route('about')}}#gallery" class="btn btn-primary w-100"><i class="fa-solid fa-image me-2"></i>Zobacz wszystkie zdjęcia</a>
-            </div>
-        </div>
     </div>
     <div class="text-end m-0 p-0 pt-1 opacity-50">
         <p class="text-muted lead">03</p>

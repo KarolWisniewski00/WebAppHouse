@@ -13,7 +13,7 @@
                     </div>
                     <div class="col-6">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-4">
-                            <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-brands fa-pagelines p-2"></i></a>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button"><i class="fa-brands fa-pagelines p-2"></i></a>
                             <h3>Ogród lub balkon</h3>
                             <p class="lead">Lokale na parterze mają indywidualne ogródki, mieszkania na piętrze posiadają balkon i dodatkowo poddasze z oknem dachowym.</p>
                         </div>
