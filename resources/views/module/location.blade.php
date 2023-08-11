@@ -3,12 +3,15 @@
     <div class="container">
         <div class="row my-4 py-4 flex-row-reverse">
             <div class="col-12 col-xl-5">
-                <div class="row text-center">
+                <div class="row text-start">
                     <div class="my-4">
-                        <h1 class="mb-2">
-                            <span>Zacisze</span>
-                            <small class="text-muted">Bobrowniki</small>
-                        </h1>
+                        <div class="hstack gap-3 mb-3">
+                            <div class="vr bg-extra" style="border: 3px solid #9cca36; opacity: .75;"></div>
+                            <h1 class="p-0 m-0">
+                                <span>Zacisze</span>
+                                <small class="text-muted">Bobrowniki</small>
+                            </h1>
+                        </div>
                         <p class="lead">Zacisze Bobrowniki zlokalizowane jest w Bobrownikach, na granicy z Rogożnikiem te obydwie miejscowości wyróżniają się terenami zielonymi, placami zabaw, zalewem kąpielowym, skateparkiem, trasami rowerowymi oraz pieszymi. Blisko do Parku w Świerklańcu który też posiada swój akwen. Spokój cisza brak hałasu samochodów. Zacisze Bobrowniki wyróżniaja się szybkim przemieszczeniem do innych miejscowości, takich jak Tarnowskie Góry, Chorzów, Siemianowice, Piekary Ślaskie, Wymysłów, Katowice.</p>
                         <p class="lead">Droga do dużych miast Chorzów ok 15 min, Katowice ok 20 min, Siemianowice ok 15 min.</p>
                         <p class="lead">Ta doskonała lokalizacja jest dla osób które pracują lub uczą się w większych miastach ościennych.</p>
@@ -27,7 +30,7 @@
                             <div class="accordion w-100 boredr-0" id="accordion-1">
                                 <div class="accordion-item w-100 border-0">
                                     <h2 class="accordion-header w-100 border-0" id="panel-1">
-                                        <a href="" class="btn btn-extra mb-3 fs-2" type="button"><i class="fa-solid fa-tree p-2"></i></a>
+                                        <a href="" class="btn btn-primary mb-3 fs-2" type="button"><i class="fa-solid fa-tree p-2"></i></a>
                                         <button class="accordion-button border-0 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panel-1-collapseOne" aria-expanded="true" aria-controls="panel-1-collapseOne">
                                             Tereny rekreacyjne
                                         </button>
@@ -106,7 +109,7 @@
                             <div class="accordion w-100 border-0" id="accordion-3">
                                 <div class="accordion-item w-100 border-0">
                                     <h2 class="accordion-header w-100 border-0" id="panel-3">
-                                        <a href="" class="btn btn-extra mb-4 fs-2" type="button"><i class="fa-solid fa-road p-2"></i></a>
+                                        <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-road p-2"></i></a>
                                         <button class="accordion-button w-100 border-0 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panel-3-collapseOne" aria-expanded="true" aria-controls="panel-3-collapseOne">
                                             Kluczowe trasy
                                         </button>
@@ -169,7 +172,7 @@
                             <div class="accordion w-100 border-0" id="accordion-5">
                                 <div class="accordion-item w-100 border-0">
                                     <h2 class="accordion-header w-100 border-0" id="panel-5">
-                                        <a href="" class="btn btn-extra mb-4 fs-2" type="button"><i class="fa-solid fa-graduation-cap p-2"></i></a>
+                                        <a href="" class="btn btn-primary mb-4 fs-2" type="button"><i class="fa-solid fa-graduation-cap p-2"></i></a>
                                         <button class="accordion-button w-100 border-0 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panel-5-collapseOne" aria-expanded="true" aria-controls="panel-5-collapseOne">
                                             Placówki edukacyjne
                                         </button>

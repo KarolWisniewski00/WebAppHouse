@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AboutInvestController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\IndexController;
@@ -28,5 +29,6 @@ Route::prefix('invest')->group(function () {
     Route::get('/wodna',[InvestEndController::class, 'wodna'])->name('invest.wodna');
 });
 Route::get('/about',[AboutController::class, 'index'])->name('about');
+Route::get('/about-invest',[AboutInvestController::class, 'index'])->name('about.invest');
 Route::get('/contact',[ContactController::class, 'index'])->name('contact');
 

@@ -52,12 +52,15 @@
 .p-1px {
     padding: 1px;
 }
-.color-extra{
-    color:#9cca36;
+
+.color-extra {
+    color: #9cca36;
 }
-.bg-extra{
-    background-color:#9cca36;
+
+.bg-extra {
+    background-color: #9cca36;
 }
+
 .btn-extra {
     --bs-btn-color: #fff;
     --bs-btn-bg: #9cca36;
@@ -73,5 +76,4 @@
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: #9cca36;
     --bs-btn-disabled-border-color: #9cca36;
-  }
-  
+}

@@ -41,6 +41,11 @@
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <a href="{{route('about.invest')}}" class="nav-link">O Inwestycji</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
                             <a href="{{route('about')}}" class="nav-link">O nas</a>
                         </div>
                     </li>

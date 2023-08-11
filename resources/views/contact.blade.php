@@ -15,10 +15,13 @@
 </section>
 <!--END BREADCRUMBS + FILTER-->
 <section>
-    <div class="container mb-3">
+    <div class="container mb-5">
         <div class="row">
             <div class="col-12">
-                <h1>Biuro <span class="text-muted">Nowe Inspiracje</span></h1>
+                <div class="hstack gap-3 mb-3">
+                    <div class="vr bg-extra" style="border: 3px solid #9cca36; opacity: .75;"></div>
+                    <h1 class="p-0 m-0">Biuro <span class="text-muted">Nowe Inspiracje</span></h1>
+                </div>
             </div>
             <div class="col-12 col-md-6">
                 <p>Henryka Sienkiewicza 1, 41-940 Piekary Śląskie</p>
@@ -35,6 +38,7 @@
             <div class="col-12 col-md-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5089.192137789474!2d18.947!3d50.374086!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d359233182f7%3A0xe73192fcbc76c5c0!2sHenryka%20Sienkiewicza%201%2C%2041-940%20Piekary%20%C5%9Al%C4%85skie!5e0!3m2!1spl!2spl!4v1686061705431!5m2!1spl!2spl" class="w-100 h-auto" style="border:0; min-height:30em" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <!--
             <hr class="my-2">
             <div class="col-12">
                 <h1>Lokalizacja inwestycji <span class="text-muted">BOBROWNIKI</span></h1>
@@ -48,6 +52,7 @@
             <div class="col-12 col-md-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.690916745814!2d19.015119200000004!3d50.3909601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d5590ca8f05d%3A0x21221ef9127cf607!2s%C5%BBurawia%204a%2F2%2C%2044-122%20Bobrowniki!5e0!3m2!1spl!2spl!4v1686062031161!5m2!1spl!2spl" class="w-100 h-auto" style="border:0; min-height:30em" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+                -->
         </div>
     </div>
 </section>

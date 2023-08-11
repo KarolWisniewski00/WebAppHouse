@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="col-12 col-xl-7">
-                <div class="d-flex flex-column justify-content-center align-items-center h-100" style="min-height: 30em; background-image: url({{asset('asset/photo/info-1.jpg')}});    background-size: cover;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
+                <div class="d-flex flex-column justify-content-center align-items-center h-100 my-4" style="min-height: 30em; background-image: url({{asset('asset/photo/info-1.jpg')}});    background-size: cover;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                 </div>
             </div>
         </div>

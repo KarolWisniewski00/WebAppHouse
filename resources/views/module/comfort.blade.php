@@ -4,7 +4,10 @@
         <div class="row my-4 py-4">
             <div class="col-12">
                 <div class="my-4">
-                    <h1>Komfort w doskonałym stylu</h1>
+                    <div class="hstack gap-3 mb-3">
+                        <div class="vr bg-extra" style="border: 3px solid #9cca36; opacity: .75;"></div>
+                        <h1 class="p-0 m-0">Komfort w doskonałym stylu</h1>
+                    </div>
                     <p class="lead">Zacisze Bobrowniki to nie tylko lokalizacja, ale również przyjazny klimat. Inwestycja obejmuje dwa budynki jednorodzinne dwulokalowe w zabudowie szeregowej. Mieszkania na parterze mają powierzchnię 55,12 m², natomiast na piętrze – 45,96 m² dodatkowo strych do własnej adaptacji ok. 15 m2 . Budynki wyróżnia atrakcyjna, nowoczesna architekturą, czystymi i prostymi liniami, szczególnie widocznymi w elementach zewnętrznych. Nasze budynki są zaprojektowane tak, aby wpisywały się idealnie w sąsiedztwo i zielone tereny. Stawiamy na połączenie elegancji z naturą zarówno przy doborze materiałów wykończeniowych jak i przy projekcie samej konstrukcji domu. Od samego początku zamysłem była prostota i funkcjonalność, bez nadmiernych ekstrawagancji. Nasze nieruchomości spełniają wszystkie warunki idealnego domu rodzinnego.</p>
                 </div>
             </div>
