@@ -20,15 +20,16 @@
             <div class="col-12">
                 <div class="hstack gap-3 mb-3">
                     <div class="vr bg-extra" style="border: 3px solid #9cca36; opacity: .75;"></div>
-                    <h1 class="p-0 m-0">Biuro <span class="text-muted">Nowe Inspiracje</span></h1>
+                    <h1 class="p-0 m-0">Biuro <span class="text-muted">DGG</span></h1>
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <p>Henryka Sienkiewicza 1, 41-940 Piekary Śląskie</p>
+                <p>ul.Sienkiewicza 1, 1 piętro, Piekary Śląskie 41-940</p>
                 <p>NIP: 498-01-71-674</p>
                 <p><a href="mailto:biuronoweinspiracje@gmail.com">biuronoweinspiracje@gmail.com</a></p>
-                <p>REMONTY NADZÓR – <a href="tel:503517499">503-517-499</a></p>
-                <p>Projekty Ola – <a href="tel:533997018">533-997-018</a></p>
+                <p>Sprzedaż – <a href="tel:503517499">503-517-499</a></p>
+                <p>Nadzór remontowy – <a href="tel:517929025">517-929-025</a></p>
+                <p>Projekty wnętrz – <a href="tel:533997018">533-997-018</a></p>
                 <div class="d-flex flex-row justify-content-start align-items-start fs-1">
                     <a href="https://www.facebook.com/people/Nowe-Inspiracje/100063527142284/" class="me-2"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#" class="me-2"><i class="fa-brands fa-instagram"></i></a>

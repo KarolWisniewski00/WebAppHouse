@@ -60,7 +60,20 @@
 .bg-extra {
     background-color: #9cca36;
 }
-
+.bg-extra-hover{
+    transition: 1s ease-in-out;
+}
+.bg-extra-hover:hover{
+    background-color: #3d5906!important;
+    transition: 1s ease-in-out;
+}
+.bg-extra-hover:hover .text-hover {
+    color: white!important;
+    transition: 1s ease-in-out;
+}
+.text-hover{
+    transition: 1s ease-in-out;
+}
 .btn-extra {
     --bs-btn-color: #fff;
     --bs-btn-bg: #9cca36;

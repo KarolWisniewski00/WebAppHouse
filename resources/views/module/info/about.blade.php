@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                <img class="img-fluid" alt="" src="{{asset('asset/photo/czarna_apla.jpeg')}}">
+                <img class="img-fluid" alt="" src="{{asset('asset/photo/logo.png')}}">
             </div>
         </div>
         <div class="text-end m-0 p-0 pt-1 opacity-50">
