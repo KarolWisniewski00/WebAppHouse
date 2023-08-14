@@ -135,7 +135,7 @@
     </div>
 </section>
 <!--END INFO WITH BG MUTED-->
-<!--SLIDER PHOTO-->
+<!--SLIDER PHOTO
 <section>
     <div class="container py-5">
         <div class="row">
@@ -177,10 +177,10 @@
     </div>
     </div>
 </section>
-<!--END SLIDER PHOTO-->
-<!--SLIDER PHOTO
+END SLIDER PHOTO-->
+<!--SLIDER PHOTO-->
 <section style="background-color: #3d5906;">
-    <div class="container pt-5">
+    <div class="container py-5">
         <div class="row">
             <div class="col-12">
                 <div class="d-flex flex-column justify-content-center align-items-center text-center my-4 h-100">
@@ -188,10 +188,6 @@
                     <p class="p-0 m-0  my-2 mb-5 text-white" style="font-size: 1.8em;">Budynek Apartamenty Rzuty 3D Dlaczego warto?</p>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid mx-0 px-0">
-        <div class="row">
             <div class="col-12">
                 <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
                     <div class="carousel-indicators d-none d-xl-flex justify-content-center align-items-end">
@@ -224,7 +220,7 @@
     </div>
     </div>
 </section>
-END SLIDER PHOTO-->
+<!--END SLIDER PHOTO-->
 <!--INFO SMALL 01-->
 <section>
     <div class="container text-primary">
