@@ -32,3 +32,13 @@ Route::get('/about',[AboutController::class, 'index'])->name('about');
 Route::get('/about-invest',[AboutInvestController::class, 'index'])->name('about.invest');
 Route::get('/contact',[ContactController::class, 'index'])->name('contact');
 
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
