@@ -18,8 +18,8 @@ return new class extends Migration
             $table->integer('surface');
             $table->string('status');
             $table->integer('price');
-            $table->string('file_pdf');
-            $table->string('file_priv');
+            $table->string('file_pdf')->nullable();
+            $table->string('file_priv')->nullable();
             $table->timestamps();
         });
     }

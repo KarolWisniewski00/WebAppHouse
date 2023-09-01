@@ -59,34 +59,49 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($tables as $table)
+                                @foreach($tables as $key => $table)
                                 <tr>
                                     <td class="px-6 py-4">
-                                        1
+                                        {{$key+1}}
                                     </td>
                                     <td class="px-6 py-4">
-                                        segment
+                                        {{$table->segment}}
                                     </td>
                                     <td class="px-6 py-4">
-                                        mieszkanie
+                                        {{$table->flat}}
+
                                     </td>
                                     <td class="px-6 py-4">
-                                        metraz
+                                        {{$table->surface}}
+
                                     </td>
                                     <td class="px-6 py-4">
-                                        status
+                                        @if($table->status == 'avaiable')
+                                        <span class="text-emerald-400">Dostępny</span>
+                                        @else
+                                        <span class="text-rose-400">Niedostępny</span>
+                                        @endif
                                     </td>
                                     <td class="px-6 py-4">
-                                        cena
+                                        {{$table->price}}
+
                                     </td>
                                     <td class="px-6 py-4">
-                                        <a href="" type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-file-pdf"></i></a>
+                                        @if(Storage::exists('public/'.$table->file_pdf))
+                                        <a href="{{ asset('storage/'.$table->file_pdf) }}" download type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-file-pdf"></i></a>
+                                        @else
+                                        <p class="text-rose-400">Plik PDF nie istnieje.</p>
+                                        @endif
                                     </td>
                                     <td class="px-6 py-4">
-                                        <a href="" type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                                        @if(Storage::exists('public/'.$table->file_priv))
+                                        <a href="{{ asset('storage/'.$table->file_priv) }}" download type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-file-pdf"></i></a>
+                                        @else
+                                        <p class="text-rose-400">Plik PDF nie istnieje.</p>
+                                        @endif
                                     </td>
                                     <td class="px-6 py-4">
-                                        <a href="" type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-eye"></i></a>
+                                        <a href="{{ route('invest.show', $table->id) }}" type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-eye"></i></a>
                                     </td>
                                     <td class="px-6 py-4">
                                         <a href="{{ route('dashboard.flat.edit', $table->id) }}" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800">
@@ -94,7 +109,7 @@
                                         </a>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <form action="{{ route('dashboard.flat.delete', $table->id) }}" method="POST" onsubmit="return confirm('Czy na pewno chcesz usunąć ten produkt?')">
+                                        <form action="{{ route('dashboard.flat.delete', $table->id) }}" method="POST" onsubmit="return confirm('Czy na pewno chcesz to usunąć?')">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="text-red-500 hover:text-white border border-red-600 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateFlatRequest;
+use App\Http\Requests\EditFlatRequest;
 use App\Models\Flat;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Storage;
 class FlatAdminController extends Controller
 {
     public function index(){
@@ -15,16 +17,27 @@ class FlatAdminController extends Controller
     {
         return view('admin.flat.create');
     }
-    public function store(Request $request)
+    public function store(CreateFlatRequest $request)
     {
+        $file_pdf=null;
+        $file_priv=null;
+        if ($request->hasFile('file_pdf') && $request->file('file_pdf')) {
+            $file_pdf = $request->file('file_pdf');
+            $file_pdf = $file_pdf->store('pdfs', 'public');
+        }
+        if ($request->hasFile('file_priv') && $request->file('file_priv')->isValid()) {
+            $file_priv = $request->file('file_priv');
+            $file_priv = $file_priv->store('privs', 'public');
+        }
+        
         $table = new Flat();
         $table->segment = $request->segment;
         $table->flat = $request->flat;
         $table->surface = $request->surface;
         $table->status = $request->status;
         $table->price = $request->price;
-        $table->file_pdf = 'null';
-        $table->file_priv = 'null';
+        $table->file_pdf = $file_pdf;
+        $table->file_priv = $file_priv;
         $res = $table->save();
 
         if ($res) {
@@ -37,7 +50,7 @@ class FlatAdminController extends Controller
     {
         return view('admin.flat.edit', compact('table'));
     }
-    public function update(Request $request, Flat $table)
+    public function update(EditFlatRequest $request, Flat $table)
     {
         $res = $table->update([
             'segment' => $request->segment,
@@ -46,6 +59,20 @@ class FlatAdminController extends Controller
             'status' => $request->status,
             'price' => $request->price,
         ]);
+        if ($request->hasFile('file_pdf') && $request->file('file_pdf')) {
+            $file_pdf = $request->file('file_pdf');
+            $file_pdf = $file_pdf->store('pdfs', 'public');
+            $table->update([
+                'file_pdf' => $file_pdf,
+            ]);
+        }
+        if ($request->hasFile('file_priv') && $request->file('file_priv')) {
+            $file_priv = $request->file('file_priv');
+            $file_priv = $file_priv->store('privs', 'public');
+            $table->update([
+                'file_priv' => $file_priv,
+            ]);
+        }
 
         if ($res) {
             return redirect()->route('dashboard')

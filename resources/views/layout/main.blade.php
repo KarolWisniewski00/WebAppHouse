@@ -29,7 +29,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Inwestycje
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><h6 class="dropdown-header">W trakcie realizacji</h6></li>
                             <li><a class="dropdown-item" href="{{route('invest')}}">DGG</a></li>
                             <li><hr class="dropdown-divider"></li>

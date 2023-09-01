@@ -44,9 +44,9 @@ Route::middleware([
             Route::get('/', [FlatAdminController::class, 'index'])->name('dashboard');
             Route::get('/create', [FlatAdminController::class, 'create'])->name('dashboard.flat.create');
             Route::post('/store', [FlatAdminController::class, 'store'])->name('dashboard.flat.store');
-            Route::get('/edit/{flat}', [FlatAdminController::class, 'edit'])->name('dashboard.flat.edit');
-            Route::put('/update/{flat}', [FlatAdminController::class, 'update'])->name('dashboard.flat.update');
-            Route::delete('/delete/{flat}', [FlatAdminController::class, 'delete'])->name('dashboard.flat.delete');
+            Route::get('/edit/{table}', [FlatAdminController::class, 'edit'])->name('dashboard.flat.edit');
+            Route::put('/update/{table}', [FlatAdminController::class, 'update'])->name('dashboard.flat.update');
+            Route::delete('/delete/{table}', [FlatAdminController::class, 'delete'])->name('dashboard.flat.delete');
         });
     });
 });

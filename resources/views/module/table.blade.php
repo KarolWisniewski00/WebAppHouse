@@ -10,7 +10,6 @@
                             <th scope="col">Segment</th>
                             <th scope="col">Mieszkanie</th>
                             <th scope="col">Metraż</th>
-                            <th scope="col">Metraż ogrodu</th>
                             <th scope="col">Status</th>
                             <th scope="col">Cena</th>
                             <th scope="col"><i class="fa-solid fa-file-pdf me-2"></i>Plik</th>
@@ -19,18 +18,50 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="table-primary">
-                            <th>1</th>
-                            <td>A1</td>
-                            <td>3 + garaż lub 4</td>
-                            <td>101,08 m2</td>
-                            <td>181,40 m2</td>
-                            <td class="text-danger">Nie dostępne</td>
-                            <td>123 PLN</td>
-                            <td><button type="button" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i></button></td>
-                            <td><button type="button" class="btn btn-primary"><i class="fa-solid fa-cloud-arrow-down"></i></button></td>
-                            <td><a href="{{route('invest.show','A1')}}" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                        @foreach($tables as $key => $table)
+                        <tr>
+                            <td>
+                                {{$key+1}}
+                            </td>
+                            <td>
+                                {{$table->segment}}
+                            </td>
+                            <td>
+                                {{$table->flat}}
+
+                            </td>
+                            <td>
+                                {{$table->surface}} m2
+
+                            </td>
+                            <td class="px-6 py-4">
+                                @if($table->status == 'avaiable')
+                                <span class="text-success">Dostępny</span>
+                                @else
+                                <span class="text-danger">Niedostępny</span>
+                                @endif
+                            </td>
+                            <td>
+                                {{$table->price}} PLN
+
+                            </td>
+                            <td>
+                                @if(Storage::exists('public/'.$table->file_pdf))
+                                <a href="{{ asset('storage/'.$table->file_pdf) }}" download  type="button" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i></a>
+                                @else
+                                <p class="text-danger">Plik PDF nie istnieje.</p>
+                                @endif
+                            </td>
+                            <td>
+                                @if(Storage::exists('public/'.$table->file_priv))
+                                <a href="{{ asset('storage/'.$table->file_priv) }}" download type="button" class="btn btn-primary"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                                @else
+                                <p class="text-danger">Plik PDF nie istnieje.</p>
+                                @endif
+                            </td>
+                            <td><a href="{{route('invest.show', $table->id)}}" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></a></td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
