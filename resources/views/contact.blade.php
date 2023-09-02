@@ -19,8 +19,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="hstack gap-3 mb-3">
-                    <div class="vr bg-extra" style="border: 3px solid #9cca36; opacity: .75;"></div>
-                    <h1 class="p-0 m-0">Biuro <span class="text-muted">DGG</span></h1>
+                    <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
+                    <h1 class="p-0 m-0">Biuro <span class="text-muted">Osiedle Luxor Residence</span></h1>
                 </div>
             </div>
             <div class="col-12 col-md-6">

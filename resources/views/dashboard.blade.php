@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Mieszkania') }}
+            Mieszkania
         </h2>
     </x-slot>
 
@@ -20,12 +20,9 @@
                         </a>
                     </div>
                     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 table-fixed">
+                        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                 <tr>
-                                    <th scope="col" class="px-6 py-3">
-                                        Numer
-                                    </th>
                                     <th scope="col" class="px-6 py-3">
                                         Segment
                                     </th>
@@ -62,10 +59,15 @@
                                 @foreach($tables as $key => $table)
                                 <tr>
                                     <td class="px-6 py-4">
-                                        {{$key+1}}
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        {{$table->segment}}
+                                        @if($table->segment == 'floor-4')
+                                        Piętro 3
+                                        @elseif($table->segment == 'floor-3')
+                                        Piętro 2
+                                        @elseif($table->segment == 'floor-2')
+                                        Piętro 1
+                                        @elseif($table->segment == 'floor-1')
+                                        Parter
+                                        @endif
                                     </td>
                                     <td class="px-6 py-4">
                                         {{$table->flat}}

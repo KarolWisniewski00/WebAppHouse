@@ -8,37 +8,37 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/slider-3.jpeg')}});    background-position: center;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
+                <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/'.$setting['zdjecie_1_karuzela_1_na_stronie_glownej'])}});    background-position: center;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                 </div>
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
-                        <h1 class="text-white">Inwestycja Zacisze Bobrowniki</h1>
-                        <p>ETAP II</p>
-                        <p><a class="btn btn-lg btn-primary" href="{{route('invest')}}">Sprawdź dostępność</a></p>
+                        <h1 class="text-white">{{$setting['naglowek_1_karuzela_1_na_stronie_glownej']}}</h1>
+                        <p>{{$setting['paragraf_1_karuzela_1_na_stronie_glownej']}}</p>
+                        <p><a class="btn btn-lg btn-primary" href="{{$setting['link_1_karuzela_1_na_stronie_glownej']}}">{{$setting['przycisk_1_karuzela_1_na_stronie_glownej']}}</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/slider-1.jpeg')}});    background-repeat: no-repeat;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
+                <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/'.$setting['zdjecie_2_karuzela_1_na_stronie_glownej'])}});    background-repeat: no-repeat;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                 </div>
 
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
-                    <h1 class="text-white">Fenomenalna lokalizacja</h1>
-                        <p>ul.Żurawia 4/2, 42-583 Bobrowniki</p>
-                        <p><a class="btn btn-lg btn-primary" href="https://goo.gl/maps/AkdQmxacJpGsmX6r6">Zobacz na mapie</a></p>
+                    <h1 class="text-white">{{$setting['naglowek_2_karuzela_1_na_stronie_glownej']}}</h1>
+                        <p>{{$setting['paragraf_2_karuzela_1_na_stronie_glownej']}}</p>
+                        <p><a class="btn btn-lg btn-primary" href="{{$setting['link_2_karuzela_1_na_stronie_glownej']}}">{{$setting['przycisk_2_karuzela_1_na_stronie_glownej']}}</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/slider-2.jpeg')}});    background-size: cover;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
+                <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/'.$setting['zdjecie_3_karuzela_1_na_stronie_glownej'])}});    background-size: cover;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                 </div>
 
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
-                        <h1 class="text-white">One more for good measure.</h1>
-                        <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        <h1 class="text-white">{{$setting['naglowek_3_karuzela_1_na_stronie_glownej']}}</h1>
+                        <p>{{$setting['paragraf_3_karuzela_1_na_stronie_glownej']}}</p>
+                        <p><a class="btn btn-lg btn-primary" href="{{$setting['link_3_karuzela_1_na_stronie_glownej']}}">{{$setting['przycisk_3_karuzela_1_na_stronie_glownej']}}</a></p>
                     </div>
                 </div>
             </div>

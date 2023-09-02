@@ -17,7 +17,7 @@
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-4">
                 <a href="{{route('index')}}" class="d-flex align-items-center justify-content-center me-md-auto text-dark text-decoration-none">
-                    <img alt="logo" src="{{asset('asset/photo/logo.png')}}" class="img-fluid bg-transparent" style="max-width: 10em;">
+                    <img alt="logo" src="{{asset('asset/photo/'.$setting['logo_w_pasku_nawigacyjnym'])}}" class="my-4 img-fluid bg-transparent" style="max-width: 10em;">
                 </a>
                 <ul class="nav nav-pills d-flex flex-row justify-content-center align-items-center flex-wrap">
                     <li class="nav-item mx-auto">
@@ -31,7 +31,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><h6 class="dropdown-header">W trakcie realizacji</h6></li>
-                            <li><a class="dropdown-item" href="{{route('invest')}}">DGG</a></li>
+                            <li><a class="dropdown-item" href="{{route('invest')}}">Osiedle Luxor Residence</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><h6 class="dropdown-header">Ukończone</h6></li>
                             <li><a class="dropdown-item" href="{{route('invest.wodna')}}">Wodna</a></li>
@@ -56,12 +56,12 @@
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="https://www.facebook.com/people/Nowe-Inspiracje/100063527142284/" class="nav-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="{{$setting['facebook_link_w_pasku_nawigacyjnym']}}" class="nav-link"><i class="fa-brands fa-facebook"></i></a>
                         </div>
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="#" class="nav-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="{{$setting['instagram_link_w_pasku_nawigacyjnym']}}" class="nav-link"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </li>
                 </ul>

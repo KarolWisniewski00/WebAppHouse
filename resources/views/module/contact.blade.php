@@ -41,7 +41,7 @@
                 <div class="d-flex justify-content-center align-items-center my-4 flex-wrap">
                     <a href="tel:+48503517499" class="card-text m-0 p-0 mx-4 my-2 text-nowrap" style="text-decoration: none;">503-517-499</a>
                     <a href="mailto:biurodgg@gmail.com" class="card-text m-0 p-0 mx-4 my-2" style="text-decoration: none;">biurodgg@gmail.com</a>
-                    <p class="card-text m-0 p-0 mx-4 my-2">Biuro ul.Sienkiewicza 1, 1 piętro, Piekary Śląskie 41-940</p>
+                    <p class="card-text m-0 p-0 mx-4 my-2 text-center">Biuro ul.Sienkiewicza 1, 1 piętro, Piekary Śląskie 41-940</p>
                 </div>
             </div>
         </div>

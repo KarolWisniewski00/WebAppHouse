@@ -24,7 +24,15 @@
                                 {{$key+1}}
                             </td>
                             <td>
-                                {{$table->segment}}
+                                @if($table->segment == 'floor-4')
+                                Piętro 3
+                                @elseif($table->segment == 'floor-3')
+                                Piętro 2
+                                @elseif($table->segment == 'floor-2')
+                                Piętro 1
+                                @elseif($table->segment == 'floor-1')
+                                Parter
+                                @endif
                             </td>
                             <td>
                                 {{$table->flat}}

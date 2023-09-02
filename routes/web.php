@@ -8,6 +8,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\InvestController;
 use App\Http\Controllers\InvestEndController;
+use App\Http\Controllers\SettingAdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,6 +48,13 @@ Route::middleware([
             Route::get('/edit/{table}', [FlatAdminController::class, 'edit'])->name('dashboard.flat.edit');
             Route::put('/update/{table}', [FlatAdminController::class, 'update'])->name('dashboard.flat.update');
             Route::delete('/delete/{table}', [FlatAdminController::class, 'delete'])->name('dashboard.flat.delete');
+        });
+        Route::prefix('setting')->group(function () {
+            Route::get('/', [SettingAdminController::class, 'index'])->name('dashboard.setting');
+            Route::get('/edit/{table}', [SettingAdminController::class, 'edit'])->name('dashboard.setting.edit');
+            Route::get('/edit/photo/{table}', [SettingAdminController::class, 'photo'])->name('dashboard.setting.edit.photo');
+            Route::put('/update/{table}', [SettingAdminController::class, 'update'])->name('dashboard.setting.update');
+            Route::put('/upload/{table}', [SettingAdminController::class, 'upload'])->name('dashboard.setting.upload');
         });
     });
 });

@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Storage;
 class FlatAdminController extends Controller
 {
     public function index(){
-        $tables = Flat::orderBy('created_at')->get();
+        $tables = Flat::orderBy('created_at')->paginate(30);
         return view('dashboard', compact('tables'));
     }
     public function create()

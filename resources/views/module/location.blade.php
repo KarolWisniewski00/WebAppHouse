@@ -6,51 +6,51 @@
                 <div class="row text-start">
                     <div class="col-6">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button"><i class="fa-solid fa-bell-slash p-2"></i></a>
-                            <h3>Cisza</h3>
-                            <p class="lead" style="font-size: 14px;">Cisza - to obecnie luksus dla wszystkich. Bliskość natury, otaczającej zieleni, widoków otulonych ciszą i jeszcze w prestiżowej dzielnicy Kamienica ... To Nasze apartamenty w otoczeniu malowniczej panoramy gór z dala od gwaru miejskiego.</p>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_1_sekcji_2_na_stronie_glownej'] !!}</a>
+                            <h5>{{$setting['naglowek_ikony_1_sekcji_2_na_stronie_glownej']}}</h5>
+                            <p class="lead" style="font-size: 14px;">{{$setting['paragraf_ikony_1_sekcji_2_na_stronie_glownej']}}</p>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button"><i class="fa-solid fa-shield-halved p-2"></i></a>
-                            <h3>Bezpieczeństwo</h3>
-                            <p class="lead" style="font-size: 14px;">Teren pozbawiony uciążliwego ruchu samochodów dający poczucie bezpieczeństwa wszystkim osobom przebywającym w Apartamentach Szyndzielnia. Dodatkowo bardzo wysokie standardy budowy, elemety p.poż i wykończenia zaspokoją oczekiwania i zagwarantują bezpieczeństwo najbardziej wymagającym.</p>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_2_sekcji_2_na_stronie_glownej'] !!}</a>
+                            <h5>{{$setting['naglowek_ikony_2_sekcji_2_na_stronie_glownej']}}</h5>
+                            <p class="lead" style="font-size: 14px;">{{$setting['paragraf_ikony_2_sekcji_2_na_stronie_glownej']}}</p>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button"><i class="fa-solid fa-key p-2"></i></a>
-                            <h3>NADCHODZI RYNEK WYNAJMU</h3>
-                            <p class="lead" style="font-size: 14px;">W dobie obecnej sytuacji gospodarczej jak i polityki kredytowej, rosnących cen i kosztów materiałów, znacznie mniej osób będzie miało możliwość zakupu własnego lokum, dlatego większa część osób będzie zainteresowana i zmuszona do korzystania z wynajmu. Dlatego reagujemy na potrzeby rynku.</p>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_3_sekcji_2_na_stronie_glownej'] !!}</a>
+                            <h5>{{$setting['naglowek_ikony_3_sekcji_2_na_stronie_glownej']}}</h5>
+                            <p class="lead" style="font-size: 14px;">{{$setting['paragraf_ikony_3_sekcji_2_na_stronie_glownej']}}</p>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button"><i class="fa-solid fa-layer-group p-2"></i></a>
-                            <h3>NAJBARDZIEJ POSZUKIWANE POWIERZCHNIE INWESTYCYJNIE</h3>
-                            <p class="lead" style="font-size: 14px;">Do najbardziej poszukiwanych powierzchni w Polsce należą kawalerki jak i dwupokojowe lokale do 45m². To jednocześnie najbardziej opłacalne przestrzenie do wynajmu dlatego od dawna są najbardziej pożądanymi i poszukiwanymi lokalami. Dużo łatwiej się je wykańcza i wynajmuje, chętnie szukają ich: młode, pracujące pary, osoby samotne, single.</p>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_4_sekcji_2_na_stronie_glownej'] !!}</a>
+                            <h5>{{$setting['naglowek_ikony_4_sekcji_2_na_stronie_glownej']}}</h5>
+                            <p class="lead" style="font-size: 14px;">{{$setting['paragraf_ikony_4_sekcji_2_na_stronie_glownej']}}</p>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button"><i class="fa-solid fa-cash-register p-2"></i></a>
-                            <h3>ODZYSKAJ VAT</h3>
-                            <p class="lead" style="font-size: 14px;">Cena zawiera podatek VAT 23%. Dodatkowo z myślą o inwestycji, wynajmie informujemy, że każda z osób nabywających apartament, niezależnie od tego czy prowadzi działalność gospodarczą czy też nie, jest uprawniona do pełnego odliczenia podatku VAT.</p>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_5_sekcji_2_na_stronie_glownej'] !!}</a>
+                            <h5>{{$setting['naglowek_ikony_5_sekcji_2_na_stronie_glownej']}}</h5>
+                            <p class="lead" style="font-size: 14px;">{{$setting['paragraf_ikony_5_sekcji_2_na_stronie_glownej']}}</p>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button"><i class="fa-solid fa-wallet p-2"></i></a>
-                            <h3>Najlepsza cena</h3>
-                            <p class="lead" style="font-size: 14px;">Cena sprzedaży jest bardzo istotna, gdyż oferty konkurencyjne są bardzo zróżnicowane – a inwestycji w najbliższym czasie będzie znacznie mniej. Nasza oferta prezentuje się najlepiej, gdyż ceny na rynku nieruchomości są uzależnione od jego miejsca - więc wystarczy porównać oferty nieruchomości w bezpośredniej i najbliższej lokalizacji. Najważniejszym kryterium określającym wartość i atrakcyjność nieruchomości to: lokalizacja, lokalizacja, najlepsza lokalizacja – to pozwala odróżnić Nas od innych i to również doceniają Nasi Klienci.</p>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_6_sekcji_2_na_stronie_glownej'] !!}</a>
+                            <h5>{{$setting['naglowek_ikony_6_sekcji_2_na_stronie_glownej']}}</h5>
+                            <p class="lead" style="font-size: 14px;">{{$setting['paragraf_ikony_6_sekcji_2_na_stronie_glownej']}}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-xl-7">
                 <div class="d-flex flex-column justify-content-start align-items-center h-100">
-                    <img alt="info-2" src="{{asset('asset/photo/info-2.jpg')}}" class="img-fluid">
+                    <img alt="{{$setting['alt_zdjecie_sekcji_2_na_stronie_glownej']}}" src="{{asset('asset/photo/'.$setting['zdjecie_sekcji_2_na_stronie_glownej'])}}" class="img-fluid">
                 </div>
             </div>
             <!--
