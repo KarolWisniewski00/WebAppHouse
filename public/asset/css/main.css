@@ -33,10 +33,9 @@
 .btn-d {
     visibility: hidden !important;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s ease;
+    transition: visibility 0s, opacity 0.5s ease, background-color 0.5s ease;
     background-color: transparent;
 }
-
 .segment-success:hover .btn-d {
     visibility: visible !important;
     opacity: 1;
@@ -48,7 +47,12 @@
     opacity: 1;
     background-color: rgba(184, 71, 67, 0.3);
 }
-
+.s-clicked .btn-d {
+    visibility: visible !important;
+    opacity: 1 !important;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: visibility 0s, opacity 0.5s ease, background-color 0.5s ease;
+}
 .p-1px {
     padding: 1px;
 }

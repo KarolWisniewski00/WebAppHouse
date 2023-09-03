@@ -15,8 +15,8 @@ class CreateFlatRequest extends FormRequest
             'price_surface' => 'required|numeric',
             'status' => 'required|string|max:255',
             'price' => 'required|numeric',
-            'file_pdf' => 'required|mimes:pdf',
-            'file_priv' => 'required|mimes:pdf',
+            'file_pdf' => 'nullable|mimes:pdf',
+            'file_priv' => 'nullable|mimes:pdf',
         ];
     }
     

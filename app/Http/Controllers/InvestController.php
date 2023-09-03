@@ -14,7 +14,7 @@ class InvestController extends Controller
     }
     public function show($slug)
     {
-        $table = Flat::where('id',$slug)->first();
-        return view('invest.show', compact('slug','table'));
+        $table = Flat::where('id', $slug)->first();
+        return view('invest.show', compact('slug', 'table'));
     }
 }

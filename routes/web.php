@@ -3,7 +3,9 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AboutInvestController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FilterController;
 use App\Http\Controllers\FlatAdminController;
+use App\Http\Controllers\FloorAdminController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\InvestController;
@@ -25,6 +27,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [IndexController::class, 'index'])->name('index');
 Route::prefix('invest')->group(function () {
     Route::get('/', [InvestController::class, 'index'])->name('invest');
+    Route::post('/', [FilterController::class, 'show'])->name('invest.filter');
     Route::get('/show/{slug}', [InvestController::class, 'show'])->name('invest.show');
     Route::get('/dlugosza', [InvestEndController::class, 'dlugosza'])->name('invest.dlugosza');
     Route::get('/kopernika', [InvestEndController::class, 'kopernika'])->name('invest.kopernika');
@@ -49,6 +52,11 @@ Route::middleware([
             Route::get('/edit/{table}', [FlatAdminController::class, 'edit'])->name('dashboard.flat.edit');
             Route::put('/update/{table}', [FlatAdminController::class, 'update'])->name('dashboard.flat.update');
             Route::delete('/delete/{table}', [FlatAdminController::class, 'delete'])->name('dashboard.flat.delete');
+        });
+        Route::prefix('floor')->group(function () {
+            Route::get('/', [FloorAdminController::class, 'index'])->name('dashboard.floor');
+            Route::get('/edit/{table}', [FloorAdminController::class, 'edit'])->name('dashboard.floor.edit');
+            Route::put('/update/{table}', [FloorAdminController::class, 'update'])->name('dashboard.floor.update');
         });
         Route::prefix('setting')->group(function () {
             Route::get('/', [SettingAdminController::class, 'index'])->name('dashboard.setting');

@@ -31,7 +31,7 @@
                         @foreach($tables as $key => $table)
                         <tr>
                             <td>
-                                {{$key+1}}
+                                {{$table->id}}
                             </td>
                             <td>
                                 @if($table->segment == 'floor-4')
@@ -46,23 +46,23 @@
                             </td>
                             <td>
                                 @if($table->flat == 'room-4')
-                                4 Pokoje
+                                4
                                 @elseif($table->flat == 'room-3')
-                                3 Pokoje
+                                3
                                 @elseif($table->flat == 'room-2')
-                                2 Pokoje
+                                2
                                 @elseif($table->flat == 'room-1')
-                                1 Pokój
+                                1
                                 @endif
                             </td>
                             <td>
-                                {{$table->surface}} m²
+                                {{$table->surface}}
                             </td>
                             <td>
-                                {{$table->price_surface}} PLN za m²
+                                {{$table->price_surface}}
                             </td>
                             <td>
-                                {{$table->price}} PLN
+                                {{$table->price}} <span style="font-size: xx-small;">PLN</span>
                             </td>
                             <td class="px-6 py-4">
                                 @if($table->status == 'avaiable')

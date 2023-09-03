@@ -39,7 +39,7 @@
                             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text-center">
                                 <tr>
                                     <th scope="col" class="px-4 py-2">
-                                        #
+                                        Numer
                                     </th>
                                     <th scope="col" class="px-4 py-2">
                                         Piętro
@@ -80,7 +80,7 @@
                                 @foreach($tables as $key => $table)
                                 <tr>
                                     <td class="px-4 py-2">
-                                        {{$key+1}}
+                                        {{$table->id}}
                                     </td>
                                     <td class="px-4 py-2">
                                         @if($table->segment == 'floor-4')
@@ -95,24 +95,24 @@
                                     </td>
                                     <td class="px-4 py-2">
                                         @if($table->flat == 'room-4')
-                                        4 Pokoje
+                                        4
                                         @elseif($table->flat == 'room-3')
-                                        3 Pokoje
+                                        3
                                         @elseif($table->flat == 'room-2')
-                                        2 Pokoje
+                                        2
                                         @elseif($table->flat == 'room-1')
-                                        1 Pokój
+                                        1
                                         @endif
                                     </td>
                                     <td class="px-4 py-2">
-                                        {{$table->surface}} m²
+                                        {{$table->surface}}
 
                                     </td>
                                     <td class="px-4 py-2">
-                                        {{$table->price_surface}} PLN
+                                        {{$table->price_surface}}
                                     </td>
                                     <td class="px-4 py-2">
-                                        {{$table->price}} PLN
+                                        {{$table->price}} <span style="font-size: xx-small;">PLN</span>
                                     </td>
                                     <td class="px-4 py-2">
                                         @if($table->status == 'avaiable')
@@ -157,7 +157,7 @@
                             </tbody>
                         </table>
                         <div class="px-4 py-2">
-                            {{ $tables->links() }}
+                            
                         </div>
                     </div>
                 </div>

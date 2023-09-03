@@ -12,7 +12,7 @@ class FlatAdminController extends Controller
 {
     public function index()
     {
-        $tables = Flat::orderBy('created_at')->paginate(30);
+        $tables = Flat::orderBy('created_at')->get();
         return view('dashboard', compact('tables'));
     }
     public function create()
