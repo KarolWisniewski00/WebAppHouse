@@ -6,9 +6,9 @@
         <div class="row my-4 py-4">
             <div class="col-12 col-xl-6">
                 <div class="row d-flex flex-row justify-content-center align-items-start flex-wrap">
-                    <div class="hstack gap-3 mb-3">
+                <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
-                        <h1 class="p-0 m-0">{{$setting['naglowek_sekcji_1_na_stronie_o_inwestycji']}}</h1>
+                        <h1 class="p-0 m-0 ms-3">{{$setting['naglowek_sekcji_1_na_stronie_o_inwestycji']}}</h1>
                     </div>
                     <p class="lead" style="font-size: 15px;">{{$setting['paragraf_1_sekcji_1_na_stronie_o_inwestycji']}}</p>
                     <p class="lead" style="font-size: 15px;">{{$setting['paragraf_2_sekcji_1_na_stronie_o_inwestycji']}}</p>
@@ -27,21 +27,21 @@
 </section>
 <!--END INFO-->
 <!--INFO WITH BG GREEN-->
-<section style="background-color: #f5f7f9!important;  border-bottom: 1px solid #d28f6f;  border-top: 1px solid #d28f6f;">
+<section style="background-color: #F8F2F0!important;  border-bottom: 1px solid #d28f6f;  border-top: 1px solid #d28f6f;">
     <div class="container-fluid">
         <div class="row my-4 py-4">
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center overflow-hidden">
                 <div class="" style="margin: 0 -10em;">
-                    <img class="w-100 my-4" alt="{{$setting['alt_zdjecie_sekcji_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_sekcji_2_na_stronie_o_inwestycji'])}}">
+                    <img class="w-100 my-4" alt="{{$setting['alt_zdjecie_sekcji_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_sekcji_2_na_stronie_o_inwestycji'])}}">
                 </div>
             </div>
             <div class="col-12 col-xl-6">
                 <div class="row d-flex flex-row justify-content-center align-items-start flex-wrap h-100">
                     <div class="col-12 h-100">
                         <div class="d-flex flex-column justify-content-center align-items-center text-start my-4 h-100">
-                            <div class="hstack gap-3 mb-3">
+                        <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                                 <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
-                                <h1 class="p-0 m-0 text-primary">{{$setting['naglowek_sekcji_2_na_stronie_o_inwestycji']}}</h1>
+                                <h1 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_sekcji_2_na_stronie_o_inwestycji']}}</h1>
                             </div>
                             <p class="lead text-primary">
                             <ul>
@@ -75,9 +75,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="d-flex flex-column justify-content-center align-items-start text-center my-4 h-100">
-                    <div class="hstack gap-3 mb-3">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
-                        <h1 class="p-0 m-0">{{$setting['naglowek_karuzeli_1_na_stronie_o_inwestycji']}}</h1>
+                        <h1 class="p-0 m-0 ms-3">{{$setting['naglowek_karuzeli_1_na_stronie_o_inwestycji']}}</h1>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                 <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
                     <div class="carousel-inner position-relative overflow-visible">
                         @for($x = 1; $x <= 9; $x++) @if($x==1) <div class="carousel-item active text-center ">
-                            <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
+                            <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
                             <div class="card text-primary mb-3 translate-custom">
                                 <div class="card-header" style="border: 1px solid #d28f6f;">{{$setting['naglowek_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}</div>
                                 <div class="card-body" style="border: 1px solid #d28f6f; border-top:0px;">
@@ -100,7 +100,7 @@
                     </div>
                     @elseif($x==2)
                     <div class="carousel-item text-center">
-                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
+                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
                         <div class="card text-primary mb-3 translate-custom">
                             <div class="card-header" style="border: 1px solid #d28f6f;">{{$setting['naglowek_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}</div>
                             <div class="card-body" style="border: 1px solid #d28f6f; border-top:0px;">
@@ -110,7 +110,7 @@
                     </div>
                     @elseif($x==3)
                     <div class="carousel-item text-center">
-                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
+                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
                         <div class="card text-primary mb-3 translate-custom">
                             <div class="card-header" style="border: 1px solid #d28f6f;">{{$setting['naglowek_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}</div>
                             <div class="card-body" style="border: 1px solid #d28f6f; border-top:0px;">
@@ -120,7 +120,7 @@
                     </div>
                     @elseif($x==4)
                     <div class="carousel-item text-center">
-                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
+                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
                         <div class="card text-primary mb-3 translate-custom">
                             <div class="card-header" style="border: 1px solid #d28f6f;">{{$setting['naglowek_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}</div>
                             <div class="card-body" style="border: 1px solid #d28f6f; border-top:0px;">
@@ -130,7 +130,7 @@
                     </div>
                     @elseif($x==5)
                     <div class="carousel-item text-center">
-                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
+                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
                         <div class="card text-primary mb-3 translate-custom">
                             <div class="card-header" style="border: 1px solid #d28f6f;">{{$setting['naglowek_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}</div>
                             <div class="card-body" style="border: 1px solid #d28f6f; border-top:0px;">
@@ -140,7 +140,7 @@
                     </div>
                     @elseif($x==6)
                     <div class="carousel-item text-center">
-                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
+                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
                         <div class="card text-primary mb-3 translate-custom">
                             <div class="card-header" style="border: 1px solid #d28f6f;">{{$setting['naglowek_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}</div>
                             <div class="card-body" style="border: 1px solid #d28f6f; border-top:0px;">
@@ -150,7 +150,7 @@
                     </div>
                     @elseif($x==7)
                     <div class="carousel-item text-center">
-                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
+                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
                         <div class="card text-primary mb-3 translate-custom">
                             <div class="card-header" style="border: 1px solid #d28f6f;">{{$setting['naglowek_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}</div>
                             <div class="card-body" style="border: 1px solid #d28f6f; border-top:0px;">
@@ -160,7 +160,7 @@
                     </div>
                     @elseif($x==8)
                     <div class="carousel-item text-center">
-                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
+                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
                         <div class="card text-primary mb-3 translate-custom">
                             <div class="card-header" style="border: 1px solid #d28f6f;">{{$setting['naglowek_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}</div>
                             <div class="card-body" style="border: 1px solid #d28f6f; border-top:0px;">
@@ -170,7 +170,7 @@
                     </div>
                     @else
                     <div class="carousel-item text-center ">
-                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
+                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
                         <div class="card text-primary mb-3 translate-custom">
                             <div class="card-header" style="border: 1px solid #d28f6f;">{{$setting['naglowek_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}</div>
                             <div class="card-body" style="border: 1px solid #d28f6f; border-top:0px;">
@@ -201,13 +201,13 @@
     <div class="container-fluid px-5 mt-5">
         <div class="row my-4 p-4 g-0">
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center me-xl-0 pe-xl-0">
-                <img class="img-fluid my-4" alt="{{$setting['alt_zdjecie_sekcji_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_sekcji_2_na_stronie_o_inwestycji'])}}">
+                <img class="img-fluid my-4" alt="{{$setting['alt_zdjecie_sekcji_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_sekcji_2_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6 ms-xl-0 ps-xl-0 py-xl-5">
-                <div class="d-flex flex-column justify-content-center align-items-center text-start h-100 p-4 border-custom-left-2" style="background-color:#f5f7f9!important;">
-                    <div class="hstack gap-3 mb-3">
+                <div class="d-flex flex-column justify-content-center align-items-center text-start h-100 p-4 border-custom-left-2" style="background-color:#F8F2F0!important;">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
-                        <h5 class="p-0 m-0 text-primary">{{$setting['naglowek_sekcji_2_na_stronie_o_inwestycji']}}</h5>
+                        <h5 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_sekcji_2_na_stronie_o_inwestycji']}}</h5>
                     </div>
                     <p class="lead text-primary">{{$setting['paragraf_sekcji_2_na_stronie_o_inwestycji']}}</p>
                 </div>
@@ -215,52 +215,27 @@
         </div>
     </div>
 </section>
-<!--END INFO WITH BG MUTED-->
-<!--SLIDER PHOTO
 <section>
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-12">
-                <div class="d-flex flex-column justify-content-center align-items-center text-center my-4 h-100">
-                    <h1 class="p-0 m-0 my-2" style="font-size: 3.8em;">O Inwestycji</h1>
-                    <p class="p-0 m-0  my-2 mb-5" style="font-size: 1.8em;">Budynek Apartamenty Rzuty 3D Dlaczego warto?</p>
+    <div class="container-fluid px-5 mt-5">
+        <div class="row my-4 p-4 g-0">
+            <div class="col-12 col-xl-6 ms-xl-0 ps-xl-0 py-xl-5">
+                <div class="d-flex flex-column justify-content-center align-items-center text-start h-100 p-4 border-custom-right-2" style="background-color:#F8F2F0!important;">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
+                        <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
+                        <h5 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_sekcji_2_na_stronie_o_inwestycji']}}</h5>
+                    </div>
+                    <p class="lead text-primary">{{$setting['paragraf_sekcji_2_na_stronie_o_inwestycji']}}</p>
                 </div>
             </div>
-            <div class="col-12">
-                <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
-                    <div class="carousel-indicators d-none d-xl-flex justify-content-center align-items-end">
-                        @for($x = 0; $x <= 9; $x++) @if($x==0) <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" class="active" aria-current="true" aria-label="Slide {{$x+1}}"></button>
-                            @else
-                            <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="{{$x}}" aria-label="Slide {{$x+1}}"></button>
-                            @endif
-                            @endfor
-                    </div>
-                    <div class="carousel-inner">
-                        @for($x = 1; $x <= 9; $x++) @if($x==1) <div class="carousel-item active text-center">
-                            <img class="img-fluid" alt="" src="{{asset('asset/photo/album/'.$x.'.jpg')}}">
-                    </div>
-                    @else
-                    <div class="carousel-item text-center">
-                        <img class="img-fluid" alt="" src="{{asset('asset/photo/album/'.$x.'.jpg')}}">
-                    </div>
-                    @endif
-                    @endfor
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
-                    <span class="bg-black p-2 px-4 fs-1" aria-hidden="true"><i class="fa-solid fa-chevron-left text-primary"></i></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
-                    <span class="bg-black p-2 px-4 fs-1" aria-hidden="true"><i class="fa-solid fa-chevron-right text-primaryt"></i></span>
-                </button>
+            <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center me-xl-0 pe-xl-0">
+            <iframe class="img-fluid my-4" style="min-width:100%;min-height:350px;" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3666.29127525145!2d18.9444722!3d50.3935556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDIzJzM2LjgiTiAxOMKwNTYnNDAuMSJF!5e1!3m2!1spl!2spl!4v1693730599382!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
-    </div>
 </section>
-END SLIDER PHOTO-->
+<!--END INFO WITH BG MUTED-->
 <!--SLIDER PHOTO-->
-<section style="background-color: #f5f7f9; border-bottom: 1px solid #d28f6f; border-top: 1px solid #d28f6f;">
+<section style="background-color: #F8F2F0; border-bottom: 1px solid #d28f6f; border-top: 1px solid #d28f6f;">
     <div class="container py-5">
         <div class="row">
             <div class="col-12">
@@ -280,11 +255,11 @@ END SLIDER PHOTO-->
                     </div>
                     <div class="carousel-inner">
                         @for($x = 1; $x <= 9; $x++) @if($x==1) <div class="carousel-item active text-center">
-                            <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzeli_2_na_stronie_o_inwestycji'])}}">
+                            <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzeli_2_na_stronie_o_inwestycji'])}}">
                     </div>
                     @else
                     <div class="carousel-item text-center">
-                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzeli_2_na_stronie_o_inwestycji'])}}">
+                        <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzeli_2_na_stronie_o_inwestycji'])}}">
                     </div>
                     @endif
                     @endfor
@@ -308,21 +283,21 @@ END SLIDER PHOTO-->
         <div class="row my-4 p-4">
             <div class="col-12">
                 <div class="d-flex flex-column justify-content-center align-items-start text-start my-4 h-100">
-                    <div class="hstack gap-3 mb-3">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
-                        <h1 class="p-0 m-0">{{$setting['naglowek_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h1>
+                        <h1 class="p-0 m-0 ms-3">{{$setting['naglowek_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h1>
                     </div>
                     <p class="lead text-muted mb-5">{{$setting['paragraf_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                 </div>
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{$setting['zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji']}}">
+                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="hstack gap-3 mb-3">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 text-primary">{{$setting['naglowek_zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
+                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
                     </div>
                     <p class="lead text-primary">{{$setting['podtytul_zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                     <p class="lead text-primary">{{$setting['paragraf_zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
@@ -337,17 +312,17 @@ END SLIDER PHOTO-->
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="hstack gap-3 mb-3">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 text-primary">{{$setting['naglowek_zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
+                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
                     </div>
                     <p class="lead text-primary">{{$setting['podtytul_zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                     <p class="lead text-primary">{{$setting['paragraf_zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                 </div>
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{$setting['zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji']}}">
+                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
         </div>
     </div>
@@ -358,13 +333,13 @@ END SLIDER PHOTO-->
     <div class="container text-primary">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{$setting['zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji']}}">
+                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="hstack gap-3 mb-3">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 text-primary">{{$setting['naglowek_zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
+                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
                     </div>
                     <p class="lead text-primary">{{$setting['podtytul_zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                     <p class="lead text-primary">{{$setting['paragraf_zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
@@ -379,17 +354,17 @@ END SLIDER PHOTO-->
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="hstack gap-3 mb-3">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 text-primary">{{$setting['naglowek_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
+                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
                     </div>
                     <p class="lead text-primary">{{$setting['podtytul_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                     <p class="lead text-primary">{{$setting['paragraf_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                 </div>
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{$setting['zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji']}}">
+                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
         </div>
     </div>
@@ -400,13 +375,13 @@ END SLIDER PHOTO-->
     <div class="container text-primary">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{$setting['zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}">
+                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="hstack gap-3 mb-3">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 text-primary">{{$setting['naglowek_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
+                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
                     </div>
                     <p class="lead text-primary">{{$setting['podtytul_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                     <p class="lead text-primary">{{$setting['paragraf_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
@@ -421,17 +396,17 @@ END SLIDER PHOTO-->
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="hstack gap-3 mb-3">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 text-primary">{{$setting['naglowek_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
+                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
                     </div>
                     <p class="lead text-primary">{{$setting['podtytul_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                     <p class="lead text-primary">{{$setting['paragraf_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                 </div>
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{$setting['zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}">
+                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
         </div>
     </div>
@@ -442,13 +417,13 @@ END SLIDER PHOTO-->
     <div class="container text-primary">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{$setting['zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}">
+                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="hstack gap-3 mb-3">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 text-primary">{{$setting['naglowek_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
+                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
                     </div>
                     <p class="lead text-primary">{{$setting['podtytul_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                     <p class="lead text-primary">{{$setting['paragraf_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
@@ -463,17 +438,17 @@ END SLIDER PHOTO-->
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="hstack gap-3 mb-3">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 text-primary">{{$setting['naglowek_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
+                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
                     </div>
                     <p class="lead text-primary">{{$setting['podtytul_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                     <p class="lead text-primary">{{$setting['paragraf_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                 </div>
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{$setting['zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}">
+                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
         </div>
     </div>
@@ -484,13 +459,13 @@ END SLIDER PHOTO-->
     <div class="container text-primary">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{$setting['zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}">
+                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="hstack gap-3 mb-3">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 text-primary">{{$setting['naglowek_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
+                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
                     </div>
                     <p class="lead text-primary">{{$setting['podtytul_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                     <p class="lead text-primary">{{$setting['paragraf_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
@@ -505,17 +480,17 @@ END SLIDER PHOTO-->
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="hstack gap-3 mb-3">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 text-primary">{{$setting['naglowek_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
+                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
                     </div>
                     <p class="lead text-primary">{{$setting['podtytul_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                     <p class="lead text-primary">{{$setting['paragraf_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
                 </div>
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{$setting['zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}">
+                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
         </div>
     </div>

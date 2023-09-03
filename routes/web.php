@@ -33,6 +33,7 @@ Route::prefix('invest')->group(function () {
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/about-invest', [AboutInvestController::class, 'index'])->name('about.invest');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::post('/pin', [SettingAdminController::class, 'pin'])->name('pin');
 
 
 Route::middleware([

@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Flat extends Model
 {
     protected $fillable = [
-        'segment', 'flat', 'surface', 'status', 'price', 'file_pdf', 'file_priv'
+        'segment', 'flat', 'surface', 'price_surface', 'status', 'price', 'file_pdf', 'file_priv'
     ];
 }

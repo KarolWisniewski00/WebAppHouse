@@ -7,9 +7,9 @@
                     <div class="col-12">
                         <div class="row text-start">
                             <div class="my-4">
-                                <div class="hstack gap-3 mb-3">
+                                <div class="d-flex flex-row mb-3">
                                     <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
-                                    <h1 class="p-0 m-0">
+                                    <h1 class="p-0 m-0 ms-3">
                                         <span>{{$setting['naglowek_ciemny_sekcji_1_na_stronie_glownej']}}</span>
                                         <small class="text-muted">{{$setting['naglowek_jasny_sekcji_1_na_stronie_glownej']}}</small>
                                     </h1>

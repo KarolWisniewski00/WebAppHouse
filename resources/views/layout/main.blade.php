@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/e37acf9c2e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="{{ asset('asset/css/main.css')}}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 <body>

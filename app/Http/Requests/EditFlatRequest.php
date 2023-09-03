@@ -12,6 +12,7 @@ class EditFlatRequest extends FormRequest
             'segment' => 'required|string|max:255',
             'flat' => 'required|string|max:255',
             'surface' => 'required|numeric',
+            'price_surface' => 'required|numeric',
             'status' => 'required|string|max:255',
             'price' => 'required|numeric',
             'file_pdf' => 'nullable|mimes:pdf',

@@ -37,14 +37,14 @@ class SettingAdminController extends Controller
     }
     public function upload(Request $request, Setting $table)
     {
-        $photoFilePath = public_path('photo/' . $table->content);
+        $photoFilePath = public_path('asset/photo/' . $table->content);
         if (File::exists($photoFilePath)) {
             File::delete($photoFilePath);
         }
 
         $file = $request->file('content');
         $fileName = time() . rand(1, 100) . '.' . $file->extension();
-        $file->move(public_path('photo'), $fileName);
+        $file->move(public_path('asset/photo'), $fileName);
 
         $res = $table->update([
             'content' => $fileName,
@@ -58,7 +58,19 @@ class SettingAdminController extends Controller
                 ->with('Fail', 'Operacja się nie powiodła. Coś poszło nie tak.');
         }
         /*
-        usuwanie pdf, interaktywne zdjecie + wyszukiwarka, mapka, formularz kontaktowy, usuwanie alertów, poprawka edycji zdjęć z strony
+         interaktywne zdjecie + wyszukiwarka formularz kontaktowy
         */
     }
+
+    public function pin(Request $request) {
+        $pin = $request->input('pin');
+        $password = Setting::where('type', 'pin')->first();
+    
+        if ($pin == $password->content) {
+            return response()->json(['success' => true]);
+        }
+    
+        return response()->json(['success' => false]);
+    }
+    
 }

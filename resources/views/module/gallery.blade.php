@@ -33,7 +33,7 @@
         </div>
         @for($x=1;$x<=12;$x++) <div class="col-6 col-md-4">
             <button type="button" style="border:0;" class="m-0 p-0 mb-4" data-bs-toggle="modal" data-bs-target="#modal-in-{{$x}}">
-                <img class="img-fluid" alt="" src="{{asset('asset/photo/album/'.$x.'.jpg')}}">
+                <img class="img-fluid" alt="" src="{{asset('asset/photo/'.$x.'.jpg')}}">
             </button>
 
             <div class="modal fade" id="modal-in-{{$x}}" tabindex="-1" aria-labelledby="ModalInLabel" aria-hidden="true">
@@ -43,7 +43,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img class="img-fluid" alt="" src="{{asset('asset/photo/album/'.$x.'.jpg')}}">
+                            <img class="img-fluid" alt="" src="{{asset('asset/photo/'.$x.'.jpg')}}">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark me-2"></i>Zamknij</button>

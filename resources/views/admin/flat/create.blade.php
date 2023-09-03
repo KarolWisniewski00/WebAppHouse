@@ -22,7 +22,7 @@
                     <form action="{{ route('dashboard.flat.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-6">
-                            <h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">Segment</h3>
+                            <h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">Piętro</h3>
                             <ul class="grid w-full gap-6 md:grid-cols-1">
                                 <li>
                                     <input type="radio" id="floor-4" name="segment" value="floor-4" class="hidden peer" required>
@@ -62,16 +62,63 @@
                             @enderror
                         </div>
                         <div class="mb-6">
-                            <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mieszkanie</label>
-                            <input value="{{ old('flat') ? old('flat') : '' }}" name="flat" type="text" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Mieszkanie" required>
+                            <h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">Pokoje</h3>
+                            <ul class="grid w-full gap-6 md:grid-cols-2">
+                                <li>
+                                    <input type="radio" id="room-4" name="flat" value="room-4" class="hidden peer" required>
+                                    <label for="room-4" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                        <div class="block">
+                                            <div class="w-full text-lg font-semibold">4 pokoje</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="room-3" name="flat" value="room-3" class="hidden peer">
+                                    <label for="room-3" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                        <div class="block">
+                                            <div class="w-full text-lg font-semibold">3 pokoje</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="room-2" name="flat" value="room-2" class="hidden peer">
+                                    <label for="room-2" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                        <div class="block">
+                                            <div class="w-full text-lg font-semibold">2 pokoje</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="room-1" name="flat" value="room-1" class="hidden peer">
+                                    <label for="room-1" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                        <div class="block">
+                                            <div class="w-full text-lg font-semibold">1 pokój</div>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
                             @error('flat')
                             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                             @enderror
                         </div>
                         <div class="mb-6">
                             <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Metraż</label>
-                            <input value="{{ old('surface') ? old('surface') : '' }}" name="surface" type="number" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="m2" required>
+                            <input value="{{ old('surface') ? old('surface') : '' }}" name="surface" type="number" step="0.01" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="m²" required>
                             @error('surface')
+                            <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
+                        </div>
+                        <div class="mb-6">
+                            <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Cena za m²</label>
+                            <input value="{{ old('price_surface') ? old('price_surface') : '' }}" name="price_surface" type="number" step="0.01" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Cena za m²" required>
+                            @error('price_surface')
+                            <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
+                        </div>
+                        <div class="mb-6">
+                            <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Cena</label>
+                            <input value="{{ old('price') ? old('price') : '' }}" name="price" type="number" step="0.01" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Cena" required>
+                            @error('price')
                             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                             @enderror
                         </div>
@@ -96,13 +143,6 @@
                                 </li>
                             </ul>
                             @error('status')
-                            <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
-                            @enderror
-                        </div>
-                        <div class="mb-6">
-                            <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Cena</label>
-                            <input value="{{ old('price') ? old('price') : '' }}" name="price" type="number" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Cena" required>
-                            @error('price')
                             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                             @enderror
                         </div>

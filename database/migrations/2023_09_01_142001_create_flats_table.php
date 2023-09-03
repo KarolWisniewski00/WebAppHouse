@@ -15,9 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('segment');
             $table->string('flat');
-            $table->integer('surface');
+            $table->float('surface');
+            $table->float('price_surface');
             $table->string('status');
-            $table->integer('price');
+            $table->float('price');
             $table->string('file_pdf')->nullable();
             $table->string('file_priv')->nullable();
             $table->timestamps();

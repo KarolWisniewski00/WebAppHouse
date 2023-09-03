@@ -27,6 +27,12 @@ return new class extends Migration
         $setting->save();
 
         $setting = new Setting();
+        $setting->place = 'pin';
+        $setting->type = 'pin';
+        $setting->content = '2505';
+        $setting->save();
+
+        $setting = new Setting();
         $setting->place = 'facebook_link_w_pasku_nawigacyjnym';
         $setting->type = 'text';
         $setting->content = 'https://www.facebook.com/people/Nowe-Inspiracje/100063527142284/';
@@ -1475,7 +1481,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = 'https://www.apartamentyszyndzielnia.pl/files/boksy/raj-dla-rowerzystow.rower-2.jpg';
+        $setting->content = '1.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1505,7 +1511,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = 'https://www.apartamentyszyndzielnia.pl/files/boksy/szyndzielnia-kolejgondolowa-i-wieza-widokowa.szyndzielnia 20.jpg';
+        $setting->content = '1.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1535,7 +1541,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = 'https://www.apartamentyszyndzielnia.pl/files/boksy/miejsce-dla-aktywnych.bieganie.jpg';
+        $setting->content = '1.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1565,7 +1571,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = 'https://www.apartamentyszyndzielnia.pl/files/boksy/cisza-to-luksus-dla-wszystkich.szyndzielnia 8-540x330.jpg';
+        $setting->content = '1.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1595,7 +1601,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = 'https://www.apartamentyszyndzielnia.pl/files/boksy/osrodek-rekreacyjno-narciarski-debowiec.debowiec.jpg';
+        $setting->content = '1.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1625,7 +1631,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = 'https://www.apartamentyszyndzielnia.pl/files/boksy/workation-czy-home-office.workstation2.jpg';
+        $setting->content = '1.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1655,7 +1661,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = 'https://www.apartamentyszyndzielnia.pl/files/boksy/ukojenie-w-nutach.cavatina.jpg';
+        $setting->content = '1.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1685,7 +1691,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = 'https://www.apartamentyszyndzielnia.pl/files/boksy/cxvbxcvbxcvb.jpg';
+        $setting->content = '1.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1715,7 +1721,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = 'https://www.apartamentyszyndzielnia.pl/files/boksy/idealna-inwestycja.jpg';
+        $setting->content = '1.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1745,7 +1751,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = 'https://www.apartamentyszyndzielnia.pl/files/boksy/zielona-okolica.jpg';
+        $setting->content = '1.jpg';
         $setting->save();
 
         $setting = new Setting();

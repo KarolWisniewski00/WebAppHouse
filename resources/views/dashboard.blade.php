@@ -6,10 +6,25 @@
     </x-slot>
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto sm:px-4 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="p-6 lg:p-8 bg-white border-b border-gray-200">
                     @include('admin.module.alerts')
+                    @if(count($tables) == 0)
+                    <div id="alert-4" class="flex items-center p-4 mb-4 text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300" role="alert">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <span class="sr-only">Info</span>
+                        <div class="ml-3 text-sm font-medium">
+                            Baza danych jest pusta, <a href="{{route('dashboard.flat.create')}}" class="font-semibold underline hover:no-underline">utwórz dane</a> aby zapewnić prawidłowe działanie.
+                        </div>
+                        <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-yellow-50 text-yellow-500 rounded-lg focus:ring-2 focus:ring-yellow-400 p-1.5 hover:bg-yellow-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-yellow-300 dark:hover:bg-gray-700" onclick="closeAlertBox('#alert-4')" data-dismiss-target="#alert-4" aria-label="Close">
+                            <span class="sr-only">Close</span>
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                            </svg>
+                        </button>
+                    </div>
+                    @endif
                     <x-application-logo class="block h-12 w-auto" />
                     <div class="flex flex-row justify-between">
                         <h1 class="mt-8 mb-4 text-2xl font-medium text-gray-900">
@@ -21,44 +36,53 @@
                     </div>
                     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
                         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text-center">
                                 <tr>
-                                    <th scope="col" class="px-6 py-3">
-                                        Segment
+                                    <th scope="col" class="px-4 py-2">
+                                        #
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Mieszkanie
+                                    <th scope="col" class="px-4 py-2">
+                                        Piętro
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-4 py-2">
+                                        Pokoje
+                                    </th>
+                                    <th scope="col" class="px-4 py-2">
                                         Metraż
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-4 py-2">
+                                        Cena za m²
+                                    </th>
+                                    <th scope="col" class="px-4 py-2">
+                                        Cena mieszkania
+                                    </th>
+                                    <th scope="col" class="px-4 py-2">
                                         Status
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Cena
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-4 py-2">
                                         Plik
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-4 py-2">
                                         Umowa
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-4 py-2">
                                         Podgląd na stronie użytkownika
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-4 py-2">
                                         Edycja
                                     </th>
-                                    <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-4 py-2">
                                         Usuwanie
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="text-center">
                                 @foreach($tables as $key => $table)
                                 <tr>
-                                    <td class="px-6 py-4">
+                                    <td class="px-4 py-2">
+                                        {{$key+1}}
+                                    </td>
+                                    <td class="px-4 py-2">
                                         @if($table->segment == 'floor-4')
                                         Piętro 3
                                         @elseif($table->segment == 'floor-3')
@@ -69,52 +93,61 @@
                                         Parter
                                         @endif
                                     </td>
-                                    <td class="px-6 py-4">
-                                        {{$table->flat}}
+                                    <td class="px-4 py-2">
+                                        @if($table->flat == 'room-4')
+                                        4 Pokoje
+                                        @elseif($table->flat == 'room-3')
+                                        3 Pokoje
+                                        @elseif($table->flat == 'room-2')
+                                        2 Pokoje
+                                        @elseif($table->flat == 'room-1')
+                                        1 Pokój
+                                        @endif
+                                    </td>
+                                    <td class="px-4 py-2">
+                                        {{$table->surface}} m²
 
                                     </td>
-                                    <td class="px-6 py-4">
-                                        {{$table->surface}}
-
+                                    <td class="px-4 py-2">
+                                        {{$table->price_surface}} PLN
                                     </td>
-                                    <td class="px-6 py-4">
+                                    <td class="px-4 py-2">
+                                        {{$table->price}} PLN
+                                    </td>
+                                    <td class="px-4 py-2">
                                         @if($table->status == 'avaiable')
                                         <span class="text-emerald-400">Dostępny</span>
                                         @else
                                         <span class="text-rose-400">Niedostępny</span>
                                         @endif
                                     </td>
-                                    <td class="px-6 py-4">
-                                        {{$table->price}}
-
-                                    </td>
-                                    <td class="px-6 py-4">
+                                    <td class="px-4 py-2">
                                         @if(Storage::exists('public/'.$table->file_pdf))
-                                        <a href="{{ asset('storage/'.$table->file_pdf) }}" download type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-file-pdf"></i></a>
+                                        <a href="{{ asset('storage/'.$table->file_pdf) }}" download type="button" class="px-5 py-2.5 text-center mx-1 my-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-file-pdf"></i></a>
                                         @else
                                         <p class="text-rose-400">Plik PDF nie istnieje.</p>
                                         @endif
                                     </td>
-                                    <td class="px-6 py-4">
+                                    <td class="px-4 py-2">
                                         @if(Storage::exists('public/'.$table->file_priv))
-                                        <a href="{{ asset('storage/'.$table->file_priv) }}" download type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-file-pdf"></i></a>
+                                        <a href="{{ asset('storage/'.$table->file_priv) }}" download type="button" class="px-5 py-2.5 text-center mx-1 my-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-cloud-arrow-down"></i></a>
                                         @else
                                         <p class="text-rose-400">Plik PDF nie istnieje.</p>
                                         @endif
                                     </td>
-                                    <td class="px-6 py-4">
-                                        <a href="{{ route('invest.show', $table->id) }}" type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-eye"></i></a>
+                                    <td class="px-4 py-2">
+                                        <a href="{{ route('invest.show', $table->id) }}" type="button" class="px-5 py-2.5 text-center mx-1 my-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-eye"></i></a>
                                     </td>
-                                    <td class="px-6 py-4">
-                                        <a href="{{ route('dashboard.flat.edit', $table->id) }}" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800">
+                                    <td class="px-4 py-2">
+                                        <a href="{{ route('dashboard.flat.edit', $table->id) }}" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-1 my-1 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800">
                                             <i class="fa-solid fa-pen-to-square"></i>
                                         </a>
                                     </td>
-                                    <td class="px-6 py-4">
+                                    <td class="px-4 py-2">
                                         <form action="{{ route('dashboard.flat.delete', $table->id) }}" method="POST" onsubmit="return confirm('Czy na pewno chcesz to usunąć?')">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="text-red-500 hover:text-white border border-red-600 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">
+                                            <button type="submit" class="text-red-500 hover:text-white border border-red-600 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-1 my-1 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">
                                                 <i class="fa-solid fa-trash"></i>
                                             </button>
                                         </form>
@@ -124,6 +157,7 @@
                             </tbody>
                         </table>
                         <div class="px-4 py-2">
+                            {{ $tables->links() }}
                         </div>
                     </div>
                 </div>

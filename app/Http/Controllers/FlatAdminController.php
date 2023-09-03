@@ -7,9 +7,11 @@ use App\Http\Requests\EditFlatRequest;
 use App\Models\Flat;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+
 class FlatAdminController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $tables = Flat::orderBy('created_at')->paginate(30);
         return view('dashboard', compact('tables'));
     }
@@ -19,8 +21,8 @@ class FlatAdminController extends Controller
     }
     public function store(CreateFlatRequest $request)
     {
-        $file_pdf=null;
-        $file_priv=null;
+        $file_pdf = null;
+        $file_priv = null;
         if ($request->hasFile('file_pdf') && $request->file('file_pdf')) {
             $file_pdf = $request->file('file_pdf');
             $file_pdf = $file_pdf->store('pdfs', 'public');
@@ -29,11 +31,12 @@ class FlatAdminController extends Controller
             $file_priv = $request->file('file_priv');
             $file_priv = $file_priv->store('privs', 'public');
         }
-        
+
         $table = new Flat();
         $table->segment = $request->segment;
         $table->flat = $request->flat;
         $table->surface = $request->surface;
+        $table->price_surface = $request->price_surface;
         $table->status = $request->status;
         $table->price = $request->price;
         $table->file_pdf = $file_pdf;
@@ -56,10 +59,16 @@ class FlatAdminController extends Controller
             'segment' => $request->segment,
             'flat' => $request->flat,
             'surface' => $request->surface,
+            'price_surface' => $request->price_surface,
             'status' => $request->status,
             'price' => $request->price,
         ]);
         if ($request->hasFile('file_pdf') && $request->file('file_pdf')) {
+            // Sprawdź, czy istnieje stary plik i usuń go
+            if ($table->file_pdf) {
+                Storage::disk('public')->delete($table->file_pdf);
+            }
+
             $file_pdf = $request->file('file_pdf');
             $file_pdf = $file_pdf->store('pdfs', 'public');
             $table->update([
@@ -67,6 +76,11 @@ class FlatAdminController extends Controller
             ]);
         }
         if ($request->hasFile('file_priv') && $request->file('file_priv')) {
+            // Sprawdź, czy istnieje stary plik i usuń go
+            if ($table->file_priv) {
+                Storage::disk('public')->delete($table->file_priv);
+            }
+            
             $file_priv = $request->file('file_priv');
             $file_priv = $file_priv->store('privs', 'public');
             $table->update([

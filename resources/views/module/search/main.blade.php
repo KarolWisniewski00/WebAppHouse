@@ -1,7 +1,11 @@
 <!--FORM SEARCH-->
 <section>
     <div class="position-relative" id="card-form-apart-container">
-        <div class="card border-primary mb-3 position-absolute top-0 start-50 translate-middle" id="card-form-apart">
+        <div class="card border-primary mb-3 position-absolute top-0 start-50 translate-middle" id="card-form-apart" style="
+        background-color:#F8F2F0;
+        --bs-card-border-width:0!important;
+        --bs-card-border-color:transparent!important;
+        border: 1px solid #d28f6f!important;">
             <div class="d-flex justify-content-center align-items-center flex-wrap">
                 <div class="card-body">
                     <div class="d-flex justify-content-start align-items-center w-100">
@@ -42,7 +46,7 @@
                     </div>
                 </div>
 
-                <div class="card-body"><a href="{{route('invest')}}" class="btn btn-primary w-100 my-auto" type="submit"><i class="fa-solid fa-magnifying-glass me-2"></i>Szukaj</a></div>
+                <div class="card-body"><a href="{{route('invest')}}" class="btn btn-extra w-100 my-auto" type="submit"><i class="fa-solid fa-magnifying-glass me-2"></i>Szukaj</a></div>
             </div>
         </div>
     </div>

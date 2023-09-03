@@ -1,11 +1,6 @@
 <!--SLIDER MAIN-->
 <section>
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators d-none d-xl-flex justify-content-end align-items-end">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/'.$setting['zdjecie_1_karuzela_1_na_stronie_glownej'])}});    background-position: center;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">

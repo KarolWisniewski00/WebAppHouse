@@ -14,11 +14,11 @@
                     </div>
                     <div class="carousel-inner">
                         @for($x = 1; $x <= 9; $x++) @if($x==1) <div class="carousel-item active text-center">
-                            <img class="img-fluid" alt="" src="{{asset('asset/photo/album/'.$x.'.jpg')}}">
+                            <img class="img-fluid" alt="" src="{{asset('asset/photo/'.$x.'.jpg')}}">
                     </div>
                     @else
                     <div class="carousel-item text-center">
-                        <img class="img-fluid" alt="" src="{{asset('asset/photo/album/'.$x.'.jpg')}}">
+                        <img class="img-fluid" alt="" src="{{asset('asset/photo/'.$x.'.jpg')}}">
                     </div>
                     @endif
                     @endfor
@@ -41,7 +41,7 @@
 </section>
 --END SLIDER PHOTO-->
 <!--SLIDER PHOTO-->
-<section style="background-color: #f5f7f9; border-top: 1px solid #d28f6f; border-bottom: 1px solid #d28f6f;">
+<section style="background-color: #F8F2F0; border-top: 1px solid #d28f6f; border-bottom: 1px solid #d28f6f;">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -60,11 +60,11 @@
                     </div>
                     <div class="carousel-inner">
                         @for($x = 1; $x <= 9; $x++) @if($x==1) <div class="carousel-item active text-center">
-                            <img class="img-fluid mb-5" alt="{{$setting['alt_zdjecie_'.$x.'_karuzela_2_na_stronie_glownej']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzela_2_na_stronie_glownej'])}}">
+                            <img class="img-fluid mb-5" alt="{{$setting['alt_zdjecie_'.$x.'_karuzela_2_na_stronie_glownej']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzela_2_na_stronie_glownej'])}}">
                     </div>
                     @else
                     <div class="carousel-item text-center">
-                        <img class="img-fluid mb-5" alt="{{$setting['alt_zdjecie_'.$x.'_karuzela_2_na_stronie_glownej']}}" src="{{asset('asset/photo/album/'.$setting['zdjecie_'.$x.'_karuzela_2_na_stronie_glownej'])}}">
+                        <img class="img-fluid mb-5" alt="{{$setting['alt_zdjecie_'.$x.'_karuzela_2_na_stronie_glownej']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzela_2_na_stronie_glownej'])}}">
                     </div>
                     @endif
                     @endfor
@@ -91,9 +91,9 @@
                     <div class="col-12">
                         <div class="row text-start">
                             <div class="my-4">
-                                <div class="hstack gap-3 mb-3">
+                                <div class="d-flex flex-row mb-3">
                                     <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
-                                    <h1 class="p-0 m-0">
+                                    <h1 class="p-0 m-0 ms-3">
                                         <span>{{$setting['naglowek_sekcji_3_na_stronie_glownej']}}</span>
                                     </h1>
                                 </div>
