@@ -98,7 +98,7 @@
             <div class="col-12">
                 <div class="d-flex flex-column justify-content-center align-items-center mb-3" style="overflow:hidden">
                     <div class="position-relative">
-                        <img class="img-fluid segment-img" alt="" src="{{asset('asset/photo/schema/a1.jpg')}}">
+                        <img class="img-fluid segment-img" alt="" src="{{asset('asset/photo/schema/A1.jpg')}}">
                         <div class="s-neutral-b position-absolute p-1px" id="flat-1">
                             <div class="h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
