@@ -27,7 +27,7 @@
 </section>
 <!--END INFO-->
 <!--INFO WITH BG GREEN-->
-<section style="background-color: #F8F2F0!important;  border-bottom: 1px solid #d28f6f;  border-top: 1px solid #d28f6f;">
+<section style="background-color: #f5f7f9!important;  border-bottom: 1px solid #d28f6f;  border-top: 1px solid #d28f6f;">
     <div class="container-fluid">
         <div class="row my-4 py-4">
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center overflow-hidden">
@@ -204,7 +204,7 @@
                 <img class="img-fluid my-4" alt="{{$setting['alt_zdjecie_sekcji_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_sekcji_2_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6 ms-xl-0 ps-xl-0 py-xl-5">
-                <div class="d-flex flex-column justify-content-center align-items-center text-start h-100 p-4 border-custom-left-2" style="background-color:#F8F2F0!important;">
+                <div class="d-flex flex-column justify-content-center align-items-center text-start h-100 p-4 border-custom-left-2" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
                         <h5 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_sekcji_2_na_stronie_o_inwestycji']}}</h5>
@@ -219,7 +219,7 @@
     <div class="container-fluid px-5 mt-5">
         <div class="row my-4 p-4 g-0">
             <div class="col-12 col-xl-6 ms-xl-0 ps-xl-0 py-xl-5">
-                <div class="d-flex flex-column justify-content-center align-items-center text-start h-100 p-4 border-custom-right-2" style="background-color:#F8F2F0!important;">
+                <div class="d-flex flex-column justify-content-center align-items-center text-start h-100 p-4 border-custom-right-2" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
                         <h5 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_sekcji_2_na_stronie_o_inwestycji']}}</h5>
@@ -235,7 +235,7 @@
 </section>
 <!--END INFO WITH BG MUTED-->
 <!--SLIDER PHOTO-->
-<section style="background-color: #F8F2F0; border-bottom: 1px solid #d28f6f; border-top: 1px solid #d28f6f;">
+<section style="background-color: #f5f7f9; border-bottom: 1px solid #d28f6f; border-top: 1px solid #d28f6f;">
     <div class="container py-5">
         <div class="row">
             <div class="col-12">
@@ -294,7 +294,7 @@
                 <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -312,7 +312,7 @@
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -336,7 +336,7 @@
                 <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -354,7 +354,7 @@
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -378,7 +378,7 @@
                 <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -396,7 +396,7 @@
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -420,7 +420,7 @@
                 <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -438,7 +438,7 @@
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -462,7 +462,7 @@
                 <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -480,7 +480,7 @@
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#F8F2F0!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>

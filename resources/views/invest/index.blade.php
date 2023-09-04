@@ -14,6 +14,10 @@
     </div>
 </section>
 <!--END BREADCRUMBS + FILTER-->
-@include('module.search.photo')
+@if(isset($clicked))
+@include('module.search.schema')
+@else
+@include('module.search.filter')
+@endif
 @include('module.table')
 @endsection
