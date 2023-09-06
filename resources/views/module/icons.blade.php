@@ -16,7 +16,7 @@
                 <div class="h-100 py-4">
                     <div class="d-flex flex-column justify-content-center align-items-center h-100 bg-extra-hover">
                         <div class="mx-4 my-2">
-                            <h1 class="color-extra m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_1_sekcji_ikon_na_stronie_glownej'] !!}</h1>
+                            <h1 class="color-extra-2 m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_1_sekcji_ikon_na_stronie_glownej'] !!}</h1>
                         </div>
                         <div class="mx-4 my-2">
                             <h6 class="text-primary m-0 p-0 text-center text-hover">{{$setting['paragraf_ikona_1_sekcji_ikon_na_stronie_glownej']}}</h6>
@@ -28,7 +28,7 @@
                 <div class="h-100 py-4">
                     <div class="d-flex flex-column justify-content-center align-items-center bg-extra-hover h-100">
                         <div class="mx-4 my-2">
-                            <h1 class="color-extra m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_2_sekcji_ikon_na_stronie_glownej'] !!}</h1>
+                            <h1 class="color-extra-2 m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_2_sekcji_ikon_na_stronie_glownej'] !!}</h1>
                         </div>
                         <div class="mx-4 my-2">
                             <h6 class="text-primary m-0 p-0 text-center text-hover">{{$setting['paragraf_ikona_2_sekcji_ikon_na_stronie_glownej']}}</h6>
@@ -40,7 +40,7 @@
                 <div class="h-100 py-4">
                     <div class="d-flex flex-column justify-content-center align-items-center bg-extra-hover h-100">
                         <div class="mx-4 my-2">
-                            <h1 class="color-extra m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_3_sekcji_ikon_na_stronie_glownej'] !!}</h1>
+                            <h1 class="color-extra-2 m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_3_sekcji_ikon_na_stronie_glownej'] !!}</h1>
                         </div>
                         <div class="mx-4 my-2">
                             <h6 class="text-primary m-0 p-0 text-center text-hover">{{$setting['paragraf_ikona_3_sekcji_ikon_na_stronie_glownej']}}</h6>
@@ -52,7 +52,7 @@
                 <div class="h-100 py-4">
                     <div class="d-flex flex-column justify-content-center align-items-center bg-extra-hover h-100">
                         <div class="mx-4 my-2">
-                            <h1 class="color-extra m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_4_sekcji_ikon_na_stronie_glownej'] !!}</h1>
+                            <h1 class="color-extra-2 m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_4_sekcji_ikon_na_stronie_glownej'] !!}</h1>
                         </div>
                         <div class="mx-4 my-2">
                             <h6 class="text-primary m-0 p-0 text-center text-hover">{{$setting['paragraf_ikona_4_sekcji_ikon_na_stronie_glownej']}}</h6>
@@ -64,7 +64,7 @@
                 <div class="h-100 py-4">
                     <div class="d-flex flex-column justify-content-center align-items-center bg-extra-hover h-100">
                         <div class="mx-4 my-2">
-                            <h1 class="color-extra m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_5_sekcji_ikon_na_stronie_glownej'] !!}</h1>
+                            <h1 class="color-extra-2 m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_5_sekcji_ikon_na_stronie_glownej'] !!}</h1>
                         </div>
                         <div class="mx-4 my-2">
                             <h6 class="text-primary m-0 p-0 text-center text-hover">{{$setting['paragraf_ikona_5_sekcji_ikon_na_stronie_glownej']}}</h6>
@@ -76,7 +76,7 @@
                 <div class="h-100 py-4">
                     <div class="d-flex flex-column justify-content-center align-items-center bg-extra-hover h-100">
                         <div class="mx-4 my-2">
-                            <h1 class="color-extra m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_6_sekcji_ikon_na_stronie_glownej'] !!}</h1>
+                            <h1 class="color-extra-2 m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_6_sekcji_ikon_na_stronie_glownej'] !!}</h1>
                         </div>
                         <div class="mx-4 my-2">
                             <h6 class="text-primary m-0 p-0 text-center text-hover">{{$setting['paragraf_ikona_6_sekcji_ikon_na_stronie_glownej']}}</h6>
@@ -88,7 +88,7 @@
                 <div class="h-100 py-4">
                     <div class="d-flex flex-column justify-content-center align-items-center bg-extra-hover h-100">
                         <div class="mx-4 my-2">
-                            <h1 class="color-extra m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_7_sekcji_ikon_na_stronie_glownej'] !!}</h1>
+                            <h1 class="color-extra-2 m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_7_sekcji_ikon_na_stronie_glownej'] !!}</h1>
                         </div>
                         <div class="mx-4 my-2">
                             <h6 class="text-primary m-0 p-0 text-center text-hover">{{$setting['paragraf_ikona_7_sekcji_ikon_na_stronie_glownej']}}</h6>
@@ -100,7 +100,7 @@
                 <div class="h-100 py-4">
                     <div class="d-flex flex-column justify-content-center align-items-center bg-extra-hover h-100">
                         <div class="mx-4 my-2">
-                            <h1 class="color-extra m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_8_sekcji_ikon_na_stronie_glownej'] !!}</h1>
+                            <h1 class="color-extra-2 m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_8_sekcji_ikon_na_stronie_glownej'] !!}</h1>
                         </div>
                         <div class="mx-4 my-2">
                             <h6 class="text-primary m-0 p-0 text-center text-hover">{{$setting['paragraf_ikona_8_sekcji_ikon_na_stronie_glownej']}}</h6>
@@ -112,7 +112,7 @@
                 <div class="h-100 py-4">
                     <div class="d-flex flex-column justify-content-center align-items-center bg-extra-hover h-100">
                         <div class="mx-4 my-2">
-                            <h1 class="color-extra m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_9_sekcji_ikon_na_stronie_glownej'] !!}</h1>
+                            <h1 class="color-extra-2 m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_9_sekcji_ikon_na_stronie_glownej'] !!}</h1>
                         </div>
                         <div class="mx-4 my-2">
                             <h6 class="text-primary m-0 p-0 text-center text-hover">{{$setting['paragraf_ikona_9_sekcji_ikon_na_stronie_glownej']}}</h6>
@@ -124,7 +124,7 @@
                 <div class="h-100 py-4">
                     <div class="d-flex flex-column justify-content-center align-items-center bg-extra-hover h-100">
                         <div class="mx-4 my-2">
-                            <h1 class="color-extra m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_10_sekcji_ikon_na_stronie_glownej'] !!}</h1>
+                            <h1 class="color-extra-2 m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_10_sekcji_ikon_na_stronie_glownej'] !!}</h1>
                         </div>
                         <div class="mx-4 my-2">
                             <h6 class="text-primary m-0 p-0 text-center text-hover">{{$setting['paragraf_ikona_10_sekcji_ikon_na_stronie_glownej']}}</h6>
@@ -136,7 +136,7 @@
                 <div class="h-100 py-4">
                     <div class="d-flex flex-column justify-content-center align-items-center bg-extra-hover h-100">
                         <div class="mx-4 my-2">
-                            <h1 class="color-extra m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_11_sekcji_ikon_na_stronie_glownej'] !!}</h1>
+                            <h1 class="color-extra-2 m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_11_sekcji_ikon_na_stronie_glownej'] !!}</h1>
                         </div>
                         <div class="mx-4 my-2">
                             <h6 class="text-primary m-0 p-0 text-center text-hover">{{$setting['paragraf_ikona_11_sekcji_ikon_na_stronie_glownej']}}</h6>
@@ -148,7 +148,7 @@
                 <div class="h-100 py-4">
                     <div class="d-flex flex-column justify-content-center align-items-center bg-extra-hover h-100">
                         <div class="mx-4 my-2">
-                            <h1 class="color-extra m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_12_sekcji_ikon_na_stronie_glownej'] !!}</h1>
+                            <h1 class="color-extra-2 m-0 p-0" style="font-size: 3.2em;">{!! $setting['ikona_12_sekcji_ikon_na_stronie_glownej'] !!}</h1>
                         </div>
                         <div class="mx-4 my-2">
                             <h6 class="text-primary m-0 p-0 text-center text-hover">{{$setting['paragraf_ikona_12_sekcji_ikon_na_stronie_glownej']}}</h6>

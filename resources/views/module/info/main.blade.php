@@ -20,14 +20,14 @@
                     </div>
                     <div class="col-6 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-4">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_po_lewej_sekcji_1_na_stronie_glownej'] !!}</a>
+                            <button class="btn btn-extra mb-4 fs-2" type="button" style="background-color: #0f4c64;">{!! $setting['ikona_po_lewej_sekcji_1_na_stronie_glownej'] !!}</button>
                             <h3>{{$setting['naglowek_ikony_po_lewej_sekcji_1_na_stronie_glownej']}}</h3>
                             <p class="lead">{{$setting['paragraf_ikony_po_lewej_sekcji_1_na_stronie_glownej']}}</p>
                         </div>
                     </div>
                     <div class="col-6 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-4">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_po_prawej_sekcji_1_na_stronie_glownej'] !!}</a>
+                            <button class="btn btn-extra mb-4 fs-2" type="button" style="background-color: #0f4c64;">{!! $setting['ikona_po_prawej_sekcji_1_na_stronie_glownej'] !!}</button>
                             <h3>{{$setting['naglowek_ikony_po_prawej_sekcji_1_na_stronie_glownej']}}</h3>
                             <p class="lead">{{$setting['paragraf_ikony_po_prawej_sekcji_1_na_stronie_glownej']}}</p>
                         </div>

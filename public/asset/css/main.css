@@ -102,6 +102,10 @@
     color: #d28f6f;
     transition: 1s ease-in-out;
 }
+.color-extra-2 {
+    color: #0f4c64;
+    transition: 1s ease-in-out;
+}
 
 .bg-extra {
     background-color: #9cca36;
@@ -112,7 +116,7 @@
 }
 
 .bg-extra-hover:hover {
-    background-color: #d28f6f !important;
+    background-color: #0f4c64 !important;
     transition: 1s ease-in-out;
 }
 
@@ -125,7 +129,10 @@
     color: white !important;
     transition: 1s ease-in-out;
 }
-
+.bg-extra-hover:hover .color-extra-2 {
+    color: white !important;
+    transition: 1s ease-in-out;
+}
 .text-hover {
     transition: 1s ease-in-out;
 }
