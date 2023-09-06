@@ -19,7 +19,7 @@
 <section>
     <div class="container">
         <div class="row my-4 py-4">
-            <div class="col-12">
+            <div class="col-12 gsap">
                 <div class="row d-flex flex-row justify-content-center align-items-start flex-wrap">
                     <div class="col-12">
                         <div class="d-flex flex-column justify-content-center align-items-center my-4">

@@ -4,7 +4,7 @@
         <div class="row my-4 py-4">
             <div class="col-12 col-xl-5">
                 <div class="row d-flex flex-row justify-content-center align-items-start flex-wrap">
-                    <div class="col-12">
+                    <div class="col-12  gsap">
                         <div class="row text-start">
                             <div class="my-4">
                                 <div class="d-flex flex-row mb-3">
@@ -18,14 +18,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-4">
                             <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_po_lewej_sekcji_1_na_stronie_glownej'] !!}</a>
                             <h3>{{$setting['naglowek_ikony_po_lewej_sekcji_1_na_stronie_glownej']}}</h3>
                             <p class="lead">{{$setting['paragraf_ikony_po_lewej_sekcji_1_na_stronie_glownej']}}</p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-4">
                             <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_po_prawej_sekcji_1_na_stronie_glownej'] !!}</a>
                             <h3>{{$setting['naglowek_ikony_po_prawej_sekcji_1_na_stronie_glownej']}}</h3>

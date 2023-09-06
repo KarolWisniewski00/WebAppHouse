@@ -88,7 +88,7 @@
         <div class="row my-4 py-4">
             <div class="col-12 col-xl-5">
                 <div class="row d-flex flex-row justify-content-center align-items-start flex-wrap">
-                    <div class="col-12">
+                    <div class="col-12 gsap">
                         <div class="row text-start">
                             <div class="my-4">
                                 <div class="d-flex flex-row mb-3">
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 gsap">
                         <div class="row">
                             <div class="col-4">
                                 <img class="img-fluid" alt="" src="{{asset('asset/photo/'.$setting['zdjecie_na_gorze_sekcji_3_na_stronie_glownej'])}}">
@@ -113,7 +113,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 gsap">
                         <div class="row">
                             <div class="col-4">
                                 <img class="img-fluid" alt="" src="{{asset('asset/photo/'.$setting['zdjecie_na_dole_sekcji_3_na_stronie_glownej'])}}">

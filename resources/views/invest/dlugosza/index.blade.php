@@ -21,7 +21,7 @@
         <div class="row my-4 py-4">
             <div class="col-12">
                 <div class="row d-flex flex-row justify-content-center align-items-start flex-wrap">
-                    <div class="col-12">
+                    <div class="col-12 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center my-4">
                             <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                                 <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>

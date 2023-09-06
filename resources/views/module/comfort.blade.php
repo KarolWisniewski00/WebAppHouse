@@ -2,7 +2,7 @@
 <section>
     <div class="container">
         <div class="row my-4 py-4">
-            <div class="col-12">
+            <div class="col-12 gsap">
                 <div class="my-4">
                     <div class="d-flex flex-row mb-3">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
@@ -19,7 +19,7 @@
 <section>
     <div class="container">
         <div class="row my-4 py-4">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 gsap">
                 <div class="h-100 pb-4">
                     <div class="d-flex flex-column justify-content-center align-items-center h-100" style="background-color: #f5f7f9!important;  border: 1px solid #d28f6f;">
                         <div class="mx-4 my-2">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 gsap">
                 <div class="h-100 pb-4">
                     <div class="d-flex flex-column justify-content-center align-items-center bg-extra h-100" style="background-color: #f5f7f9!important;  border: 1px solid #d28f6f;">
                         <div class="mx-4 my-2">
@@ -49,7 +49,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 gsap">
                 <div class="h-100 pb-4">
                     <div class="d-flex flex-column justify-content-center align-items-center h-100" style="background-color: #f5f7f9!important;  border: 1px solid #d28f6f;">
                         <div class="mx-4 my-2">

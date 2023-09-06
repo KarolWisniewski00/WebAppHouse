@@ -4,7 +4,7 @@
 <section>
     <div class="container">
         <div class="row my-4 py-4">
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 gsap">
                 <div class="row d-flex flex-row justify-content-center align-items-start flex-wrap">
                 <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
@@ -37,7 +37,7 @@
             </div>
             <div class="col-12 col-xl-6">
                 <div class="row d-flex flex-row justify-content-center align-items-start flex-wrap h-100">
-                    <div class="col-12 h-100">
+                    <div class="col-12 h-100 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-start my-4 h-100">
                         <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                                 <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
@@ -73,7 +73,7 @@
 <section>
     <div class="container my-4">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 gsap">
                 <div class="d-flex flex-column justify-content-center align-items-start text-center my-4 h-100">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
@@ -203,7 +203,7 @@
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center me-xl-0 pe-xl-0">
                 <img class="img-fluid my-4" alt="{{$setting['alt_zdjecie_sekcji_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_sekcji_2_na_stronie_o_inwestycji'])}}">
             </div>
-            <div class="col-12 col-xl-6 ms-xl-0 ps-xl-0 py-xl-5">
+            <div class="col-12 col-xl-6 ms-xl-0 ps-xl-0 py-xl-5 gsap">
                 <div class="d-flex flex-column justify-content-center align-items-center text-start h-100 p-4 border-custom-left-2" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
@@ -218,7 +218,7 @@
 <section>
     <div class="container-fluid px-5 mt-5">
         <div class="row my-4 p-4 g-0">
-            <div class="col-12 col-xl-6 ms-xl-0 ps-xl-0 py-xl-5">
+            <div class="col-12 col-xl-6 ms-xl-0 ps-xl-0 py-xl-5 gsap">
                 <div class="d-flex flex-column justify-content-center align-items-center text-start h-100 p-4 border-custom-right-2" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
@@ -238,7 +238,7 @@
 <section style="background-color: #f5f7f9; border-bottom: 1px solid #d28f6f; border-top: 1px solid #d28f6f;">
     <div class="container py-5">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 gsap">
                 <div class="d-flex flex-column justify-content-center align-items-center text-center my-4 h-100">
                     <h1 class="p-0 m-0 my-2  text-primary" style="font-size: 3em;">{{$setting['naglowek_karuzeli_2_na_stronie_o_inwestycji']}}</h1>
                     <p class="p-0 m-0  my-2 mb-5 text-primary" style="font-size: 1.8em;">{{$setting['paragraf_karuzeli_2_na_stronie_o_inwestycji']}}</p>
@@ -281,7 +281,7 @@
 <section>
     <div class="container text-primary">
         <div class="row my-4 p-4">
-            <div class="col-12">
+            <div class="col-12 gsap">
                 <div class="d-flex flex-column justify-content-center align-items-start text-start my-4 h-100">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
@@ -293,7 +293,7 @@
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
                 <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 gsap">
                 <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
@@ -311,7 +311,7 @@
 <section>
     <div class="container">
         <div class="row my-4 p-4">
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 gsap">
                 <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
@@ -335,7 +335,7 @@
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
                 <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 gsap">
                 <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
@@ -353,7 +353,7 @@
 <section>
     <div class="container">
         <div class="row my-4 p-4">
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 gsap">
                 <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
@@ -374,7 +374,7 @@
 <section>
     <div class="container text-primary">
         <div class="row my-4 p-4">
-            <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
+            <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start gsap">
                 <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6">
@@ -395,7 +395,7 @@
 <section>
     <div class="container">
         <div class="row my-4 p-4">
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 gsap">
                 <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
@@ -419,7 +419,7 @@
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
                 <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 gsap">
                 <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
@@ -437,7 +437,7 @@
 <section>
     <div class="container">
         <div class="row my-4 p-4">
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 gsap">
                 <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
@@ -461,7 +461,7 @@
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
                 <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 gsap">
                 <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
@@ -479,7 +479,7 @@
 <section>
     <div class="container">
         <div class="row my-4 p-4">
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 gsap">
                 <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>

@@ -4,44 +4,44 @@
         <div class="row my-4 py-4 flex-row-reverse">
             <div class="col-12 col-xl-5">
                 <div class="row text-start">
-                    <div class="col-6">
+                    <div class="col-6 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_1_sekcji_2_na_stronie_glownej'] !!}</a>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button" style="background-color: #0f4c64;">{!! $setting['ikona_1_sekcji_2_na_stronie_glownej'] !!}</a>
                             <h5>{{$setting['naglowek_ikony_1_sekcji_2_na_stronie_glownej']}}</h5>
                             <p class="lead" style="font-size: 14px;">{{$setting['paragraf_ikony_1_sekcji_2_na_stronie_glownej']}}</p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_2_sekcji_2_na_stronie_glownej'] !!}</a>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button" style="background-color: #0f4c64;">{!! $setting['ikona_2_sekcji_2_na_stronie_glownej'] !!}</a>
                             <h5>{{$setting['naglowek_ikony_2_sekcji_2_na_stronie_glownej']}}</h5>
                             <p class="lead" style="font-size: 14px;">{{$setting['paragraf_ikony_2_sekcji_2_na_stronie_glownej']}}</p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_3_sekcji_2_na_stronie_glownej'] !!}</a>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button" style="background-color: #0f4c64;">{!! $setting['ikona_3_sekcji_2_na_stronie_glownej'] !!}</a>
                             <h5>{{$setting['naglowek_ikony_3_sekcji_2_na_stronie_glownej']}}</h5>
                             <p class="lead" style="font-size: 14px;">{{$setting['paragraf_ikony_3_sekcji_2_na_stronie_glownej']}}</p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_4_sekcji_2_na_stronie_glownej'] !!}</a>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button" style="background-color: #0f4c64;">{!! $setting['ikona_4_sekcji_2_na_stronie_glownej'] !!}</a>
                             <h5>{{$setting['naglowek_ikony_4_sekcji_2_na_stronie_glownej']}}</h5>
                             <p class="lead" style="font-size: 14px;">{{$setting['paragraf_ikony_4_sekcji_2_na_stronie_glownej']}}</p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_5_sekcji_2_na_stronie_glownej'] !!}</a>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button" style="background-color: #0f4c64;">{!! $setting['ikona_5_sekcji_2_na_stronie_glownej'] !!}</a>
                             <h5>{{$setting['naglowek_ikony_5_sekcji_2_na_stronie_glownej']}}</h5>
                             <p class="lead" style="font-size: 14px;">{{$setting['paragraf_ikony_5_sekcji_2_na_stronie_glownej']}}</p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <a href="" class="btn btn-extra mb-4 fs-2" type="button">{!! $setting['ikona_6_sekcji_2_na_stronie_glownej'] !!}</a>
+                            <a href="" class="btn btn-extra mb-4 fs-2" type="button" style="background-color: #0f4c64;">{!! $setting['ikona_6_sekcji_2_na_stronie_glownej'] !!}</a>
                             <h5>{{$setting['naglowek_ikony_6_sekcji_2_na_stronie_glownej']}}</h5>
                             <p class="lead" style="font-size: 14px;">{{$setting['paragraf_ikony_6_sekcji_2_na_stronie_glownej']}}</p>
                         </div>

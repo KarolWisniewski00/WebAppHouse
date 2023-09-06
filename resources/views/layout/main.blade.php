@@ -10,6 +10,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="{{ asset('asset/css/main.css')}}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -31,10 +33,16 @@
                             Inwestycje
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><h6 class="dropdown-header">W trakcie realizacji</h6></li>
+                            <li>
+                                <h6 class="dropdown-header">W trakcie realizacji</h6>
+                            </li>
                             <li><a class="dropdown-item" href="{{route('invest')}}">Osiedle Luxor Residence</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><h6 class="dropdown-header">Ukończone</h6></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Ukończone</h6>
+                            </li>
                             <li><a class="dropdown-item" href="{{route('invest.wodna')}}">Wodna</a></li>
                             <li><a class="dropdown-item" href="{{route('invest.kopernika')}}">Kopernika</a></li>
                             <li><a class="dropdown-item" href="{{route('invest.dlugosza')}}">Długosza</a></li>
@@ -71,7 +79,7 @@
     </section>
     <!--END NAV-->
     <!--MAIN-->
-    <main>
+    <main id="main">
         <!--ALERTS
         <section>
             <div class="container">
@@ -108,6 +116,34 @@
     <!--END FOOTER-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="{{asset('asset/js/bootstrap.js')}}"></script>
+    <script>
+        //SCROLL TRIGGER
+        gsap.registerPlugin(ScrollTrigger);
+
+        function st(string) {
+            const elements = document.querySelectorAll(string);
+            elements.forEach(element => {
+                gsap.fromTo(element.children, {
+                    opacity: 0,
+                    y: 100,
+                    scale: 0.8
+                }, {
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    duration: 1,
+                    ease: "power4.out",
+                    scrollTrigger: {
+                        trigger: element,
+                        start: '-20% 50%',
+                        end: 'top 50%',
+                    }
+                });
+            });
+        };
+
+        st('#main .gsap');
+    </script>
 </body>
 
 </html>

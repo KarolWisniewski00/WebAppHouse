@@ -23,7 +23,7 @@
                     <h1 class="p-0 m-0 ms-3">Biuro <span class="text-muted">Osiedle Luxor Residence</span></h1>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 gsap">
                 <p>ul.Sienkiewicza 1, 1 piętro, Piekary Śląskie 41-940</p>
                 <p>NIP: 498-01-71-674</p>
                 <p><a href="mailto:biuronoweinspiracje@gmail.com">biuronoweinspiracje@gmail.com</a></p>
