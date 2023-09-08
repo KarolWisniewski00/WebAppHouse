@@ -312,7 +312,7 @@
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6 gsap">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-02" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -354,7 +354,7 @@
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6 gsap">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-02" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -396,7 +396,7 @@
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6 gsap">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-02" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -438,7 +438,7 @@
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6 gsap">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-02" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
@@ -480,7 +480,7 @@
     <div class="container">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6 gsap">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
+                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-02" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
                         <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>

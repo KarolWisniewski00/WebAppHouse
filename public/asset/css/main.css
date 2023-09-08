@@ -58,13 +58,13 @@
 .segment-success:hover .btn-d {
     visibility: visible !important;
     opacity: 1;
-    background-color: rgba(88, 189, 123, 0.3);
+    background-color: rgba(88, 189, 123, 0.3)!important;
 }
 
 .segment-danger:hover .btn-d {
     visibility: visible !important;
     opacity: 1;
-    background-color: rgba(184, 71, 67, 0.3);
+    background-color: rgba(184, 71, 67, 0.3)!important;
 }
 
 .s-neutral:hover .btn-d {
@@ -241,7 +241,7 @@
     padding: 8px 20px !important;
     margin: 0px 3px 6px !important;
     text-align: center !important;
-    border: 2px solid #d28f6f !important;
+    border: 2px solid #0f4c64 !important;
     text-decoration: none !important;
     color: black !important;
     white-space: nowrap !important;
@@ -258,14 +258,14 @@
 .hb-fill-left-br::before {
     position: absolute !important;
     content: "" !important;
-    background: #d28f6f !important;
+    background: #0f4c64 !important;
     transition-duration: 0.3s !important;
     z-index: -1 !important;
     inset: 0px 0px auto auto !important;
     width: 0px !important;
     height: 100% !important;
     opacity: 1 !important;
-    border: 2px solid #d28f6f !important;
+    border: 2px solid #0f4c64 !important;
 }
 
 
@@ -278,13 +278,13 @@
 
 .hb-fill-left-br:hover {
     color: #f5f7f9 !important;
-    background: #d28f6f !important;
+    background: #0f4c64 !important;
     transition: color 0.3s ease 0s, background 0s ease 0.3s !important;
 }
 
 .hbtnon{
     color: #f5f7f9 !important;
-    background: #d28f6f !important;
+    background: #0f4c64 !important;
     transition: color 0.3s ease 0s, background 0s ease 0.3s !important;
 }
 .hbtnon::before{
@@ -294,7 +294,7 @@
 }
 .hbtnon-2{
     color: #f5f7f9 !important;
-    background: #d28f6f !important;
+    background: #0f4c64 !important;
     transition: color 0.3s ease 0s, background 0s ease 0.3s !important;
 }
 .hbtnon-2::before{

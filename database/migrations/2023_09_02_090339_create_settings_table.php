@@ -473,7 +473,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_sekcji_3_na_stronie_glownej';
         $setting->type = 'photo';
-        $setting->content = 'info-1.jpg';
+        $setting->content = 'info-12.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -497,7 +497,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_na_gorze_sekcji_3_na_stronie_glownej';
         $setting->type = 'photo';
-        $setting->content = 'info-1.jpg';
+        $setting->content = 'info-13.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -521,12 +521,12 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_na_dole_sekcji_3_na_stronie_glownej';
         $setting->type = 'photo';
-        $setting->content = 'info-1.jpg';
+        $setting->content = 'info-14.jpg';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'alt_zdjecie_na_dole_sekcji_3_na_stronie_glownej';
-        $setting->type = 'photo';
+        $setting->type = 'text';
         $setting->content = 'Opis zdjęcia w celu pozycjonowania +/- 4-8 słów';
         $setting->save();
 
@@ -784,7 +784,7 @@ return new class extends Migration
 
         $setting = new Setting();
         $setting->place = 'zdjecie_3_na_stronie_wodna';
-        $setting->type = 'text';
+        $setting->type = 'photo';
         $setting->content = 'wodna-3.jpg';
         $setting->save();
 
@@ -1055,7 +1055,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_sekcji_2_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '7.jpg';
+        $setting->content = '71.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1073,7 +1073,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_1_karuzeli_1_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '1.jpg';
+        $setting->content = '11.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1097,7 +1097,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_2_karuzeli_1_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '2.jpg';
+        $setting->content = '21.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1121,7 +1121,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_3_karuzeli_1_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '3.jpg';
+        $setting->content = '31.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1145,7 +1145,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_4_karuzeli_1_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '4.jpg';
+        $setting->content = '41.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1169,7 +1169,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_5_karuzeli_1_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '5.jpg';
+        $setting->content = '51.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1193,7 +1193,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_6_karuzeli_1_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '6.jpg';
+        $setting->content = '61.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1217,7 +1217,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_7_karuzeli_1_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '7.jpg';
+        $setting->content = '72.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1241,7 +1241,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_8_karuzeli_1_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '8.jpg';
+        $setting->content = '81.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1265,7 +1265,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_9_karuzeli_1_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '9.jpg';
+        $setting->content = '91.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1289,7 +1289,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_10_karuzeli_1_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '10.jpg';
+        $setting->content = '101.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1313,12 +1313,12 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_sekcji_2_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '8.jpg';
+        $setting->content = '82.jpg';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'alt_zdjecie_sekcji_2_na_stronie_o_inwestycji';
-        $setting->type = 'photo';
+        $setting->type = 'text';
         $setting->content = 'Opis zdjęcia w celu pozycjonowania +/- 4-8 słów';
         $setting->save();
 
@@ -1367,43 +1367,43 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_4_karuzeli_2_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '4.jpg';
+        $setting->content = '49.jpg';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'zdjecie_5_karuzeli_2_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '10.jpg';
+        $setting->content = '109.jpg';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'zdjecie_6_karuzeli_2_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '5.jpg';
+        $setting->content = '59.jpg';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'zdjecie_7_karuzeli_2_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '6.jpg';
+        $setting->content = '69.jpg';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'zdjecie_8_karuzeli_2_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '7.jpg';
+        $setting->content = '79.jpg';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'zdjecie_9_karuzeli_2_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '8.jpg';
+        $setting->content = '89.jpg';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'zdjecie_10_karuzeli_2_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '9.jpg';
+        $setting->content = '99.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1481,7 +1481,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '1.jpg';
+        $setting->content = 'sz1.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1511,7 +1511,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '1.jpg';
+        $setting->content = 'sz2.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1541,7 +1541,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '1.jpg';
+        $setting->content = 'sz3.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1559,7 +1559,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'podtytul_zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'NADSZEDŁ CZAS NA LAS';
+        $setting->content = 'I MIŁOŚNIKÓW GÓRSKICH KRAJOBRAZÓW';
         $setting->save();
 
         $setting = new Setting();
@@ -1571,7 +1571,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '1.jpg';
+        $setting->content = 'sz4.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1583,25 +1583,25 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'naglowek_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'tytul4';
+        $setting->content = 'CISZA TO LUKSUS DLA WSZYSTKICH';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'podtytul_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'podtytul';
+        $setting->content = 'NADSZEDŁ CZAS NA LAS';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'paragraf_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'paragraf';
+        $setting->content = 'Góry i las to istotny element otoczenia Apartamentów Szyndzielnia. Wystarczy parę chwil aby poczuć uspokajająca energię, która płynie prosto z natury. Ty decydujesz o własnym tempie, ty decydujesz jaki czas spędzisz w Naszej pobliskiej „fabryce tlenu”, ty sam wiesz, co właśnie Tobie jest potrzebne. Idealne miejsce na odpoczynek od miejskiego pędu a może to ten moment by na chwilę zwolnić ... To nie wymaga wysiłku. Pobyt na łonie natury, spacer wśród drzew, świeże powietrze i poczucie niezwykłej leśnej atmosfery ma same plusy. Las to znakomity "wychowawca", a w szczególności dzieci, które na świeżym powietrzu lepiej się rozwijają, poprawia się ich sprawność fizyczna. Nie wspominając już o wspaniałej stronie rodzinnych spacerów po lesie - o budowaniu i utrwalaniu więzi rodzinnych. Ten las jest dla Ciebie, dla Was ...';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '1.jpg';
+        $setting->content = 'sz5.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1613,25 +1613,25 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'naglowek_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'MIEJSCE DLA AKTYWNYCH';
+        $setting->content = 'OŚRODEK REKREACYJNO-NARCIARSKI DĘBOWIEC';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'podtytul_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'tytul';
+        $setting->content = '';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'paragraf_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'Pobliskie góry, lasy, oznaczone szlaki turystyczne i wytyczone ścieżki biegowe są idealne miejsce do uprawiania turystyki pieszej. Możesz wybrać się zarówno na spacery w rodzinnym gronie ale znajdziesz coś dla osób aktywnych, spragnionych biegania czy nordic walkingu w otoczeniu zieleni i czystego powietrza, przestrzeni i pięknych widoków. Dla biegaczy szczególnie polecana jest ścieżka biegowa w Bielsku-Białej w Wapienicy o długości 12,5-km, która wiedzie malowniczymi terenami Doliny Wapienicy. Bezpośrednia lokalizacja i okolica wręcz zaprasza do aktywnego wypoczynku, spacerów z rodziną, górskich wędrówek i sportów bez względu na porę roku.';
+        $setting->content = 'Stok Dębowca to idealne całorocznie wykorzystane miejsce na piesze wędrówki, spacery a dla wygodnych na górę można dostać się kolejką kanapową. Zimą to miejsce zmienia się w doskonały i nowoczesny kompleks narciarski z trasą o długości 600 m gdzie znajdziesz mały wyciąg zaczepowy dla dzieci, trasę do nauki jazdy na nartach. Naśnieżanie, ratrakowanie zapewnia świetne warunki do jazdy na nartach, desce snowboardowej a wieczorne oświetlenie doda wyjątkowego klimatu, co idealnie się łączy z dużą dawką niezapomnianych widoków i podziwiania panoramy regionu. Nieopodal sprawdź również Park Linowy, plac zabaw dla dzieci wyposażony m.in. w piramidę wspinaczkową, huśtawki, skałkę i ściankę wspinaczkową, karuzelę, plac ćwiczeń.';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '1.jpg';
+        $setting->content = 'sz6.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1643,25 +1643,25 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'naglowek_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'CISZA TO LUKSUS DLA WSZYSTKICH';
+        $setting->content = 'WORKATION CZY HOME OFFICE';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'podtytul_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'Podtytul';
+        $setting->content = 'IDEALNE MIEJSCE DO PRACY ZDALNEJ';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'paragraf_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'Pobliskie góry, lasy, oznaczone szlaki turystyczne i wytyczone ścieżki biegowe są idealne miejsce do uprawiania turystyki pieszej. Możesz wybrać się zarówno na spacery w rodzinnym gronie ale znajdziesz coś dla osób aktywnych, spragnionych biegania czy nordic walkingu w otoczeniu zieleni i czystego powietrza, przestrzeni i pięknych widoków. Dla biegaczy szczególnie polecana jest ścieżka biegowa w Bielsku-Białej w Wapienicy o długości 12,5-km, która wiedzie malowniczymi terenami Doliny Wapienicy. Bezpośrednia lokalizacja i okolica wręcz zaprasza do aktywnego wypoczynku, spacerów z rodziną, górskich wędrówek i sportów bez względu na porę roku.';
+        $setting->content = 'Czy zdarzyło Ci się spakować komputer, telefony do plecaków i wyjechać za miasto, by pracować zdalnie w otoczeniu natury? Przy innym stole, w innym wnętrzu, z nowym inspirującym widokiem za oknem, z możliwością napicia się kawy z innej filiżanki a także wyjścia na prywatny balkon – wtedy praca jest chyba znacznie przyjemniejsza. Nie zajmuje Nam przecież całego dnia ... Apartamenty Szyndzielnia to idealne miejsce na krótszą i dłuższą chwilę. Nowe, inne, bezpieczne i wygodne miejsce do pracy zdalnej, dzięki światłowodom i połączeniu wi-fi w każdym apartamencie. To z pewnością sprzyja osiągnięciu dobrego samopoczucia, większej motywacji oraz wewnętrznej równowagi. Po zamknięciu laptopa i wyciszeniu telefonu służbowego zaczyna się relaks. Robisz co chcesz, idziesz gdzie chcesz, niech praca będzie przyjemnością a nie obowiązkiem ... więc połącz przyjemne z pożytecznym.';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '1.jpg';
+        $setting->content = 'sz7.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1673,25 +1673,25 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'naglowek_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'MIEJSCE DLA AKTYWNYCH';
+        $setting->content = 'UKOJENIE W NUTACH';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'podtytul_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'I MIŁOŚNIKÓW GÓRSKICH KRAJOBRAZÓW';
+        $setting->content = 'CAVATINA HALL SALA KONCERTOWA';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'paragraf_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'Pobliskie góry, lasy, oznaczone szlaki turystyczne i wytyczone ścieżki biegowe są idealne miejsce do uprawiania turystyki pieszej. Możesz wybrać się zarówno na spacery w rodzinnym gronie ale znajdziesz coś dla osób aktywnych, spragnionych biegania czy nordic walkingu w otoczeniu zieleni i czystego powietrza, przestrzeni i pięknych widoków. Dla biegaczy szczególnie polecana jest ścieżka biegowa w Bielsku-Białej w Wapienicy o długości 12,5-km, która wiedzie malowniczymi terenami Doliny Wapienicy. Bezpośrednia lokalizacja i okolica wręcz zaprasza do aktywnego wypoczynku, spacerów z rodziną, górskich wędrówek i sportów bez względu na porę roku.';
+        $setting->content = 'Cavatina Hall to nowy, nowoczesny i futurystyczny budynek sali koncertowej zlokalizowany w centrum Bielska-Białej z doskonałym dostępem do komunikacji miejskiej. Masz ochotę na doznania muzyczne wysokiej klasy ? Czekają Cię wspaniałe koncerty, niesamowici wykonawcy, muzyka pobudzająca zmysły i emocje, a to wszystko w perfekcyjnie zaprojektowanych nietuzinkowych przestrzeniach. Miejsce gwarantujące doznania zarówno dla melomanów jak i miłośników architektury. Z pewnością to jedna z najnowszych i najlepszych Sal Koncertowych w Polsce. Wypada doświadczyć całkiem nowych doznań muzycznych ...';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '1.jpg';
+        $setting->content = 'sz8.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1703,25 +1703,25 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'naglowek_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'CISZA TO LUKSUS DLA WSZYSTKICH';
+        $setting->content = 'Cygański las';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'podtytul_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'NADSZEDŁ CZAS NA LAS';
+        $setting->content = '';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'paragraf_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'Góry i las to istotny element otoczenia Apartamentów Szyndzielnia. Wystarczy parę chwil aby poczuć uspokajająca energię, która płynie prosto z natury. Ty decydujesz o własnym tempie, ty decydujesz jaki czas spędzisz w Naszej pobliskiej „fabryce tlenu”, ty sam wiesz, co właśnie Tobie jest potrzebne. Idealne miejsce na odpoczynek od miejskiego pędu a może to ten moment by na chwilę zwolnić ... To nie wymaga wysiłku. Pobyt na łonie natury, spacer wśród drzew, świeże powietrze i poczucie niezwykłej leśnej atmosfery ma same plusy. Las to znakomity "wychowawca", a w szczególności dzieci, które na świeżym powietrzu lepiej się rozwijają, poprawia się ich sprawność fizyczna. Nie wspominając już o wspaniałej stronie rodzinnych spacerów po lesie - o budowaniu i utrwalaniu więzi rodzinnych. Ten las jest dla Ciebie, dla Was ...';
+        $setting->content = 'Od lat jest popularnym miejscem wypoczynku mieszkańców Bielska, z szerokimi ścieżkami rowerowymi i szlakami turystycznymi. Dogodny dojazd, walory przyrodnicze obszaru i dobrze wytyczone trasy spacerowe czynią z Cygańskiego Lasu jeden z najczęściej odwiedzanych „naturalnych” rejonów miasta. Te swoiste zalety przyczyniły się do powstania ścieżki, wzdłuż której opisano odcinki oraz stanowiska dydaktyczne.';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '1.jpg';
+        $setting->content = 'sz9.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1733,25 +1733,25 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'naglowek_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'MIEJSCE DLA AKTYWNYCH';
+        $setting->content = 'IDEALNA INWESTYCJA';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'podtytul_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'I MIŁOŚNIKÓW GÓRSKICH KRAJOBRAZÓW';
+        $setting->content = '';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'paragraf_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'Pobliskie góry, lasy, oznaczone szlaki turystyczne i wytyczone ścieżki biegowe są idealne miejsce do uprawiania turystyki pieszej. Możesz wybrać się zarówno na spacery w rodzinnym gronie ale znajdziesz coś dla osób aktywnych, spragnionych biegania czy nordic walkingu w otoczeniu zieleni i czystego powietrza, przestrzeni i pięknych widoków. Dla biegaczy szczególnie polecana jest ścieżka biegowa w Bielsku-Białej w Wapienicy o długości 12,5-km, która wiedzie malowniczymi terenami Doliny Wapienicy. Bezpośrednia lokalizacja i okolica wręcz zaprasza do aktywnego wypoczynku, spacerów z rodziną, górskich wędrówek i sportów bez względu na porę roku.';
+        $setting->content = 'Najbardziej poszukiwane inwestycyjne powierzchnie apartamentów, loggia w każdym apartamencie, bardzo cicha lokalizacja, garaż podziemny z automatyczną bramą wjazdową, miejsca parkingowe, rowerownia, nowoczesne ogrzewanie podłogowe, całkowity brak gazu w budynku, światłowody (Internet, TV), prestiżowa lokalizacja, doskonała komunikacja, widok na panoramę gór, zieleń i tereny rekreacyjne, ścieżki rowerowe, zabytki miasta Bielska-Białej.';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'photo';
-        $setting->content = '1.jpg';
+        $setting->content = 'sz10.jpg';
         $setting->save();
 
         $setting = new Setting();
@@ -1763,19 +1763,19 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'naglowek_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'CISZA TO LUKSUS DLA WSZYSTKICH';
+        $setting->content = 'ZIELONA OKOLICA';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'podtytul_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'NADSZEDŁ CZAS NA LAS';
+        $setting->content = '';
         $setting->save();
 
         $setting = new Setting();
         $setting->place = 'paragraf_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji';
         $setting->type = 'text';
-        $setting->content = 'Góry i las to istotny element otoczenia Apartamentów Szyndzielnia. Wystarczy parę chwil aby poczuć uspokajająca energię, która płynie prosto z natury. Ty decydujesz o własnym tempie, ty decydujesz jaki czas spędzisz w Naszej pobliskiej „fabryce tlenu”, ty sam wiesz, co właśnie Tobie jest potrzebne. Idealne miejsce na odpoczynek od miejskiego pędu a może to ten moment by na chwilę zwolnić ... To nie wymaga wysiłku. Pobyt na łonie natury, spacer wśród drzew, świeże powietrze i poczucie niezwykłej leśnej atmosfery ma same plusy. Las to znakomity "wychowawca", a w szczególności dzieci, które na świeżym powietrzu lepiej się rozwijają, poprawia się ich sprawność fizyczna. Nie wspominając już o wspaniałej stronie rodzinnych spacerów po lesie - o budowaniu i utrwalaniu więzi rodzinnych. Ten las jest dla Ciebie, dla Was ...';
+        $setting->content = 'Inwestycja zlokalizowana jest w Otulinie Parku Krajobrazowo-Przyrodniczego Beskidu Śląskiego. Niesamowicie widokowej, malowniczej i najlepszej dzielnicy miasta, w bezpośrednim sąsiedztwie Szyndzielni i stoku Dębowca, otoczona zielenią pobliskich gór, terenami rekreacyjnymi, trasami spacerowymi, rowerowymi. Okolica wręcz zaprasza do aktywnego wypoczynku, spacerów z rodziną, górskich wędrówek i sportów bez względu na porę roku.';
         $setting->save();
 
         $setting = new Setting();
@@ -1793,7 +1793,7 @@ return new class extends Migration
         $setting = new Setting();
         $setting->place = 'zdjecie_na_stronie_o_nas';
         $setting->type = 'photo';
-        $setting->content = 'logo.png';
+        $setting->content = 'logo2.png';
         $setting->save();
 
         $setting = new Setting();

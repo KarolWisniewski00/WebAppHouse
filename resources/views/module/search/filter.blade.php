@@ -7,7 +7,7 @@
                     <div class="position-relative">
                         <img class="img-fluid segment-img" alt="" src="{{asset('asset/photo/search.jpg')}}">
                         <div class="position-absolute p-1px" id="segment-A1">
-                            <div id="h1" class="segment-hover-3 segment-hover-2 s-neutral h-100 w-100">
+                            <div id="h1" class="segment-hover-3 segment-hover-2 s-neutral {{ ($floor_1 == true) ? 'segment-success' : 'segment-danger' }} h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
                                     <form method="post" class="w-100 h-100" action="{{route('invest.filter')}}">
                                         @csrf
@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <div class="position-absolute p-1px" id="segment-A2">
-                            <div id="h2" class="segment-hover-3 segment-hover-2 s-neutral h-100 w-100">
+                            <div id="h2" class="segment-hover-3 segment-hover-2 s-neutral {{ ($floor_2 == true) ? 'segment-success' : 'segment-danger' }} h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
                                     <form method="post" class="w-100 h-100" action="{{route('invest.filter')}}">
                                         @csrf
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="position-absolute p-1px" id="segment-B1">
-                            <div id="h3" class="segment-hover-3 segment-hover-2 s-neutral h-100 w-100">
+                            <div id="h3" class="segment-hover-3 segment-hover-2 s-neutral {{ ($floor_3 == true) ? 'segment-success' : 'segment-danger' }} h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
                                     <form method="post" class="w-100 h-100" action="{{route('invest.filter')}}">
                                         @csrf
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         <div class="position-absolute p-1px" id="segment-B2">
-                            <div id="h4" class="segment-hover-3 segment-hover-2 s-neutral h-100 w-100">
+                            <div id="h4" class="segment-hover-3 segment-hover-2 s-neutral {{ ($floor_4 == true) ? 'segment-success' : 'segment-danger' }} h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
                                     <form method="post" class="h-100 w-100" action="{{route('invest.filter')}}">
                                         @csrf
