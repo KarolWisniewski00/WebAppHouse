@@ -34,7 +34,7 @@ class FloorAdminController extends Controller
                 ->with('success', 'Operacja przebiegła pomyślnie.');
         } else {
             return redirect()->route('dashboard.floor.edit', $table->id)
-                ->with('Fail', 'Operacja się nie powiodła. Coś poszło nie tak.');
+                ->with('fail', 'Operacja się nie powiodła. Coś poszło nie tak.');
         }
     }
 }

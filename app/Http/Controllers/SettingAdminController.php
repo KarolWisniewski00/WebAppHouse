@@ -32,7 +32,7 @@ class SettingAdminController extends Controller
                 ->with('success', 'Operacja przebiegła pomyślnie.');
         } else {
             return redirect()->route('dashboard.setting.edit', $table->id)
-                ->with('Fail', 'Operacja się nie powiodła. Coś poszło nie tak.');
+                ->with('fail', 'Operacja się nie powiodła. Coś poszło nie tak.');
         }
     }
     public function upload(Request $request, Setting $table)
@@ -43,6 +43,10 @@ class SettingAdminController extends Controller
         }
 
         $file = $request->file('content');
+        if($file == ""){
+            return redirect()->route('dashboard.setting.edit', $table->id)
+            ->with('fail', 'Operacja się nie powiodła. Coś poszło nie tak.');
+        }
         $fileName = time() . rand(1, 100) . '.' . $file->extension();
         $file->move(public_path('asset/photo'), $fileName);
 
@@ -55,7 +59,7 @@ class SettingAdminController extends Controller
                 ->with('success', 'Operacja przebiegła pomyślnie.');
         } else {
             return redirect()->route('dashboard.setting.edit', $table->id)
-                ->with('Fail', 'Operacja się nie powiodła. Coś poszło nie tak.');
+                ->with('fail', 'Operacja się nie powiodła. Coś poszło nie tak.');
         }
         /*
          interaktywne zdjecie + wyszukiwarka formularz kontaktowy
