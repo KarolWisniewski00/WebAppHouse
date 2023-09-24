@@ -1,5 +1,5 @@
-*:not(i){
-    font-family: 'Roboto', sans-serif!important;
+*:not(i) {
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .accordion {
@@ -58,13 +58,13 @@
 .segment-success:hover .btn-d {
     visibility: visible !important;
     opacity: 1;
-    background-color: rgba(88, 189, 123, 0.3)!important;
+    background-color: rgba(88, 189, 123, 0.3) !important;
 }
 
 .segment-danger:hover .btn-d {
     visibility: visible !important;
     opacity: 1;
-    background-color: rgba(184, 71, 67, 0.3)!important;
+    background-color: rgba(184, 71, 67, 0.3) !important;
 }
 
 .s-neutral:hover .btn-d {
@@ -87,6 +87,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     transition: visibility 0s, opacity 0.5s ease, background-color 0.5s ease;
 }
+
 .s-clicked-2 .btn-d {
     visibility: visible !important;
     opacity: 1 !important;
@@ -102,6 +103,7 @@
     color: #d28f6f;
     transition: 1s ease-in-out;
 }
+
 .color-extra-2 {
     color: #0f4c64;
     transition: 1s ease-in-out;
@@ -129,10 +131,12 @@
     color: white !important;
     transition: 1s ease-in-out;
 }
+
 .bg-extra-hover:hover .color-extra-2 {
     color: white !important;
     transition: 1s ease-in-out;
 }
+
 .text-hover {
     transition: 1s ease-in-out;
 }
@@ -282,23 +286,32 @@
     transition: color 0.3s ease 0s, background 0s ease 0.3s !important;
 }
 
-.hbtnon{
+.hbtnon {
     color: #f5f7f9 !important;
     background: #0f4c64 !important;
     transition: color 0.3s ease 0s, background 0s ease 0.3s !important;
 }
-.hbtnon::before{
+
+.hbtnon::before {
     width: 100% !important;
     height: 100% !important;
     opacity: 1 !important;
 }
-.hbtnon-2{
+
+.hbtnon-2 {
     color: #f5f7f9 !important;
     background: #0f4c64 !important;
     transition: color 0.3s ease 0s, background 0s ease 0.3s !important;
 }
-.hbtnon-2::before{
+
+.hbtnon-2::before {
     width: 100% !important;
     height: 100% !important;
     opacity: 1 !important;
+}
+
+.v-size {
+    width: 100%;
+    transition: width 1s ease-in-out;
+    transition: margin-left 1s ease-in-out;
 }

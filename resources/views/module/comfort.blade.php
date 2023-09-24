@@ -1,4 +1,4 @@
-<!--INFO-->
+<!--INFO--
 <section>
     <div class="container">
         <div class="row my-4 py-4">
@@ -14,14 +14,14 @@
         </div>
     </div>
 </section>
-<!--END INFO-->
+--END INFO-->
 <!--COUNTER-->
 <section>
     <div class="container">
         <div class="row my-4 py-4">
             <div class="col-12 col-md-4 gsap">
                 <div class="h-100 pb-4">
-                    <div class="d-flex flex-column justify-content-center align-items-center h-100" style="background-color: #f5f7f9!important;  border: 1px solid #d28f6f;">
+                    <div class="d-flex flex-column justify-content-start align-items-center h-100" style="background-color: #f5f7f9!important;  border: 1px solid #d28f6f;">
                         <div class="mx-4 my-2">
                             <h1 class="text-primary m-0 p-0">{!! $setting['ikona_1_sekcji_ostatniej_na_stronie_glownej'] !!}</h1>
                         </div>
@@ -36,7 +36,7 @@
             </div>
             <div class="col-12 col-md-4 gsap">
                 <div class="h-100 pb-4">
-                    <div class="d-flex flex-column justify-content-center align-items-center bg-extra h-100" style="background-color: #f5f7f9!important;  border: 1px solid #d28f6f;">
+                    <div class="d-flex flex-column justify-content-start align-items-center bg-extra h-100" style="background-color: #f5f7f9!important;  border: 1px solid #d28f6f;">
                         <div class="mx-4 my-2">
                             <h1 class="text-primary m-0 p-0">{!! $setting['ikona_2_sekcji_ostatniej_na_stronie_glownej'] !!}</h1>
                         </div>
@@ -51,7 +51,7 @@
             </div>
             <div class="col-12 col-md-4 gsap">
                 <div class="h-100 pb-4">
-                    <div class="d-flex flex-column justify-content-center align-items-center h-100" style="background-color: #f5f7f9!important;  border: 1px solid #d28f6f;">
+                    <div class="d-flex flex-column justify-content-start align-items-center h-100" style="background-color: #f5f7f9!important;  border: 1px solid #d28f6f;">
                         <div class="mx-4 my-2">
                             <h1 class="text-primary m-0 p-0">{!! $setting['ikona_3_sekcji_ostatniej_na_stronie_glownej'] !!}</h1>
                         </div>

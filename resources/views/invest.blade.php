@@ -6,7 +6,7 @@
         <div class="row my-4 py-4">
             <div class="col-12 col-xl-6 gsap">
                 <div class="row d-flex flex-row justify-content-center align-items-start flex-wrap">
-                <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
+                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
                         <h1 class="p-0 m-0 ms-3">{{$setting['naglowek_sekcji_1_na_stronie_o_inwestycji']}}</h1>
                     </div>
@@ -39,7 +39,7 @@
                 <div class="row d-flex flex-row justify-content-center align-items-start flex-wrap h-100">
                     <div class="col-12 h-100 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-start my-4 h-100">
-                        <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
+                            <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                                 <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
                                 <h1 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_sekcji_2_na_stronie_o_inwestycji']}}</h1>
                             </div>
@@ -228,7 +228,7 @@
                 </div>
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center me-xl-0 pe-xl-0">
-            <iframe class="img-fluid my-4" style="min-width:100%;min-height:350px;" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3666.29127525145!2d18.9444722!3d50.3935556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDIzJzM2LjgiTiAxOMKwNTYnNDAuMSJF!5e1!3m2!1spl!2spl!4v1693730599382!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="img-fluid my-4" style="min-width:100%;min-height:350px;" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3666.29127525145!2d18.9444722!3d50.3935556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDIzJzM2LjgiTiAxOMKwNTYnNDAuMSJF!5e1!3m2!1spl!2spl!4v1693730599382!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -365,132 +365,6 @@
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
                 <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
-            </div>
-        </div>
-    </div>
-</section>
-<!--END INFO SMALL 02-->
-<!--INFO SMALL 01-->
-<section>
-    <div class="container text-primary">
-        <div class="row my-4 p-4">
-            <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start gsap">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
-            </div>
-            <div class="col-12 col-xl-6">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
-                        <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
-                    </div>
-                    <p class="lead text-primary">{{$setting['podtytul_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
-                    <p class="lead text-primary">{{$setting['paragraf_zdjecie_5_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--END INFO SMALL 01-->
-<!--INFO SMALL 02-->
-<section>
-    <div class="container">
-        <div class="row my-4 p-4">
-            <div class="col-12 col-xl-6 gsap">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-02" style="background-color:#f5f7f9!important;">
-                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
-                        <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
-                    </div>
-                    <p class="lead text-primary">{{$setting['podtytul_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
-                    <p class="lead text-primary">{{$setting['paragraf_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
-                </div>
-            </div>
-            <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_6_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
-            </div>
-        </div>
-    </div>
-</section>
-<!--END INFO SMALL 02-->
-<!--INFO SMALL 01-->
-<section>
-    <div class="container text-primary">
-        <div class="row my-4 p-4">
-            <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
-            </div>
-            <div class="col-12 col-xl-6 gsap">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
-                        <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
-                    </div>
-                    <p class="lead text-primary">{{$setting['podtytul_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
-                    <p class="lead text-primary">{{$setting['paragraf_zdjecie_7_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--END INFO SMALL 01-->
-<!--INFO SMALL 02-->
-<section>
-    <div class="container">
-        <div class="row my-4 p-4">
-            <div class="col-12 col-xl-6 gsap">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-02" style="background-color:#f5f7f9!important;">
-                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
-                        <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
-                    </div>
-                    <p class="lead text-primary">{{$setting['podtytul_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
-                    <p class="lead text-primary">{{$setting['paragraf_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
-                </div>
-            </div>
-            <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_8_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
-            </div>
-        </div>
-    </div>
-</section>
-<!--END INFO SMALL 02-->
-<!--INFO SMALL 01-->
-<section>
-    <div class="container text-primary">
-        <div class="row my-4 p-4">
-            <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
-            </div>
-            <div class="col-12 col-xl-6 gsap">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
-                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
-                        <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
-                    </div>
-                    <p class="lead text-primary">{{$setting['podtytul_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
-                    <p class="lead text-primary">{{$setting['paragraf_zdjecie_9_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--END INFO SMALL 01-->
-<!--INFO SMALL 02-->
-<section>
-    <div class="container">
-        <div class="row my-4 p-4">
-            <div class="col-12 col-xl-6 gsap">
-                <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-02" style="background-color:#f5f7f9!important;">
-                    <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
-                        <div class="vr bg-extra" style="border: 2px solid #d28f6f; opacity: .75;"></div>
-                        <h3 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}</h3>
-                    </div>
-                    <p class="lead text-primary">{{$setting['podtytul_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
-                    <p class="lead text-primary">{{$setting['paragraf_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}</p>
-                </div>
-            </div>
-            <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_10_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
         </div>
     </div>
