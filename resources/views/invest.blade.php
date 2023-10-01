@@ -89,7 +89,7 @@
                 <!--SLIDER-->
                 <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel" style="z-index: 1;">
                     <div class="carousel-inner position-relative overflow-visible">
-                        @for($x = 1; $x <= 9; $x++) @if($x==1) <div class="carousel-item active text-center ">
+                        @for($x = 1; $x <= 7; $x++) @if($x==1) <div class="carousel-item active text-center ">
                             <img class="img-fluid" alt="{{$setting['alt_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji'])}}">
                             <div class="card text-primary mb-3 translate-custom">
                                 <div class="card-header" style="border: 1px solid #d28f6f;">{{$setting['naglowek_zdjecie_'.$x.'_karuzeli_1_na_stronie_o_inwestycji']}}</div>
@@ -222,9 +222,9 @@
                 <div class="d-flex flex-column justify-content-center align-items-center text-start h-100 p-4 border-custom-right-2" style="background-color:#f5f7f9!important;">
                     <div class="d-flex flex-row mb-3 justify-content-start align-items-start w-100">
                         <div class="vr bg-extra" style="border: 3px solid #d28f6f; opacity: .75;"></div>
-                        <h5 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_sekcji_2_na_stronie_o_inwestycji']}}</h5>
+                        <h5 class="p-0 m-0 ms-3 text-primary">{{$setting['naglowek_sekcji_2_na_stronie_o_inwestycji_mapa']}}</h5>
                     </div>
-                    <p class="lead text-primary">{{$setting['paragraf_sekcji_2_na_stronie_o_inwestycji']}}</p>
+                    <p class="lead text-primary">{{$setting['paragraf_sekcji_2_na_stronie_o_inwestycji_mapa']}}</p>
                 </div>
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center me-xl-0 pe-xl-0">

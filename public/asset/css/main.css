@@ -106,6 +106,7 @@
 
 .color-extra-2 {
     color: #0f4c64;
+    fill: #0f4c64;
     transition: 1s ease-in-out;
 }
 
@@ -134,6 +135,7 @@
 
 .bg-extra-hover:hover .color-extra-2 {
     color: white !important;
+    fill: white !important;
     transition: 1s ease-in-out;
 }
 
