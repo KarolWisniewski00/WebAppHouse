@@ -203,7 +203,7 @@
                     @endif
                     @if($clicked == 'floor-4')
                     <div class="position-relative">
-                        <img class="img-fluid segment-img" alt="" src="{{asset('asset/photo/schema/f3.png')}}">
+                        <img class="img-fluid segment-img" alt="" src="{{asset('asset/photo/schema/f4.png')}}">
                         @foreach($tables as $key => $table)
                         @if($table->id == 36)
                         <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 41%;left: 48%;width: 10%;height: 25%;">
