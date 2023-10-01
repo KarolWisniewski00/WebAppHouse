@@ -65,17 +65,17 @@
                     <form method="post" class="w-100" action="{{route('invest.filter')}}">
                         @csrf
                         <input type="hidden" name="floor" value="4">
-                        <button id="4" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Piętro 4</button>
+                        <button id="4" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Piętro 3</button>
                     </form>
                     <form method="post" class="w-100" action="{{route('invest.filter')}}">
                         @csrf
                         <input type="hidden" name="floor" value="3">
-                        <button id="3" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Piętro 3</button>
+                        <button id="3" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Piętro 2</button>
                     </form>
                     <form method="post" class="w-100" action="{{route('invest.filter')}}">
                         @csrf
                         <input type="hidden" name="floor" value="2">
-                        <button id="2" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Piętro 2</button>
+                        <button id="2" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Piętro 1</button>
                     </form>
                     <form method="post" class="w-100" action="{{route('invest.filter')}}">
                         @csrf
