@@ -15,7 +15,7 @@
 </section>
 <!--END BREADCRUMBS + FILTER-->
 @include('module.info.about')
-<section>
+<!--<section>
     <div class="container">
         <div class="row my-4 py-4">
             <div class="col-12 col-md-4">
@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <section>
     <div class="container">
         <div class="row mb-4 pb-4">

@@ -42,8 +42,8 @@
                     <p>Metraż {{$table->surface}} m2</p>
                     <p>Cena za metr: {{$table->price_surface}} PLN</p>
                     <p>Cena {{$table->price}} PLN</p>
-                    <a href="{{ asset('storage/'.$table->file_pdf) }}" target="_blank" class="btn btn-primary m-1 my-4"><i class="fa-solid fa-magnifying-glass me-2"></i>Otwórz w nowej karcie plan PDF</a>
-                    <a href="{{ asset('storage/'.$table->file_pdf) }}" download class="btn btn-primary m-1"><i class="fa-solid fa-file-pdf me-2"></i>Pobierz plan PDF</a>
+                    <a href="{{ asset('storage/'.$table->file_pdf) }}" style="background-color: #0f4c64;" target="_blank" class="btn btn-primary m-1 my-4"><i class="fa-solid fa-magnifying-glass me-2"></i>Otwórz w nowej karcie plan PDF</a>
+                    <a href="{{ asset('storage/'.$table->file_pdf) }}" style="background-color: #0f4c64;" download class="btn btn-primary m-1"><i class="fa-solid fa-file-pdf me-2"></i>Pobierz plan PDF</a>
                 </div>
             </div>
             <div class="col-12 col-md-6">

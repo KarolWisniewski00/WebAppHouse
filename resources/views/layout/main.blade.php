@@ -25,9 +25,10 @@
                 <ul class="nav nav-pills d-flex flex-row justify-content-center align-items-center flex-wrap">
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{route('index')}}" class="nav-link active" aria-current="page"><i class="fa-solid fa-house me-2"></i>Strona główna</a>
+                            <a href="{{route('index')}}" class="nav-link active" style="background-color: #0f4c64;" aria-current="page"><i class="fa-solid fa-house me-2"></i>Strona główna</a>
                         </div>
                     </li>
+                    <!--
                     <li class="nav-item dropdown mx-auto">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Inwestycje
@@ -47,6 +48,11 @@
                             <li><a class="dropdown-item" href="{{route('invest.kopernika')}}">Kopernika</a></li>
                             <li><a class="dropdown-item" href="{{route('invest.dlugosza')}}">Długosza</a></li>
                         </ul>
+                    </li>-->
+                    <li class="nav-item mx-auto">
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <a href="{{route('invest')}}" class="nav-link">Osiedle Luxor Residence</a>
+                        </div>
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
@@ -98,7 +104,7 @@
     </main>
     <!--END MAIN-->
     <!--FOOTER-->
-    <section class="bg-primary py-4">
+    <section class=" py-4" style="background-color: #0f4c64;">
         <div class="container">
             <footer class="py-3">
                 <ul class="nav justify-content-center pb-3 mb-3 fpt">

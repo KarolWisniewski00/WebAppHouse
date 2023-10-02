@@ -73,19 +73,19 @@
                             </td>
                             <td>
                                 @if(Storage::exists('public/'.$table->file_pdf))
-                                <a href="{{ asset('storage/'.$table->file_pdf) }}" download type="button" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i></a>
+                                <a href="{{ asset('storage/'.$table->file_pdf) }}" download type="button" style="background-color: #0f4c64;" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i></a>
                                 @else
                                 <p class="text-danger">Plik PDF nie istnieje.</p>
                                 @endif
                             </td>
                             <td>
                                 @if(Storage::exists('public/'.$table->file_priv))
-                                <a href="{{ asset('storage/'.$table->file_priv) }}" download type="button" class="btn btn-primary download-button"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                                <a href="{{ asset('storage/'.$table->file_priv) }}" download type="button" style="background-color: #0f4c64;" class="btn btn-primary download-button"><i class="fa-solid fa-cloud-arrow-down"></i></a>
                                 @else
                                 <p class="text-danger">Plik PDF nie istnieje.</p>
                                 @endif
                             </td>
-                            <td><a href="{{route('invest.show', $table->id)}}" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                            <td><a href="{{route('invest.show', $table->id)}}" class="btn btn-primary" style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
                         </tr>
                         @endforeach
                     </tbody>

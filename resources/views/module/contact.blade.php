@@ -36,7 +36,7 @@
                         <label for="exampleTextarea" class="form-label">Wiadomość</label>
                         <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
                     </div>
-                    <button class="btn btn-primary mb-3 w-100" type="submit">Wyślij</button>
+                    <button class="btn btn-primary mb-3 w-100" style="background-color: #0f4c64;" type="submit">Wyślij</button>
                 </div>
                 <div class="d-flex justify-content-center align-items-center my-4 flex-wrap">
                     <a href="tel:+48503517499" class="card-text m-0 p-0 mx-4 my-2 text-nowrap" style="text-decoration: none;">503-517-499</a>
