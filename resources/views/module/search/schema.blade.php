@@ -203,7 +203,7 @@
                     @endif
                     @if($clicked == 'floor-4')
                     <div class="position-relative">
-                        <img class="img-fluid segment-img" alt="" src="{{asset('asset/photo/schema/f4.png')}}">
+                        <img class="img-fluid segment-img" alt="" src="{{asset('asset/photo/schema/f3.png')}}">
                         @foreach($tables as $key => $table)
                         @if($table->id == 36)
                         <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 41%;left: 48%;width: 10%;height: 25%;">
@@ -298,6 +298,110 @@
                             <div class="h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
                                     <a href="{{route('invest.show', 47)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
+                        @endforeach
+                    </div>
+                    @endif
+                    @if($clicked == 'floor-2')
+                    <div class="position-relative">
+                        <img class="img-fluid segment-img" alt="" src="{{asset('asset/photo/schema/f3.png')}}">
+                        @foreach($tables as $key => $table)
+                        @if($table->id == 12)
+                        <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 41%;left: 48%;width: 10%;height: 25%;">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route('invest.show', 12)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif($table->id == 13)
+                        <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 41%;left: 37.75%;width: 10%;height: 28%;">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route('invest.show', 13)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif($table->id == 14)
+                        <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 41%;left: 31%;width: 6.75%;height: 28%;">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route('invest.show', 14)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif($table->id == 15)
+                        <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 41%;left: 20%;width: 11%;height: 28%;">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route('invest.show', 15)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif($table->id == 16)
+                        <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 9%;left: 20%;width: 11%;height: 28%;">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route('invest.show', 16)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif($table->id == 17)
+                        <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 9%;left: 31%;width: 6.75%;height: 28%;">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route('invest.show', 17)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif($table->id == 18)
+                        <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 12%;left: 37.75%;width: 10%;height: 24%;">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route('invest.show', 18)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif($table->id == 19)
+                        <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 12%;left: 47.75%;width: 10%;height: 24%;">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route('invest.show', 19)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif($table->id == 20)
+                        <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 9%;left: 57.75%;width: 11.5%;height: 28%;">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route('invest.show', 20)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif($table->id == 21)
+                        <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 9%;left: 69.25%;width: 11%;height: 42%;">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route('invest.show', 21)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif($table->id == 22)
+                        <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 64%;left: 58%;width: 11%;height: 28%;">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route('invest.show', 22)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif($table->id == 23)
+                        <div class="s-neutral-b position-absolute p-1px {{ $table->status == 'avaiable' ? 'segment-success' : 'segment-danger' }}" style="top: 50%;left: 69.25%;width: 11%;height: 42%;">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route('invest.show', 23)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
                                 </div>
                             </div>
                         </div>
