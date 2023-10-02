@@ -11,9 +11,35 @@
                     <li class="breadcrumb-item"><a href="{{route('invest.show',$slug)}}">{{$table->flat}}</a></li>
                 </ol>
             </div>
+            <div class="col-4">
+                <div class="d-flex flex-row justify-content-center align-items-center mb-3">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex flex-row justify-content-center align-items-center mb-3">
+                    <form method="post" action="{{route('invest.filter')}}">
+                        @csrf
+                        @if($table->segment == 'floor-4')
+                        <input type="hidden" name="floor" value="4">
+                        @elseif($table->segment == 'floor-3')
+                        <input type="hidden" name="floor" value="3">
+                        @elseif($table->segment == 'floor-2')
+                        <input type="hidden" name="floor" value="2">
+                        @elseif($table->segment == 'floor-1')
+                        <input type="hidden" name="floor" value="1">
+                        @endif
+                        <button type="submit" class="btn btn-lg btn-primary h-100" style="background-color: #0f4c64;">Plan Piętra</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex flex-row justify-content-center align-items-center mb-3">
+
+                </div>
+            </div>
             <div class="col-12 col-md-6">
                 <div class="d-flex flex-column justify-content-center align-items-center h-100 pt-5 pb-2">
-                    <h1>Apartament {{$table->flat}}</h1>
+                    <h1>Apartament NR. {{$table->id}}</h1>
                     @if($table->status == 'available')
                     <h6 class="text-danger">Niedostępne</h6>
                     @else
@@ -48,7 +74,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="d-flex flex-column justify-content-center align-items-center h-100 pt-5 pb-2">
-                    <embed src="{{ asset('storage/'.$table->file_pdf) }}" type="application/pdf" width="100%" height="850px" />
+                    <embed src="{{ asset('storage/'.$table->file_pdf) }}" type="application/pdf" width="100%" height="500px" />
                 </div>
             </div>
         </div>
