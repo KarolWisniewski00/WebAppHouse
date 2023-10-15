@@ -7,31 +7,31 @@
 }
 
 #segment-A1 {
-    top: 75%;
-    left: 9%;
-    width: 80.5%;
-    height: 10%;
+    top: 86%;
+    left: 4%;
+    width: 93%;
+    height: 13%;
 }
 
 #segment-A2 {
-    top: 64%;
-    left: 8.75%;
-    width: 80.75%;
+    top: 75%;
+    left: 4%;
+    width: 93%;
     height: 11%;
 }
 
 #segment-B1 {
-    top: 54%;
-    left: 8.75%;
-    width: 80.75%;
-    height: 10%;
+    top: 64%;
+    left: 4%;
+    width: 93%;
+    height: 11%;
 }
 
 #segment-B2 {
-    top: 41.5%;
-    left: 8.75%;
-    width: 80.75%;
-    height: 12.5%;
+    top: 49%;
+    left: 4%;
+    width: 93%;
+    height: 15%;
 }
 
 #flat-1 {
@@ -184,6 +184,9 @@
     border: 1px solid #d28f6f !important;
     border-bottom: 0px solid #d28f6f !important;
 }
+#card-form-apart{
+    position: relative!important;
+}
 
 @media (min-width: 576px) {
     .border-custom-left {
@@ -208,6 +211,9 @@
 }
 
 @media (min-width: 1200px) {
+    #card-form-apart{
+        position: absolute!important;
+    }
     .translate-custom {
         top: 100%;
         right: 0%;

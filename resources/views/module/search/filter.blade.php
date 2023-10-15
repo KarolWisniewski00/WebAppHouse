@@ -5,7 +5,7 @@
             <div class="col-12">
                 <div class="d-flex flex-column justify-content-center align-items-center mb-3" style="overflow:hidden">
                     <div class="position-relative">
-                        <img class="img-fluid segment-img" alt="" src="{{asset('asset/photo/search.jpg')}}">
+                        <img class="img-fluid segment-img"  alt="" src="{{asset('asset/photo/search.jpg')}}">
                         <div class="position-absolute p-1px" id="segment-A1">
                             <div id="h1" class="segment-hover-3 segment-hover-2 s-neutral {{ ($floor_1 == true) ? 'segment-success' : 'segment-danger' }} h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
