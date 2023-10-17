@@ -19,7 +19,7 @@
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center overflow-hidden">
                 <div class="" style="margin: 0 -10em;">
-                    <img class="w-100 my-4" alt="{{$setting['alt_zdjecie_sekcji_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_sekcji_1_na_stronie_o_inwestycji'])}}">
+                    <img class="w-100 my-4 hover-1" alt="{{$setting['alt_zdjecie_sekcji_1_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_sekcji_1_na_stronie_o_inwestycji'])}}">
                 </div>
             </div>
         </div>
@@ -32,7 +32,7 @@
         <div class="row my-4 py-4">
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center overflow-hidden">
                 <div class="" style="margin: 0 -10em;">
-                    <img class="w-100 my-4" alt="{{$setting['alt_zdjecie_sekcji_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_sekcji_2_na_stronie_o_inwestycji'])}}">
+                    <img class="w-100 my-4 hover-1" alt="{{$setting['alt_zdjecie_sekcji_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_sekcji_2_na_stronie_o_inwestycji'])}}">
                 </div>
             </div>
             <div class="col-12 col-xl-6">
@@ -201,7 +201,7 @@
     <div class="container-fluid px-5 mt-5">
         <div class="row my-4 p-4 g-0">
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center me-xl-0 pe-xl-0">
-                <img class="img-fluid my-4" alt="{{$setting['alt_zdjecie_sekcji_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_sekcji_2_na_stronie_o_inwestycji'])}}">
+                <img class="img-fluid my-4 hover-1" alt="{{$setting['alt_zdjecie_sekcji_2_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_sekcji_2_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6 ms-xl-0 ps-xl-0 py-xl-5 gsap">
                 <div class="d-flex flex-column justify-content-center align-items-center text-start h-100 p-4 border-custom-left-2" style="background-color:#f5f7f9!important;">
@@ -228,7 +228,7 @@
                 </div>
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center me-xl-0 pe-xl-0">
-                <iframe class="img-fluid my-4" style="min-width:100%;min-height:350px;" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3666.29127525145!2d18.9444722!3d50.3935556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDIzJzM2LjgiTiAxOMKwNTYnNDAuMSJF!5e1!3m2!1spl!2spl!4v1693730599382!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="img-fluid my-4 hover-1" style="min-width:100%;min-height:350px;" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3666.29127525145!2d18.9444722!3d50.3935556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDIzJzM2LjgiTiAxOMKwNTYnNDAuMSJF!5e1!3m2!1spl!2spl!4v1693730599382!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -291,7 +291,7 @@
                 </div>
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
+                <img class="img-fluid w-100 hover-1" alt="{{$setting['alt_zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_1_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6 gsap">
                 <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
@@ -322,7 +322,7 @@
                 </div>
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
+                <img class="img-fluid w-100 hover-1" alt="{{$setting['alt_zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_2_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
         </div>
     </div>
@@ -333,7 +333,7 @@
     <div class="container text-primary">
         <div class="row my-4 p-4">
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
+                <img class="img-fluid w-100 hover-1" alt="{{$setting['alt_zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_3_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
             <div class="col-12 col-xl-6 gsap">
                 <div class="d-flex flex-column justify-content-start align-items-start text-start bg-secondary h-100 p-4 border-custom-01" style="background-color:#f5f7f9!important;">
@@ -364,7 +364,7 @@
                 </div>
             </div>
             <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start">
-                <img class="img-fluid w-100" alt="{{$setting['alt_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
+                <img class="img-fluid w-100 hover-1" alt="{{$setting['alt_zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji']}}" src="{{asset('asset/photo/'.$setting['zdjecie_4_sekcji_ostatniej_na_stronie_o_inwestycji'])}}">
             </div>
         </div>
     </div>

@@ -38,7 +38,7 @@ class FlatAdminController extends Controller
         $table->surface = $request->surface;
         $table->price_surface = $request->price_surface;
         $table->status = $request->status;
-        $table->price = $request->price;
+        $table->price = intval(intval($request->surface) * intval($request->price_surface));
         $table->file_pdf = $file_pdf;
         $table->file_priv = $file_priv;
         $res = $table->save();
@@ -61,7 +61,8 @@ class FlatAdminController extends Controller
             'surface' => $request->surface,
             'price_surface' => $request->price_surface,
             'status' => $request->status,
-            'price' => $request->price,
+            'price' => intval(intval($request->surface) * intval($request->price_surface)),
+
         ]);
         if ($request->hasFile('file_pdf') && $request->file('file_pdf')) {
             // Sprawdź, czy istnieje stary plik i usuń go

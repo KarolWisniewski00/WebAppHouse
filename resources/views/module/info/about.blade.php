@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                <img class="img-fluid" alt="{{$setting['alt_zdjecie_na_stronie_o_nas']}}" src="{{asset('asset/photo/'.$setting['zdjecie_na_stronie_o_nas'])}}">
+                <img class="img-fluid hover-1" alt="{{$setting['alt_zdjecie_na_stronie_o_nas']}}" src="{{asset('asset/photo/'.$setting['zdjecie_na_stronie_o_nas'])}}">
             </div>
         </div>
     </div>

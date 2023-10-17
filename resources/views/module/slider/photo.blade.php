@@ -103,7 +103,7 @@
                     <div class="col-12 gsap">
                         <div class="row">
                             <div class="col-4">
-                                <img class="img-fluid" alt="" src="{{asset('asset/photo/'.$setting['zdjecie_na_gorze_sekcji_3_na_stronie_glownej'])}}">
+                                <img class="img-fluid hover-1" alt="" src="{{asset('asset/photo/'.$setting['zdjecie_na_gorze_sekcji_3_na_stronie_glownej'])}}">
                             </div>
                             <div class="col-8">
                                 <div class="d-flex flex-column justify-content-start align-items-start text-start">
@@ -116,7 +116,7 @@
                     <div class="col-12 gsap">
                         <div class="row">
                             <div class="col-4">
-                                <img class="img-fluid" alt="" src="{{asset('asset/photo/'.$setting['zdjecie_na_dole_sekcji_3_na_stronie_glownej'])}}">
+                                <img class="img-fluid hover-1" alt="" src="{{asset('asset/photo/'.$setting['zdjecie_na_dole_sekcji_3_na_stronie_glownej'])}}">
                             </div>
                             <div class="col-8">
                                 <div class="d-flex flex-column justify-content-start align-items-start text-start">

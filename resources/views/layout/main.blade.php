@@ -25,7 +25,7 @@
                 <ul class="nav nav-pills d-flex flex-row justify-content-center align-items-center flex-wrap">
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{route('index')}}" class="nav-link active" style="background-color: #0f4c64;" aria-current="page"><i class="fa-solid fa-house me-2"></i>Strona główna</a>
+                            <a href="{{route('index')}}" class="nav-link nav-hover active" style="background-color: #0f4c64;"><i class="fa-solid fa-house me-2"></i>Strona główna</a>
                         </div>
                     </li>
                     <!--
@@ -51,32 +51,32 @@
                     </li>-->
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{route('invest')}}" class="nav-link">Osiedle Luxor Residence</a>
+                            <a href="{{route('invest')}}" class="nav-link nav-hover">Osiedle Luxor Residence</a>
                         </div>
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{route('about.invest')}}" class="nav-link">O Inwestycji</a>
+                            <a href="{{route('about.invest')}}" class="nav-link nav-hover">O Inwestycji</a>
                         </div>
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{route('about')}}" class="nav-link">O nas</a>
+                            <a href="{{route('about')}}" class="nav-link nav-hover">O nas</a>
                         </div>
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{route('contact')}}" class="nav-link">Kontakt</a>
+                            <a href="{{route('contact')}}" class="nav-link nav-hover">Kontakt</a>
                         </div>
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{$setting['facebook_link_w_pasku_nawigacyjnym']}}" class="nav-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="{{$setting['facebook_link_w_pasku_nawigacyjnym']}}" class="nav-link nav-hover"><i class="fa-brands fa-facebook"></i></a>
                         </div>
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{$setting['instagram_link_w_pasku_nawigacyjnym']}}" class="nav-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="{{$setting['instagram_link_w_pasku_nawigacyjnym']}}" class="nav-link nav-hover"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </li>
                 </ul>
@@ -112,8 +112,8 @@
                     <li class="nav-item"><a href="{{route('invest')}}" class="nav-link px-2 text-white">Inwestycja</a></li>
                     <li class="nav-item"><a href="{{route('about')}}" class="nav-link px-2 text-white">O nas</a></li>
                     <li class="nav-item"><a href="{{route('contact')}}" class="nav-link px-2 text-white">Kontakt</a></li>
-                    <li class="nav-item"><a href="https://www.facebook.com/people/Nowe-Inspiracje/100063527142284/" class="nav-link px-2 text-white"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="nav-item"><a href="{{$setting['facebook_link_w_pasku_nawigacyjnym']}}" class="nav-link px-2 text-white"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="nav-item"><a href="{{$setting['instagram_link_w_pasku_nawigacyjnym']}}" class="nav-link px-2 text-white"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
                 <p class="text-center text-white">&copy; 2023 Nowe Inspiracje, desinged by Karol Wiśniewski</p>
             </footer>

@@ -6,7 +6,7 @@
                 <div class="row text-start">
                     <div class="col-6 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <div style="background-color: #0f4c64;" class="px-4 py-2 mb-4">
+                            <div style="background-color: #0f4c64;" class="px-4 py-2 mb-4 hover-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" x="0px" y="0px" width="60px" height="60px">
                                     <title>silent, bell, notification, notif</title>
                                     <g data-name="Layer 2" fill="#fff">
@@ -20,7 +20,7 @@
                     </div>
                     <div class="col-6 gsap">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                            <div style="background-color: #0f4c64;" class="px-4 py-2 mb-4">
+                            <div style="background-color: #0f4c64;" class="px-4 py-2 mb-4 hover-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px" width="60px" height="60px">
                                     <title>Artboard 4</title>
                                     <path fill="#fff" d="M49.18,98.36a2.5,2.5,0,0,0,1.64,0C91.6,84.23,91,50.59,90.49,26c-.05-2.68-.1-5.2-.1-7.65a2.5,2.5,0,0,0-2.5-2.5c-15.08,0-26.56-4.34-36.15-13.67a2.5,2.5,0,0,0-3.49,0c-9.59,9.32-21.07,13.67-36.15,13.67a2.5,2.5,0,0,0-2.5,2.5c0,2.45,0,5-.1,7.65C9,50.59,8.4,84.22,49.18,98.36ZM14.51,26.12c0-1.82.07-3.57.09-5.29C29,20.4,40.33,16.09,50,7.42c9.67,8.67,21,13,35.41,13.42,0,1.71.05,3.47.09,5.29.46,24.13,1,54.12-35.5,67.23C13.48,80.24,14,50.25,14.51,26.12Zm27.57,37.8a21.76,21.76,0,0,0,15.86,0h0a4,4,0,0,0,2.35-5.14L57.16,50a9.31,9.31,0,0,0,2.1-7.45A9.37,9.37,0,0,0,40.63,44a9.3,9.3,0,0,0,2.21,6l-3.12,8.79A4,4,0,0,0,42.07,63.92Zm5.22-16.55a4.37,4.37,0,1,1,5.42,0,2.5,2.5,0,0,0-.8,2.79l3.34,9.4a16.76,16.76,0,0,1-10.51,0l3.34-9.4A2.5,2.5,0,0,0,47.29,47.37Z" />
@@ -39,7 +39,7 @@
             </div>
             <div class="col-6 gsap my-4">
                 <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                    <div style="background-color: #0f4c64;" class="px-4 py-2 mb-4">
+                    <div style="background-color: #0f4c64;" class="px-4 py-2 mb-4 hover-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve" width="60px" height="60px">
                             <g fill="#fff">
                                 <path d="M9.707,88.562h17.127c2.595,0,4.706-2.111,4.706-4.707v-0.026l16.391,5.428c2.447,0.811,4.969,1.213,7.484,1.213   c3.503,0,6.991-0.781,10.241-2.331l25.632-12.537c1.589-0.777,2.78-2.126,3.354-3.8s0.461-3.469-0.317-5.059   c-1.603-3.272-5.57-4.636-8.848-3.038L70.833,70.85c-0.722-2.991-3.414-5.222-6.623-5.222H53.966l-3.62-1.931   c-3.436-1.832-7.308-2.8-11.199-2.8H31.54v-0.115c0-2.595-2.111-4.707-4.706-4.707H9.707C7.111,56.076,5,58.187,5,60.782v23.073   C5,86.451,7.111,88.562,9.707,88.562z M39.147,64.897c3.237,0,6.459,0.806,9.316,2.329l4.065,2.168   c0.024,0.013,0.049,0.017,0.074,0.028c0.088,0.043,0.18,0.076,0.275,0.106c0.053,0.017,0.105,0.037,0.159,0.049   c0.094,0.021,0.191,0.028,0.29,0.035c0.047,0.003,0.095,0.017,0.142,0.017c0.007,0,0.014-0.003,0.022-0.003H64.21   c1.555,0,2.82,1.265,2.82,2.828c0,1.555-1.266,2.82-2.82,2.82H49.209c-1.104,0-2,0.896-2,2s0.896,2,2,2H64.21   c2.635,0,4.92-1.504,6.056-3.699l16.965-8.276c1.297-0.633,2.868-0.092,3.502,1.202c0.308,0.629,0.352,1.34,0.125,2.002   c-0.227,0.662-0.698,1.196-1.327,1.504L63.916,84.537c-4.627,2.207-9.856,2.536-14.728,0.923L31.54,79.616V64.897H39.147z    M9,60.782c0-0.39,0.317-0.707,0.707-0.707h17.127c0.39,0,0.706,0.317,0.706,0.707v23.073c0,0.39-0.316,0.707-0.706,0.707H9.707   C9.317,84.562,9,84.245,9,83.855V60.782z" />
@@ -56,7 +56,7 @@
             </div>
             <div class="col-6 gsap my-4">
                 <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                    <div style="background-color: #0f4c64;" class="px-4 py-2 mb-4">
+                    <div style="background-color: #0f4c64;" class="px-4 py-2 mb-4 hover-1">
                         <svg xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" width="60px" height="60px" xml:space="preserve">
                             <switch>
                                 <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1" />
@@ -76,7 +76,7 @@
             </div>
             <div class="col-6 gsap my-4">
                 <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                    <div style="background-color: #0f4c64;" class="px-4 py-2 mb-4">
+                    <div style="background-color: #0f4c64;" class="px-4 py-2 mb-4 hover-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 96 96" xml:space="preserve" width="60px" height="60px">
                             <style type="text/css">
                                 .st0 {
@@ -93,7 +93,7 @@
             </div>
             <div class="col-6 gsap my-4">
                 <div class="d-flex flex-column justify-content-center align-items-center text-center my-1">
-                    <div style="background-color: #0f4c64;" class="px-4 py-2 mb-4">
+                    <div style="background-color: #0f4c64;" class="px-4 py-2 mb-4 hover-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 80 80" xml:space="preserve" width="60px" height="60px">
                             <g>
                                 <path fill="#fff" d="M71,64H9c-2.2,0-4-1.8-4-4V16c0-2.2,1.8-4,4-4h62c2.2,0,4,1.8,4,4v44C75,62.2,73.2,64,71,64z M9,14   c-1.1,0-2,0.9-2,2v44c0,1.1,0.9,2,2,2h62c1.1,0,2-0.9,2-2V16c0-1.1-0.9-2-2-2H9z" />

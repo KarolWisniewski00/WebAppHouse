@@ -52,7 +52,7 @@
                         </div>
                     </div>
 
-                    <div class="card-body p-0 m-0 p-md-4"><button class="btn btn-extra btn-sm w-100 my-auto" type="submit"><i class="fa-solid fa-magnifying-glass me-2 d-none d-md-inline"></i>Szukaj</button></div>
+                    <div class="card-body p-0 m-0 p-md-4"><button class="btn btn-extra btn-sm w-100 my-auto hover-1" type="submit"><i class="fa-solid fa-magnifying-glass me-2 d-none d-md-inline"></i>Szukaj</button></div>
                 </div>
             </div>
         </div>

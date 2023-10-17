@@ -61,6 +61,12 @@
     background-color: rgba(88, 189, 123, 0.3) !important;
 }
 
+.segment-warning:hover .btn-d {
+    visibility: visible !important;
+    opacity: 1;
+    background-color: rgba(255, 204, 0, 0.3) !important;
+}
+
 .segment-danger:hover .btn-d {
     visibility: visible !important;
     opacity: 1;
@@ -322,4 +328,23 @@
     width: 100%;
     transition: width 1s ease-in-out;
     transition: margin-left 1s ease-in-out;
+}
+.nav-hover{
+    transition: ease-in-out 200ms;
+
+}
+.nav-hover:hover {
+    transform: scale(1.05);
+    color: #0f4c64;
+    transition: ease-in-out 200ms;
+}
+.hover-1{
+    transition: ease-in-out 200ms;
+}
+.hover-1:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 200ms;
+}
+.filter{
+    filter: brightness(0.75) saturate(1.4);
 }

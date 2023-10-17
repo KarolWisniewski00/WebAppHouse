@@ -40,7 +40,7 @@
                         <a href="{{$setting['instagram_link_w_pasku_nawigacyjnym']}}" class="me-2"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.nowe-inspiracje.com.pl/"><i class="fa-solid fa-link"></i></a>
                     </div>
-                    <div class="w-100 p-4">
+                    <div class="w-100 p-4 hover-1">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.7964073982257!2d18.944425577254556!3d50.374089492857955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d3307d5711cf%3A0x598ebce1077d64a6!2sNowe%20Inspiracje!5e1!3m2!1spl!2spl!4v1693730706858!5m2!1spl!2spl" class="w-100 h-auto" style="border:0; min-height:30em" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -49,9 +49,9 @@
                 <div class="d-flex flex-column justify-content-center align-items-end">
                     <div class="d-flex flex-column justify-content-center align-items-start">
                         <div class="d-flex flex-row justify-content-center align-items-center">
-                            <img class="img-fluid" alt="Partyk Gogacz" src="{{asset('asset/photo/'.$setting['strona_kontaktowa_zdjecie'])}}">
+                            <img class="img-fluid hover-1" alt="Partyk Gogacz" src="{{asset('asset/photo/'.$setting['strona_kontaktowa_zdjecie'])}}">
                         </div>
-                        <div class="d-flex flex-column justify-content-start align-items-start mt-3">
+                        <div class="d-flex flex-column justify-content-start align-items-start mt-3 hover-1">
                             <h5 class="fw-bold">{{$setting['strona_kontaktowa_imie_i_nazwisko']}}</h5>
                             <h6>{{$setting['strona_kontaktowa_dział']}}</h6>
                             <hr>

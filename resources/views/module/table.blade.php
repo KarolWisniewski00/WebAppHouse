@@ -56,7 +56,7 @@
                                 @endif
                             </td>
                             <td>
-                                {{$table->surface}}
+                                {{$table->surface}} m²
                             </td>
                             <td>
                                 {{$table->price_surface}}
@@ -66,9 +66,13 @@
                             </td>
                             <td class="px-6 py-4">
                                 @if($table->status == 'avaiable')
-                                <span class="text-success">Dostępny</span>
+                                <span class="text-success">Dostępne</span>
+                                @elseif($table->status == 'reservation')
+                                <span class="text-warning">Rezerwacja</span>
+                                @elseif($table->status == 'sold')
+                                <span class="text-danger">Sprzedane</span>
                                 @else
-                                <span class="text-danger">Niedostępny</span>
+                                <span class="text-danger">Niedostępne</span>
                                 @endif
                             </td>
                             <td>
@@ -80,12 +84,12 @@
                             </td>
                             <td>
                                 @if(Storage::exists('public/'.$table->file_priv))
-                                <a href="{{ asset('storage/'.$table->file_priv) }}" download style="background-color: #0f4c64;" class="btn btn-primary download-button"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                                <a href="{{ asset('storage/'.$table->file_priv) }}" download style="background-color: #0f4c64;" class="btn btn-primary  hover-1 download-button"><i class="fa-solid fa-cloud-arrow-down"></i></a>
                                 @else
                                 <p class="text-danger">Plik PDF nie istnieje.</p>
                                 @endif
                             </td>
-                            <td><a href="{{route('invest.show', $table->id)}}" class="btn btn-primary" style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                            <td><a href="{{route('invest.show', $table->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
                         </tr>
                         @endforeach
                     </tbody>

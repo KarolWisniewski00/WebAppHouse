@@ -6,7 +6,7 @@
                 <!--
                 <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/'.$setting['zdjecie_1_karuzela_1_na_stronie_glownej'])}});    background-position: center;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                 </div>-->
-                <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_1_karuzela_1_na_stronie_glownej'])}}" class="w-100 h-auto">
+                <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_1_karuzela_1_na_stronie_glownej'])}}" class="filter w-100 h-auto">
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
                         <h1 class="text-white">{{$setting['naglowek_1_karuzela_1_na_stronie_glownej']}}</h1>
@@ -18,7 +18,7 @@
                 <!--
                 <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/'.$setting['zdjecie_2_karuzela_1_na_stronie_glownej'])}});    background-repeat: no-repeat;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                 </div>-->
-                <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_2_karuzela_1_na_stronie_glownej'])}}" class="w-100 h-auto">
+                <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_2_karuzela_1_na_stronie_glownej'])}}" class="filter w-100 h-auto">
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
                         <h1 class="text-white">{{$setting['naglowek_2_karuzela_1_na_stronie_glownej']}}</h1>
@@ -30,7 +30,7 @@
                 <!--
                 <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/'.$setting['zdjecie_3_karuzela_1_na_stronie_glownej'])}});    background-size: cover;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                 </div>-->
-                <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_3_karuzela_1_na_stronie_glownej'])}}" class="w-100 h-auto">
+                <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_3_karuzela_1_na_stronie_glownej'])}}" class="filter w-100 h-auto">
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
                         <h1 class="text-white">{{$setting['naglowek_3_karuzela_1_na_stronie_glownej']}}</h1>
@@ -42,7 +42,7 @@
                 <!--
                 <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/'.$setting['zdjecie_4_karuzela_1_na_stronie_glownej'])}});    background-size: cover;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                 </div>-->
-                <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_4_karuzela_1_na_stronie_glownej'])}}" class="w-100 h-auto">
+                <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_4_karuzela_1_na_stronie_glownej'])}}" class="filter w-100 h-auto">
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
                         <h1 class="text-white">{{$setting['naglowek_4_karuzela_1_na_stronie_glownej']}}</h1>
@@ -54,7 +54,7 @@
                 <!--
                 <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/'.$setting['zdjecie_5_karuzela_1_na_stronie_glownej'])}});    background-size: cover;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                 </div>-->
-                <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_5_karuzela_1_na_stronie_glownej'])}}" class="w-100 h-auto">
+                <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_5_karuzela_1_na_stronie_glownej'])}}" class="filter w-100 h-auto">
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
                         <h1 class="text-white">{{$setting['naglowek_5_karuzela_1_na_stronie_glownej']}}</h1>
@@ -66,7 +66,7 @@
                 <!--
                 <div class="d-flex flex-column justify-content-center align-items-center" style="height: 50em; background-image: url({{asset('asset/photo/'.$setting['zdjecie_6_karuzela_1_na_stronie_glownej'])}});    background-size: cover;    background-position: center;    background-size: cover; filter: brightness(0.75) saturate(1.4);">
                 </div>-->
-                <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_6_karuzela_1_na_stronie_glownej'])}}" class="w-100 h-auto">
+                <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_6_karuzela_1_na_stronie_glownej'])}}" class="filter w-100 h-auto">
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
                         <h1 class="text-white">{{$setting['naglowek_6_karuzela_1_na_stronie_glownej']}}</h1>

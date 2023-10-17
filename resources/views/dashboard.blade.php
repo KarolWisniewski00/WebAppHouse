@@ -116,9 +116,13 @@
                                     </td>
                                     <td class="px-4 py-2">
                                         @if($table->status == 'avaiable')
-                                        <span class="text-emerald-400">Dostępny</span>
+                                        <span class="text-emerald-400">Dostępne</span>
+                                        @elseif($table->status == 'reservation')
+                                        <span class="text-amber-400">Rezerwacja</span>
+                                        @elseif($table->status == 'sold')
+                                        <span class="text-rose-400">Sprzedane</span>
                                         @else
-                                        <span class="text-rose-400">Niedostępny</span>
+                                        <span class="text-rose-400">Niedostępne</span>
                                         @endif
                                     </td>
                                     <td class="px-4 py-2">
