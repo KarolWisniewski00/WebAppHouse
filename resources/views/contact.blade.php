@@ -55,8 +55,8 @@
                             <h5 class="fw-bold">{{$setting['strona_kontaktowa_imie_i_nazwisko']}}</h5>
                             <h6>{{$setting['strona_kontaktowa_dział']}}</h6>
                             <hr>
+                            <p><a href="tel:+48{{$setting['strona_kontaktowa_telefon_działu']}}">Kontakt: {{$setting['strona_kontaktowa_telefon_działu']}}</a></p>
                             <p><a href="mailto:{{$setting['strona_kontaktowa_email_działu']}}">{{$setting['strona_kontaktowa_email_działu']}}</a></p>
-                            <p><a href="tel:+48{{$setting['strona_kontaktowa_telefon_działu']}}">{{$setting['strona_kontaktowa_telefon_działu']}}</a></p>
                         </div>
                     </div>
                 </div>
