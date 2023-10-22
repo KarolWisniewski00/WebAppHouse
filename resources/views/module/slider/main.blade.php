@@ -9,8 +9,8 @@
                 <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_1_karuzela_1_na_stronie_glownej'])}}" class="filter w-100 h-auto">
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
-                        <h1 class="text-white">{{$setting['naglowek_1_karuzela_1_na_stronie_glownej']}}</h1>
-                        <p>{{$setting['paragraf_1_karuzela_1_na_stronie_glownej']}}</p>
+                        <h1 class="text-white custom-size">{{$setting['naglowek_1_karuzela_1_na_stronie_glownej']}}</h1>
+                        <p class="custom-size-p">{{$setting['paragraf_1_karuzela_1_na_stronie_glownej']}}</p>
                     </div>
                 </div>
             </div>
@@ -21,8 +21,8 @@
                 <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_2_karuzela_1_na_stronie_glownej'])}}" class="filter w-100 h-auto">
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
-                        <h1 class="text-white">{{$setting['naglowek_2_karuzela_1_na_stronie_glownej']}}</h1>
-                        <p>{{$setting['paragraf_2_karuzela_1_na_stronie_glownej']}}</p>
+                        <h1 class="text-white custom-size">{{$setting['naglowek_2_karuzela_1_na_stronie_glownej']}}</h1>
+                        <p class="custom-size-p">{{$setting['paragraf_2_karuzela_1_na_stronie_glownej']}}</p>
                     </div>
                 </div>
             </div>
@@ -33,8 +33,8 @@
                 <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_3_karuzela_1_na_stronie_glownej'])}}" class="filter w-100 h-auto">
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
-                        <h1 class="text-white">{{$setting['naglowek_3_karuzela_1_na_stronie_glownej']}}</h1>
-                        <p>{{$setting['paragraf_3_karuzela_1_na_stronie_glownej']}}</p>
+                        <h1 class="text-white custom-size">{{$setting['naglowek_3_karuzela_1_na_stronie_glownej']}}</h1>
+                        <p class="custom-size-p">{{$setting['paragraf_3_karuzela_1_na_stronie_glownej']}}</p>
                     </div>
                 </div>
             </div>
@@ -45,8 +45,8 @@
                 <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_4_karuzela_1_na_stronie_glownej'])}}" class="filter w-100 h-auto">
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
-                        <h1 class="text-white">{{$setting['naglowek_4_karuzela_1_na_stronie_glownej']}}</h1>
-                        <p>{{$setting['paragraf_4_karuzela_1_na_stronie_glownej']}}</p>
+                        <h1 class="text-white custom-size">{{$setting['naglowek_4_karuzela_1_na_stronie_glownej']}}</h1>
+                        <p class="custom-size-p">{{$setting['paragraf_4_karuzela_1_na_stronie_glownej']}}</p>
                     </div>
                 </div>
             </div>
@@ -57,8 +57,8 @@
                 <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_5_karuzela_1_na_stronie_glownej'])}}" class="filter w-100 h-auto">
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
-                        <h1 class="text-white">{{$setting['naglowek_5_karuzela_1_na_stronie_glownej']}}</h1>
-                        <p>{{$setting['paragraf_5_karuzela_1_na_stronie_glownej']}}</p>
+                        <h1 class="text-white custom-size">{{$setting['naglowek_5_karuzela_1_na_stronie_glownej']}}</h1>
+                        <p class="custom-size-p">{{$setting['paragraf_5_karuzela_1_na_stronie_glownej']}}</p>
                     </div>
                 </div>
             </div>
@@ -69,8 +69,8 @@
                 <img alt="" src="{{asset('asset/photo/'.$setting['zdjecie_6_karuzela_1_na_stronie_glownej'])}}" class="filter w-100 h-auto">
                 <div class="container">
                     <div class="carousel-caption text-end fpb">
-                        <h1 class="text-white">{{$setting['naglowek_6_karuzela_1_na_stronie_glownej']}}</h1>
-                        <p>{{$setting['paragraf_6_karuzela_1_na_stronie_glownej']}}</p>
+                        <h1 class="text-white custom-size">{{$setting['naglowek_6_karuzela_1_na_stronie_glownej']}}</h1>
+                        <p class="custom-size-p">{{$setting['paragraf_6_karuzela_1_na_stronie_glownej']}}</p>
                     </div>
                 </div>
             </div>

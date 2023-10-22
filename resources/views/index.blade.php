@@ -6,7 +6,7 @@
 @include('module.location')
 @include('module.slider.photo')
 @include('module.icons')
-@include('module.search.photo')
+@include('module.search.filter')
 @include('module.comfort')
 <div class="container-fluid px-0 position-relative video-container overflow-hidden my-4">
     <video loop="" playsinline="" class="v-size" controls>

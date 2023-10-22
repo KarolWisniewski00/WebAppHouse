@@ -28,31 +28,14 @@
                             <a href="{{route('index')}}" class="nav-link nav-hover active" style="background-color: #0f4c64;"><i class="fa-solid fa-house me-2"></i>Strona główna</a>
                         </div>
                     </li>
-                    <!--
                     <li class="nav-item dropdown mx-auto">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Inwestycje
+                        <a class="nav-link dropdown-toggle nav-hover" href="{{route('invest')}}" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Osiedle Luxor Residence
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li>
-                                <h6 class="dropdown-header">W trakcie realizacji</h6>
-                            </li>
-                            <li><a class="dropdown-item" href="{{route('invest')}}">Osiedle Luxor Residence</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li>
-                                <h6 class="dropdown-header">Ukończone</h6>
-                            </li>
-                            <li><a class="dropdown-item" href="{{route('invest.wodna')}}">Wodna</a></li>
-                            <li><a class="dropdown-item" href="{{route('invest.kopernika')}}">Kopernika</a></li>
-                            <li><a class="dropdown-item" href="{{route('invest.dlugosza')}}">Długosza</a></li>
+                            <li><a class="dropdown-item" href="{{route('invest')}}">Etap 1</a></li>
+                            <li><a class="dropdown-item" href="{{route('invest')}}">Etap 2</a></li>
                         </ul>
-                    </li>-->
-                    <li class="nav-item mx-auto">
-                        <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{route('invest')}}" class="nav-link nav-hover">Osiedle Luxor Residence</a>
-                        </div>
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">

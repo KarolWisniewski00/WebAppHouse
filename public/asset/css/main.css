@@ -220,6 +220,12 @@
     #card-form-apart{
         position: absolute!important;
     }
+    .custom-size{
+        font-size: 3em!important;
+    }
+    .custom-size-p{
+        font-size: 2em!important;
+    }
     .translate-custom {
         top: 100%;
         right: 0%;

@@ -3,9 +3,59 @@
     <div class="container">
         <div class="row">
             @if(isset($clicked))
+            @if($clicked == 'floor--1')
+            <div class="col-4">
+                <div class="d-flex flex-row justify-content-center align-items-center mb-3">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex flex-row justify-content-center align-items-center mb-3">
+                    <a class="btn btn-lg btn-primary h-100" href="{{route('invest')}}" style="background-color: #0f4c64;">Plan pięter</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex flex-row justify-content-center align-items-center mb-3">
+                    <form method="post" action="{{route('invest.filter')}}">
+                        @csrf
+                        <input type="hidden" name="floor" value="0">
+                        <button type="submit" class="btn btn-lg btn-primary h-100" style="background-color: #0f4c64;">Garaż -1</button>
+                    </form>
+                </div>
+            </div>
+            @endif
+            @if($clicked == 'floor-0')
+            <div class="col-4">
+                <div class="d-flex flex-row justify-content-center align-items-center mb-3">
+                <form method="post" action="{{route('invest.filter')}}">
+                        @csrf
+                        <input type="hidden" name="floor" value="-1">
+                        <button type="submit" class="btn btn-lg btn-primary h-100" style="background-color: #0f4c64;">Garaż -2</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex flex-row justify-content-center align-items-center mb-3">
+                    <a class="btn btn-lg btn-primary h-100" href="{{route('invest')}}" style="background-color: #0f4c64;">Plan pięter</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex flex-row justify-content-center align-items-center mb-3">
+                    <form method="post" action="{{route('invest.filter')}}">
+                        @csrf
+                        <input type="hidden" name="floor" value="1">
+                        <button type="submit" class="btn btn-lg btn-primary h-100" style="background-color: #0f4c64;">Parter</button>
+                    </form>
+                </div>
+            </div>
+            @endif
             @if($clicked == 'floor-1')
             <div class="col-4">
                 <div class="d-flex flex-row justify-content-center align-items-center mb-3">
+                <form method="post" action="{{route('invest.filter')}}">
+                        @csrf
+                        <input type="hidden" name="floor" value="0">
+                        <button type="submit" class="btn btn-lg btn-primary h-100" style="background-color: #0f4c64;">Garaż -1</button>
+                    </form>
                 </div>
             </div>
             <div class="col-4">

@@ -103,18 +103,47 @@
                         </div>
                         <div class="mb-6">
                             <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Metraż</label>
-                            <input value="{{ old('surface') ? old('surface') : '' }}" name="surface" type="number" step="0.01" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="m²" required>
+                            <input id="surface" value="{{ old('surface') ? old('surface') : '' }}" name="surface" type="number" step="0.01" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="m²" required>
                             @error('surface')
                             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                             @enderror
                         </div>
                         <div class="mb-6">
                             <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Cena za m²</label>
-                            <input value="{{ old('price_surface') ? old('price_surface') : '' }}" name="price_surface" type="number" step="0.01" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Cena za m²" required>
+                            <input id="price_surface" value="{{ old('price_surface') ? old('price_surface') : '' }}" name="price_surface" type="number" step="0.01" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Cena za m²" required>
                             @error('price_surface')
                             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                             @enderror
                         </div>
+
+                        <div class="mb-6">
+                            <p id="total_price" class="text-gray-900 text-sm"></p>
+                        </div>
+                        <script>
+                            $(document).ready(function() {
+                                // Pobierz wartości metrażu i ceny za metr kwadratowy
+                                var surface = parseFloat($('#surface').val());
+                                var priceSurface = parseFloat($('#price_surface').val());
+
+                                // Oblicz całkowitą cenę
+                                var totalPrice = surface * priceSurface;
+
+                                // Wyświetl wynik na stronie
+                                $('#total_price').text('Całkowita cena: ' + totalPrice.toFixed(2) + ' zł'); // Dwa miejsca po przecinku
+
+                                $('#surface, #price_surface').on('input', function() {
+                                    // Pobierz wartości metrażu i ceny za metr kwadratowy
+                                    var surface = parseFloat($('#surface').val());
+                                    var priceSurface = parseFloat($('#price_surface').val());
+
+                                    // Oblicz całkowitą cenę
+                                    var totalPrice = surface * priceSurface;
+
+                                    // Wyświetl wynik na stronie
+                                    $('#total_price').text('Całkowita cena: ' + totalPrice.toFixed(2) + ' zł'); // Dwa miejsca po przecinku
+                                });
+                            });
+                        </script>
                         <div class="mb-6">
                             <h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">Status</h3>
                             <ul class="grid w-full gap-6 md:grid-cols-2">

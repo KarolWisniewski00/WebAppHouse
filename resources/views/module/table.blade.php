@@ -3,6 +3,20 @@
     <div class="container">
         <div class="row">
             <div class="col-12 overflow-auto">
+                @if(isset($clicked))
+                @if($clicked == 'floor--1')
+                <div class="col-12">
+                    <div class="d-flex flex-column justify-content-center align-items-center h-100 pt-5 pb-2">
+                        <embed src="{{ asset('asset/-1.pdf') }}" type="application/pdf" width="100%" height="500px" />
+                    </div>
+                </div>
+                @elseif($clicked == 'floor-0')
+                <div class="col-12">
+                    <div class="d-flex flex-column justify-content-center align-items-center h-100 pt-5 pb-2">
+                        <embed src="{{ asset('asset/0.pdf') }}" type="application/pdf" width="100%" height="500px" />
+                    </div>
+                </div>
+                @else
                 <div id="pin-modal" style="display: none;">
                     <div class="d-flex flex-column justify-content-center align-items-start text-center my-3">
                         <div class="input-group mb-3">
@@ -62,7 +76,7 @@
                                 {{$table->price_surface}}
                             </td>
                             <td>
-                                {{$table->price}} <span style="font-size: xx-small;">PLN</span>
+                                {{$table->price}} <span style="font-size: xx-small;">zł</span>
                             </td>
                             <td class="px-6 py-4">
                                 @if($table->status == 'avaiable')
@@ -94,6 +108,100 @@
                         @endforeach
                     </tbody>
                 </table>
+                @endif
+                @else
+                <div id="pin-modal" style="display: none;">
+                    <div class="d-flex flex-column justify-content-center align-items-start text-center my-3">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">PIN</span>
+                            <input type="text" class="form-control" id="pin-input" placeholder="Wprowadź kod pin" aria-describedby="basic-addon1">
+                        </div>
+                        <button id="pin-confirm" class="btn btn-primary">Potwierdź</button>
+                    </div>
+                </div>
+                <table class="table table-hover text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Numer</th>
+                            <th scope="col">Piętro</th>
+                            <th scope="col">Pokoje</th>
+                            <th scope="col">Metraż</th>
+                            <th scope="col">Cena za m²</th>
+                            <th scope="col">Cena</th>
+                            <th scope="col">Status</th>
+                            <th scope="col"><i class="fa-solid fa-file-pdf me-2"></i>Plik</th>
+                            <th scope="col"></i>Umowa</th>
+                            <th scope="col"><i class="fa-solid fa-magnifying-glass"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach($tables as $key => $table)
+                        <tr>
+                            <td>
+                                {{$table->id}}
+                            </td>
+                            <td>
+                                @if($table->segment == 'floor-4')
+                                Piętro 3
+                                @elseif($table->segment == 'floor-3')
+                                Piętro 2
+                                @elseif($table->segment == 'floor-2')
+                                Piętro 1
+                                @elseif($table->segment == 'floor-1')
+                                Parter
+                                @endif
+                            </td>
+                            <td>
+                                @if($table->flat == 'room-4')
+                                4
+                                @elseif($table->flat == 'room-3')
+                                3
+                                @elseif($table->flat == 'room-2')
+                                2
+                                @elseif($table->flat == 'room-1')
+                                1
+                                @endif
+                            </td>
+                            <td>
+                                {{$table->surface}} m²
+                            </td>
+                            <td>
+                                {{$table->price_surface}}
+                            </td>
+                            <td>
+                                {{$table->price}} <span style="font-size: xx-small;">zł</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                @if($table->status == 'avaiable')
+                                <span class="text-success">Dostępne</span>
+                                @elseif($table->status == 'reservation')
+                                <span class="text-warning">Rezerwacja</span>
+                                @elseif($table->status == 'sold')
+                                <span class="text-danger">Sprzedane</span>
+                                @else
+                                <span class="text-danger">Niedostępne</span>
+                                @endif
+                            </td>
+                            <td>
+                                @if(Storage::exists('public/'.$table->file_pdf))
+                                <a href="{{ asset('storage/'.$table->file_pdf) }}" download style="background-color: #0f4c64;" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i></a>
+                                @else
+                                <p class="text-danger">Plik PDF nie istnieje.</p>
+                                @endif
+                            </td>
+                            <td>
+                                @if(Storage::exists('public/'.$table->file_priv))
+                                <a href="{{ asset('storage/'.$table->file_priv) }}" download style="background-color: #0f4c64;" class="btn btn-primary  hover-1 download-button"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                                @else
+                                <p class="text-danger">Plik PDF nie istnieje.</p>
+                                @endif
+                            </td>
+                            <td><a href="{{route('invest.show', $table->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+                @endif
             </div>
         </div>
     </div>

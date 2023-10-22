@@ -27,7 +27,6 @@
                     <p>{{$setting['strona_kontaktowa_miasto']}}</p>
                     <p><a href="mailto:{{$setting['strona_kontaktowa_email']}}">{{$setting['strona_kontaktowa_email']}}</a></p>
                     <hr>
-                    <p>{{$setting['strona_kontaktowa_godziny_otwarcia_linia_1']}}</p>
                     <p>{{$setting['strona_kontaktowa_godziny_otwarcia_linia_2']}}</p>
                     <hr>
                     <!--
@@ -57,6 +56,8 @@
                             <hr>
                             <p><a href="tel:+48{{$setting['strona_kontaktowa_telefon_działu']}}">Kontakt: {{$setting['strona_kontaktowa_telefon_działu']}}</a></p>
                             <p><a href="mailto:{{$setting['strona_kontaktowa_email_działu']}}">{{$setting['strona_kontaktowa_email_działu']}}</a></p>
+                            <p>{{$setting['strona_kontaktowa_paragraf_1_działu']}}</p>
+                            <p>{{$setting['strona_kontaktowa_paragraf_2_działu']}}</p>
                         </div>
                     </div>
                 </div>

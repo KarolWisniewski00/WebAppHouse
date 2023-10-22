@@ -112,7 +112,7 @@
                                         {{$table->price_surface}}
                                     </td>
                                     <td class="px-4 py-2">
-                                        {{$table->price}} <span style="font-size: xx-small;">PLN</span>
+                                        {{$table->price}} <span style="font-size: xx-small;">zł</span>
                                     </td>
                                     <td class="px-4 py-2">
                                         @if($table->status == 'avaiable')

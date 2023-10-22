@@ -40,6 +40,27 @@
                             <textarea class="form-control" id="mess" rows="3"></textarea>
                             <div class="invalid-feedback" id="mess-invalid"></div>
                         </div>
+                        <div class="d-flex flex-column justify-content-center align-items-start my-4 flex-wrap">
+                            <p class="card-text m-0 p-0 mx-4 my-2 text-start mb-3">Administratorem Pani/Pana danych osobowych jest PERFECT JOBS SP Z.O.O z siedzibą w Piekarach Śląskich przy ulicy Walentego Roździeńskiego 2a/20 NIP 4980269203</p>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="check1" required>
+                                <label class="form-check-label" for="check1">
+                                    Oświadczam że zapoznałem się z <a href="{{route('rodo')}}">polityką informacyjną</a>
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="check2" required>
+                                <label class="form-check-label" for="check2">
+                                    Wyrażam zgodę na przetwarzanie moich danych osobowych w zakresie imienia i nazwiska, numeru telefonu, adresu email, oraz wysyłanie informacji reklamowych.
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="check3" required>
+                                <label class="form-check-label" for="check3">
+                                    Podaję dane osobowe dobrowolnie i oświadczam, że są one zgodne z prawdą.
+                                </label>
+                            </div>
+                        </div>
                         <button class="btn btn-primary mb-3 w-100 hover-1" style="background-color: #0f4c64;" type="submit">Wyślij</button>
                     </form>
                 </div>

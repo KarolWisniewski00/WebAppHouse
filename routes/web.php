@@ -10,6 +10,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\InvestController;
 use App\Http\Controllers\InvestEndController;
+use App\Http\Controllers\RodoController;
 use App\Http\Controllers\SettingAdminController;
 use Illuminate\Support\Facades\Route;
 
@@ -34,6 +35,7 @@ Route::prefix('invest')->group(function () {
     Route::get('/wodna', [InvestEndController::class, 'wodna'])->name('invest.wodna');
 });
 Route::get('/about', [AboutController::class, 'index'])->name('about');
+Route::get('/rodo', [RodoController::class, 'index'])->name('rodo');
 Route::get('/about-invest', [AboutInvestController::class, 'index'])->name('about.invest');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/pin', [SettingAdminController::class, 'pin'])->name('pin');
