@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AboutInvestController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FilesController;
 use App\Http\Controllers\FilterController;
 use App\Http\Controllers\FlatAdminController;
 use App\Http\Controllers\FloorAdminController;
@@ -39,6 +40,7 @@ Route::get('/rodo', [RodoController::class, 'index'])->name('rodo');
 Route::get('/about-invest', [AboutInvestController::class, 'index'])->name('about.invest');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/pin', [SettingAdminController::class, 'pin'])->name('pin');
+Route::get('/download', [FilesController::class, 'downloadAllFiles'])->name('downloadAllFiles');
 
 
 Route::middleware([
@@ -54,6 +56,11 @@ Route::middleware([
             Route::get('/edit/{table}', [FlatAdminController::class, 'edit'])->name('dashboard.flat.edit');
             Route::put('/update/{table}', [FlatAdminController::class, 'update'])->name('dashboard.flat.update');
             Route::delete('/delete/{table}', [FlatAdminController::class, 'delete'])->name('dashboard.flat.delete');
+        });
+        Route::prefix('files')->group(function () {
+            Route::get('/create', [FilesController::class, 'create'])->name('dashboard.files.create');
+            Route::post('/store', [FilesController::class, 'store'])->name('dashboard.files.store');
+            Route::delete('/delete/{filename}', [FilesController::class, 'delete'])->name('dashboard.files.delete');
         });
         Route::prefix('floor')->group(function () {
             Route::get('/', [FloorAdminController::class, 'index'])->name('dashboard.floor');

@@ -26,7 +26,33 @@
                     </div>
                     @endif
                     <x-application-logo class="block h-12 w-auto" />
-                    <div class="flex flex-row justify-between">
+                    <div class="flex flex-row justify-between align-center items-center">
+                        <h1 class="mt-8 mb-4 text-2xl font-medium text-gray-900">
+                            Prywatne pliki
+                        </h1>
+                        <a href="{{route('dashboard.files.create')}}" class="inline-flex items-center justify-center w-10 h-10 mr-2 text-blue-100 transition-colors duration-150 bg-blue-500 rounded-full focus:shadow-outline hover:bg-blue-600">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="flex flex-col">
+                        @foreach ($files as $file)
+                        <div class="flex justify-between mb-3 align-center items-center">
+                            <div class="h3">
+                                {{ $file }}
+                            </div>
+                            <div>
+                                <form action="{{ route('dashboard.files.delete', $file) }}" method="POST" onsubmit="return confirm('Czy na pewno chcesz to usunąć?')">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="text-red-500 hover:text-white border border-red-600 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-1 my-1 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                    <div class="flex flex-row justify-between align-center items-center">
                         <h1 class="mt-8 mb-4 text-2xl font-medium text-gray-900">
                             Mieszkania
                         </h1>
@@ -61,9 +87,6 @@
                                     </th>
                                     <th scope="col" class="px-4 py-2">
                                         Plik
-                                    </th>
-                                    <th scope="col" class="px-4 py-2">
-                                        Umowa
                                     </th>
                                     <th scope="col" class="px-4 py-2">
                                         Podgląd na stronie użytkownika
@@ -133,14 +156,7 @@
                                         @endif
                                     </td>
                                     <td class="px-4 py-2">
-                                        @if(Storage::exists('public/'.$table->file_priv))
-                                        <a href="{{ asset('storage/'.$table->file_priv) }}" download class="px-5 py-2.5 text-center mx-1 my-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-cloud-arrow-down"></i></a>
-                                        @else
-                                        <p class="text-rose-400">Plik PDF nie istnieje.</p>
-                                        @endif
-                                    </td>
-                                    <td class="px-4 py-2">
-                                        <a href="{{ route('invest.show', $table->id) }}"  class="px-5 py-2.5 text-center mx-1 my-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-eye"></i></a>
+                                        <a href="{{ route('invest.show', $table->id) }}" class="px-5 py-2.5 text-center mx-1 my-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-eye"></i></a>
                                     </td>
                                     <td class="px-4 py-2">
                                         <a href="{{ route('dashboard.flat.edit', $table->id) }}" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-1 my-1 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800">
@@ -161,7 +177,7 @@
                             </tbody>
                         </table>
                         <div class="px-4 py-2">
-                            
+
                         </div>
                     </div>
                 </div>

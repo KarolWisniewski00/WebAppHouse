@@ -110,6 +110,16 @@
                         <input type="hidden" name="floor" value="1">
                         <button id="1" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Parter</button>
                     </form>
+                    <form method="post" class="w-100" action="{{route('invest.filter')}}">
+                        @csrf
+                        <input type="hidden" name="floor" value="0">
+                        <button id="0" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Garaż -1</button>
+                    </form>
+                    <form method="post" class="w-100" action="{{route('invest.filter')}}">
+                        @csrf
+                        <input type="hidden" name="floor" value="-1">
+                        <button id="-1" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Garaż -2</button>
+                    </form>
                 </div>
             </div>
         </div>

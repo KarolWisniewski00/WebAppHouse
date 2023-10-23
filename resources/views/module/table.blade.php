@@ -190,11 +190,7 @@
                                 @endif
                             </td>
                             <td>
-                                @if(Storage::exists('public/'.$table->file_priv))
-                                <a href="{{ asset('storage/'.$table->file_priv) }}" download style="background-color: #0f4c64;" class="btn btn-primary  hover-1 download-button"><i class="fa-solid fa-cloud-arrow-down"></i></a>
-                                @else
-                                <p class="text-danger">Plik PDF nie istnieje.</p>
-                                @endif
+                                <a href="{{ route('downloadAllFiles') }}" download style="background-color: #0f4c64;" class="btn btn-primary  hover-1 download-button"><i class="fa-solid fa-cloud-arrow-down"></i></a>
                             </td>
                             <td><a href="{{route('invest.show', $table->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
                         </tr>

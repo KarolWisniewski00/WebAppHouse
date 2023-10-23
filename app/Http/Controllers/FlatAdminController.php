@@ -13,7 +13,10 @@ class FlatAdminController extends Controller
     public function index()
     {
         $tables = Flat::orderBy('created_at')->get();
-        return view('dashboard', compact('tables'));
+        $storagePath = storage_path('app/public/files');
+        $files = scandir($storagePath);
+        $files = array_slice($files, 2);
+        return view('dashboard', compact('tables', 'files'));
     }
     public function create()
     {
@@ -81,7 +84,7 @@ class FlatAdminController extends Controller
             if ($table->file_priv) {
                 Storage::disk('public')->delete($table->file_priv);
             }
-            
+
             $file_priv = $request->file('file_priv');
             $file_priv = $file_priv->store('privs', 'public');
             $table->update([
