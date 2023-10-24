@@ -25,31 +25,31 @@
                 <ul class="nav nav-pills d-flex flex-row justify-content-center align-items-center flex-wrap">
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{route('index')}}" class="nav-link nav-hover active" style="background-color: #0f4c64;"><i class="fa-solid fa-house me-2"></i>Strona główna</a>
+                            <a href="{{route('index')}}" class="nav-link nav-hover active" style="background-color: #0f4c64;"><i class="fa-solid fa-house me-2"></i>{{$setting['naglowek_strona_glowna']}}</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mx-auto">
                         <a class="nav-link dropdown-toggle nav-hover" href="{{route('invest')}}" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Osiedle Luxor Residence
+                            {{$setting['naglowek_osiedle_luxor_residence']}}
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{route('invest')}}">Etap 1</a></li>
-                            <li><a class="dropdown-item" href="{{route('invest')}}">Etap 2</a></li>
+                            <li><a class="dropdown-item" href="{{route('invest')}}">{{$setting['naglowek_etap_1']}}</a></li>
+                            <li><a class="dropdown-item" href="{{route('invest')}}">{{$setting['naglowek_etap_2']}}</a></li>
                         </ul>
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{route('about.invest')}}" class="nav-link nav-hover">O Inwestycji</a>
+                            <a href="{{route('about.invest')}}" class="nav-link nav-hover">{{$setting['naglowek_o_inwestycji']}}</a>
                         </div>
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{route('about')}}" class="nav-link nav-hover">O nas</a>
+                            <a href="{{route('about')}}" class="nav-link nav-hover">{{$setting['naglowek_O_nas']}}</a>
                         </div>
                     </li>
                     <li class="nav-item mx-auto">
                         <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                            <a href="{{route('contact')}}" class="nav-link nav-hover">Kontakt</a>
+                            <a href="{{route('contact')}}" class="nav-link nav-hover">{{$setting['naglowek_kontakt']}}</a>
                         </div>
                     </li>
                     <li class="nav-item mx-auto">

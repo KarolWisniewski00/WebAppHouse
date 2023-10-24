@@ -61,6 +61,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="d-flex flex-column justify-content-center align-items-end">
+                    <div class="d-flex flex-column justify-content-center align-items-start">
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+                            <img class="img-fluid hover-1" alt="" src="{{asset('asset/photo/'.$setting['strona_kontaktowa_zdjecie_po_prawej'])}}">
+                        </div>
+                        <div class="d-flex flex-column justify-content-start align-items-start mt-3 hover-1">
+                            <h5 class="fw-bold">{{$setting['strona_kontaktowa_imie_i_nazwisko_po_prawej']}}</h5>
+                            <h6>{{$setting['strona_kontaktowa_dział_po_prawej']}}</h6>
+                            <hr>
+                            <p><a href="tel:+48{{$setting['strona_kontaktowa_telefon_działu']}}">Kontakt: {{$setting['strona_kontaktowa_telefon_działu_po_prawej']}}</a></p>
+                            <p><a href="mailto:{{$setting['strona_kontaktowa_email_działu']}}">{{$setting['strona_kontaktowa_email_działu_po_prawej']}}</a></p>
+                            <p>{{$setting['strona_kontaktowa_paragraf_1_działu_po_prawej']}}</p>
+                            <p>{{$setting['strona_kontaktowa_paragraf_2_działu_po_prawej']}}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

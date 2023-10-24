@@ -28,7 +28,7 @@ class SettingAdminController extends Controller
         ]);
 
         if ($res) {
-            return redirect()->route('dashboard.setting')
+            return redirect()->route('dashboard.setting.edit', $table->id)
                 ->with('success', 'Operacja przebiegła pomyślnie.');
         } else {
             return redirect()->route('dashboard.setting.edit', $table->id)
@@ -55,7 +55,7 @@ class SettingAdminController extends Controller
         ]);
 
         if ($res) {
-            return redirect()->route('dashboard.setting')
+            return redirect()->route('dashboard.setting.edit', $table->id)
                 ->with('success', 'Operacja przebiegła pomyślnie.');
         } else {
             return redirect()->route('dashboard.setting.edit', $table->id)

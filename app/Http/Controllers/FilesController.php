@@ -15,17 +15,17 @@ class FilesController extends Controller
     }
     public function store(CreateFileRequest $request)
     {
+        
         if ($request->hasFile('file_priv') && $request->file('file_priv')) {
             $file_priv = $request->file('file_priv');
-            $originalFileName = $file_priv->getClientOriginalName();
-            $file_priv->storeAs('files', $originalFileName, 'public');
+            $file_priv->store('privs','public');
             return redirect()->route('dashboard')->with('success', 'Operacja przebiegła pomyślnie.');
         }
         return redirect()->route('dashboard.flat.create')->with('fail', 'Operacja się nie powiodła. Coś poszło nie tak.');
     }
     public function delete($filename)
     {
-        if (Storage::disk('public')->delete('files/' . $filename)) {
+        if (Storage::disk('public')->delete('privs/' . $filename)) {
             return redirect()->route('dashboard')->with('success', 'Operacja przebiegła pomyślnie.');
         } else {
             return redirect()->route('dashboard')->with('fail', 'Operacja się nie powiodła. Coś poszło nie tak.');
@@ -34,7 +34,7 @@ class FilesController extends Controller
 
     public function downloadAllFiles()
     {
-        $filesPath = storage_path('app/public/files');
+        $filesPath = storage_path('app/public/privs');
         $zipFileName = 'all_files.zip';
 
         // Tworzenie archiwum ZIP
