@@ -12,6 +12,18 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <meta name="author" content="Karol Wiśniewski">
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:locale" content="pl_PL" />
+    <link rel="icon" href="{{asset('asset/photo/'.$setting['logo_w_pasku_nawigacyjnym'])}}" type="image/png">
+    <link rel="apple-touch-icon" href="{{asset('asset/photo/'.$setting['logo_w_pasku_nawigacyjnym'])}}">
+    <meta name="base-url" content="https://dggdevelopment.pl/">
+    <link rel="canonical" href="https://dgginvestments.pl/">
+    <meta property="og:url" content="https://dggdevelopment.pl/">
+    <meta property="og:site_name" content="DGG Development" />
+    <meta name="twitter:card" content="summary" />
+    <!--SEO-->
+    @yield('SEO')
 </head>
 
 <body>

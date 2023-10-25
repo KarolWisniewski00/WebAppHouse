@@ -209,7 +209,12 @@
         }
     }
 }
-
+.custom-size{
+    font-size: 1em!important;
+}
+.custom-size-p{
+    font-size: 0.8em!important;
+}
 .translate-custom {
     background-color: #f5f7f9;
     --bs-card-border-width: 0 !important;
