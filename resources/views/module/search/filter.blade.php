@@ -3,77 +3,90 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
+                @if($table == 1)
+                <h1>{{$setting['naglowek_etap_1']}}</h1>
+                @else
+                <h1>{{$setting['naglowek_etap_2']}}</h1>
+                @endif
                 <div class="d-flex flex-column justify-content-center align-items-center mb-3" style="overflow:hidden">
                     <div class="position-relative">
                         <img class="img-fluid segment-img" alt="" src="{{asset('asset/photo/search.jpg')}}">
                         <div class="position-absolute p-1px" id="segment-A1">
-                            <div id="h1" class="segment-hover-3 segment-hover-2 s-neutral {{ ($floor_1 == true) ? 'segment-success' : 'segment-danger' }} h-100 w-100">
+                            <div id="h1" class="segment-hover-3 segment-hover-2 s-neutral h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
-                                    <form method="post" class="h-100 w-100" action="{{route('invest.filter')}}">
-                                        <div class="text-black h5">Etap 2</div>
+                                    <form method="post" class="h-100 w-100" action="{{route('invest.filter.second')}}">
                                         @csrf
                                         <input type="hidden" name="floor" value="1">
-                                        <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100"></button>
+                                        <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100">
+                                            <div class="text-black h5">Etap 2</div>
+                                        </button>
                                     </form>
                                     <form method="post" class="w-100 h-100" action="{{route('invest.filter')}}">
-                                        <div class="text-black h5">Etap 1</div>
                                         @csrf
                                         <input type="hidden" name="floor" value="1">
-                                        <button type="submit" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></button>
+                                        <button type="submit" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;">
+                                            <div class="text-black h5">Etap 1</div>
+                                        </button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                         <div class="position-absolute p-1px" id="segment-A2">
-                            <div id="h2" class="segment-hover-3 segment-hover-2 s-neutral {{ ($floor_2 == true) ? 'segment-success' : 'segment-danger' }} h-100 w-100">
+                            <div id="h2" class="segment-hover-3 segment-hover-2 s-neutral h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
-                                    <form method="post" class="h-100 w-100" action="{{route('invest.filter')}}">
-                                        <div class="text-black h5">Etap 2</div>
+                                    <form method="post" class="h-100 w-100" action="{{route('invest.filter.second')}}">
                                         @csrf
                                         <input type="hidden" name="floor" value="2">
-                                        <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100"></button>
+                                        <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100">
+                                            <div class="text-black h5">Etap 2</div>
+                                        </button>
                                     </form>
                                     <form method="post" class="w-100 h-100" action="{{route('invest.filter')}}">
-                                        <div class="text-black h5">Etap 1</div>
                                         @csrf
                                         <input type="hidden" name="floor" value="2">
-                                        <button type="submit" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></button>
+                                        <button type="submit" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;">
+                                            <div class="text-black h5">Etap 1</div>
+                                        </button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                         <div class="position-absolute p-1px" id="segment-B1">
-                            <div id="h3" class="segment-hover-3 segment-hover-2 s-neutral {{ ($floor_3 == true) ? 'segment-success' : 'segment-danger' }} h-100 w-100">
+                            <div id="h3" class="segment-hover-3 segment-hover-2 s-neutral h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
-                                    <form method="post" class="h-100 w-100" action="{{route('invest.filter')}}">
-                                        <div class="text-black h5">Etap 2</div>
+                                    <form method="post" class="h-100 w-100" action="{{route('invest.filter.second')}}">
                                         @csrf
                                         <input type="hidden" name="floor" value="3">
-                                        <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100"></button>
+                                        <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100">
+                                            <div class="text-black h5">Etap 2</div>
+                                        </button>
                                     </form>
                                     <form method="post" class="w-100 h-100" action="{{route('invest.filter')}}">
-                                        <div class="text-black h5">Etap 1</div>
                                         @csrf
                                         <input type="hidden" name="floor" value="3">
-                                        <button type="submit" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></button>
+                                        <button type="submit" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;">
+                                            <div class="text-black h5">Etap 1</div>
+                                        </button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                         <div class="position-absolute p-1px" id="segment-B2">
-                            <div id="h4" class="segment-hover-3 segment-hover-2 s-neutral {{ ($floor_4 == true) ? 'segment-success' : 'segment-danger' }} h-100 w-100">
+                            <div id="h4" class="segment-hover-3 segment-hover-2 s-neutral h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
-                                    <form method="post" class="h-100 w-100" action="{{route('invest.filter')}}">
-                                        <div class="text-black h5">Etap 2</div>
+                                    <form method="post" class="h-100 w-100" action="{{route('invest.filter.second')}}">
                                         @csrf
                                         <input type="hidden" name="floor" value="4">
-                                        <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100"></button>
+                                        <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100">
+                                            <div class="text-black h5">Etap 2</div>
+                                        </button>
                                     </form>
                                     <form method="post" class="h-100 w-100" action="{{route('invest.filter')}}">
-                                        <div class="text-black h5">Etap 1</div>
                                         @csrf
                                         <input type="hidden" name="floor" value="4">
-                                        <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100"></button>
+                                        <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100">
+                                            <div class="text-black h5">Etap 1</div>
+                                        </button>
                                     </form>
                                 </div>
                             </div>
@@ -90,6 +103,7 @@
                     <div class="h4 align-self-start">
                         Z zdjęcia lub z listy:
                     </div>
+                    @if($table == 1)
                     <form method="post" class="w-100" action="{{route('invest.filter')}}">
                         @csrf
                         <input type="hidden" name="floor" value="4">
@@ -120,6 +134,38 @@
                         <input type="hidden" name="floor" value="-1">
                         <button id="-1" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Garaż -2</button>
                     </form>
+                    @else
+                    <form method="post" class="w-100" action="{{route('invest.filter.second')}}">
+                        @csrf
+                        <input type="hidden" name="floor" value="4">
+                        <button id="4" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Piętro 3</button>
+                    </form>
+                    <form method="post" class="w-100" action="{{route('invest.filter.second')}}">
+                        @csrf
+                        <input type="hidden" name="floor" value="3">
+                        <button id="3" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Piętro 2</button>
+                    </form>
+                    <form method="post" class="w-100" action="{{route('invest.filter.second')}}">
+                        @csrf
+                        <input type="hidden" name="floor" value="2">
+                        <button id="2" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Piętro 1</button>
+                    </form>
+                    <form method="post" class="w-100" action="{{route('invest.filter.second')}}">
+                        @csrf
+                        <input type="hidden" name="floor" value="1">
+                        <button id="1" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Parter</button>
+                    </form>
+                    <form method="post" class="w-100" action="{{route('invest.filter.second')}}">
+                        @csrf
+                        <input type="hidden" name="floor" value="0">
+                        <button id="0" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Garaż -1</button>
+                    </form>
+                    <form method="post" class="w-100" action="{{route('invest.filter.second')}}">
+                        @csrf
+                        <input type="hidden" name="floor" value="-1">
+                        <button id="-1" type="submit" class="segment-hover hbtn hb-fill-left-br w-100 h5">Garaż -2</button>
+                    </form>
+                    @endif
                 </div>
             </div>
         </div>

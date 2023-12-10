@@ -5,6 +5,7 @@ use App\Http\Controllers\AboutInvestController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FilesController;
 use App\Http\Controllers\FilterController;
+use App\Http\Controllers\FlatAdmin2Controller;
 use App\Http\Controllers\FlatAdminController;
 use App\Http\Controllers\FloorAdminController;
 use App\Http\Controllers\GalleryController;
@@ -30,6 +31,9 @@ Route::get('/', [IndexController::class, 'index'])->name('index');
 Route::prefix('invest')->group(function () {
     Route::get('/', [InvestController::class, 'index'])->name('invest');
     Route::post('/', [FilterController::class, 'show'])->name('invest.filter');
+    Route::get('/second', [InvestController::class, 'indexSecond'])->name('invest.second');
+    Route::post('/second', [FilterController::class, 'showSecond'])->name('invest.filter.second');
+    Route::get('/second/show/{slug}', [InvestController::class, 'showSecond'])->name('invest.show.second');
     Route::get('/show/{slug}', [InvestController::class, 'show'])->name('invest.show');
     Route::get('/dlugosza', [InvestEndController::class, 'dlugosza'])->name('invest.dlugosza');
     Route::get('/kopernika', [InvestEndController::class, 'kopernika'])->name('invest.kopernika');
@@ -56,6 +60,14 @@ Route::middleware([
             Route::get('/edit/{table}', [FlatAdminController::class, 'edit'])->name('dashboard.flat.edit');
             Route::put('/update/{table}', [FlatAdminController::class, 'update'])->name('dashboard.flat.update');
             Route::delete('/delete/{table}', [FlatAdminController::class, 'delete'])->name('dashboard.flat.delete');
+        });
+        Route::prefix('second')->group(function () {
+            Route::get('/', [FlatAdmin2Controller::class, 'index'])->name('second');
+            Route::get('/create', [FlatAdmin2Controller::class, 'create'])->name('second.flat.create');
+            Route::post('/store', [FlatAdmin2Controller::class, 'store'])->name('second.flat.store');
+            Route::get('/edit/{table}', [FlatAdmin2Controller::class, 'edit'])->name('second.flat.edit');
+            Route::put('/update/{table}', [FlatAdmin2Controller::class, 'update'])->name('second.flat.update');
+            Route::delete('/delete/{table}', [FlatAdmin2Controller::class, 'delete'])->name('second.flat.delete');
         });
         Route::prefix('files')->group(function () {
             Route::get('/create', [FilesController::class, 'create'])->name('dashboard.files.create');

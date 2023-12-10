@@ -46,7 +46,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="{{route('invest')}}">{{$setting['naglowek_etap_1']}}</a></li>
-                            <li><a class="dropdown-item" href="{{route('invest')}}">{{$setting['naglowek_etap_2']}}</a></li>
+                            <li><a class="dropdown-item" href="{{route('invest.second')}}">{{$setting['naglowek_etap_2']}}</a></li>
                         </ul>
                     </li>
                     <li class="nav-item mx-auto">

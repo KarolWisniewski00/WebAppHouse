@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 
 class AboutController extends Controller
 {
-    public function index(){
-        return view('about');
+    public function index()
+    {
+        $table = 1;
+        return view('about', compact('table'));
     }
 }

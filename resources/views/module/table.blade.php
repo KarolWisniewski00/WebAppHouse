@@ -42,68 +42,68 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($tables as $key => $table)
+                        @foreach($tables as $key => $t)
                         <tr>
                             <td>
-                                {{$table->id}}
+                                {{$t->id}}
                             </td>
                             <td>
-                                @if($table->segment == 'floor-4')
+                                @if($t->segment == 'floor-4')
                                 Piętro 3
-                                @elseif($table->segment == 'floor-3')
+                                @elseif($t->segment == 'floor-3')
                                 Piętro 2
-                                @elseif($table->segment == 'floor-2')
+                                @elseif($t->segment == 'floor-2')
                                 Piętro 1
-                                @elseif($table->segment == 'floor-1')
+                                @elseif($t->segment == 'floor-1')
                                 Parter
                                 @endif
                             </td>
                             <td>
-                                @if($table->flat == 'room-4')
+                                @if($t->flat == 'room-4')
                                 4
-                                @elseif($table->flat == 'room-3')
+                                @elseif($t->flat == 'room-3')
                                 3
-                                @elseif($table->flat == 'room-2')
+                                @elseif($t->flat == 'room-2')
                                 2
-                                @elseif($table->flat == 'room-1')
+                                @elseif($t->flat == 'room-1')
                                 1
                                 @endif
                             </td>
                             <td>
-                                {{$table->surface}} m²
+                                {{$t->surface}} m²
                             </td>
                             <td>
-                                {{$table->price_surface}}
+                                {{$t->price_surface}}
                             </td>
                             <td>
-                                {{$table->price}} <span style="font-size: xx-small;">zł</span>
+                                {{$t->price}} <span style="font-size: xx-small;">zł</span>
                             </td>
                             <td class="px-6 py-4">
-                                @if($table->status == 'avaiable')
+                                @if($t->status == 'avaiable')
                                 <span class="text-success">Dostępne</span>
-                                @elseif($table->status == 'reservation')
+                                @elseif($t->status == 'reservation')
                                 <span class="text-warning">Rezerwacja</span>
-                                @elseif($table->status == 'sold')
+                                @elseif($t->status == 'sold')
                                 <span class="text-danger">Sprzedane</span>
                                 @else
                                 <span class="text-danger">Niedostępne</span>
                                 @endif
                             </td>
                             <td>
-                                @if(Storage::exists('public/'.$table->file_pdf))
-                                <a href="{{ asset('storage/'.$table->file_pdf) }}" download style="background-color: #0f4c64;" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i></a>
+                                @if(Storage::exists('public/'.$t->file_pdf))
+                                <a href="{{ asset('storage/'.$t->file_pdf) }}" download style="background-color: #0f4c64;" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i></a>
                                 @else
                                 <p class="text-danger">Plik PDF nie istnieje.</p>
                                 @endif
                             </td>
                             <td>
-                                @if(Storage::exists('public/'.$table->file_priv))
-                                <a href="{{ asset('storage/'.$table->file_priv) }}" download style="background-color: #0f4c64;" class="btn btn-primary  hover-1 download-button"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                                @if(Storage::exists('public/'.$t->file_priv))
+                                <a href="{{ asset('storage/'.$t->file_priv) }}" download style="background-color: #0f4c64;" class="btn btn-primary  hover-1 download-button"><i class="fa-solid fa-cloud-arrow-down"></i></a>
                                 @else
                                 <p class="text-danger">Plik PDF nie istnieje.</p>
                                 @endif
                             </td>
-                            <td><a href="{{route('invest.show', $table->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                            <td><a href="{{route($table == 1 ? 'invest.show' : 'invest.show.second', $t->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
                         </tr>
                         @endforeach
                     </tbody>
@@ -135,56 +135,56 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($tables as $key => $table)
+                        @foreach($tables as $key => $t)
                         <tr>
                             <td>
-                                {{$table->id}}
+                                {{$t->id}}
                             </td>
                             <td>
-                                @if($table->segment == 'floor-4')
+                                @if($t->segment == 'floor-4')
                                 Piętro 3
-                                @elseif($table->segment == 'floor-3')
+                                @elseif($t->segment == 'floor-3')
                                 Piętro 2
-                                @elseif($table->segment == 'floor-2')
+                                @elseif($t->segment == 'floor-2')
                                 Piętro 1
-                                @elseif($table->segment == 'floor-1')
+                                @elseif($t->segment == 'floor-1')
                                 Parter
                                 @endif
                             </td>
                             <td>
-                                @if($table->flat == 'room-4')
+                                @if($t->flat == 'room-4')
                                 4
-                                @elseif($table->flat == 'room-3')
+                                @elseif($t->flat == 'room-3')
                                 3
-                                @elseif($table->flat == 'room-2')
+                                @elseif($t->flat == 'room-2')
                                 2
-                                @elseif($table->flat == 'room-1')
+                                @elseif($t->flat == 'room-1')
                                 1
                                 @endif
                             </td>
                             <td>
-                                {{$table->surface}} m²
+                                {{$t->surface}} m²
                             </td>
                             <td>
-                                {{$table->price_surface}}
+                                {{$t->price_surface}}
                             </td>
                             <td>
-                                {{$table->price}} <span style="font-size: xx-small;">zł</span>
+                                {{$t->price}} <span style="font-size: xx-small;">zł</span>
                             </td>
                             <td class="px-6 py-4">
-                                @if($table->status == 'avaiable')
+                                @if($t->status == 'avaiable')
                                 <span class="text-success">Dostępne</span>
-                                @elseif($table->status == 'reservation')
+                                @elseif($t->status == 'reservation')
                                 <span class="text-warning">Rezerwacja</span>
-                                @elseif($table->status == 'sold')
+                                @elseif($t->status == 'sold')
                                 <span class="text-danger">Sprzedane</span>
                                 @else
                                 <span class="text-danger">Niedostępne</span>
                                 @endif
                             </td>
                             <td>
-                                @if(Storage::exists('public/'.$table->file_pdf))
-                                <a href="{{ asset('storage/'.$table->file_pdf) }}" download style="background-color: #0f4c64;" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i></a>
+                                @if(Storage::exists('public/'.$t->file_pdf))
+                                <a href="{{ asset('storage/'.$t->file_pdf) }}" download style="background-color: #0f4c64;" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i></a>
                                 @else
                                 <p class="text-danger">Plik PDF nie istnieje.</p>
                                 @endif
@@ -192,7 +192,7 @@
                             <td>
                                 <a href="{{ route('downloadAllFiles') }}" download style="background-color: #0f4c64;" class="btn btn-primary  hover-1 download-button"><i class="fa-solid fa-cloud-arrow-down"></i></a>
                             </td>
-                            <td><a href="{{route('invest.show', $table->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                            <td><a href="{{route($table == 1 ? 'invest.show' : 'invest.show.second', $t->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
                         </tr>
                         @endforeach
                     </tbody>

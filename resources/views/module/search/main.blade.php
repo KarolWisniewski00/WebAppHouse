@@ -43,9 +43,9 @@
                                     <select class="form-select" id="exampleSelect2" name="floor">
                                         <option value="Wybierz">Wybierz</option>
                                         <option value="1">Parter</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                        <option value="4">3</option>
                                     </select>
                                 </div>
                             </div>

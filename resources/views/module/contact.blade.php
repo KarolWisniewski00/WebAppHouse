@@ -41,7 +41,7 @@
                             <div class="invalid-feedback" id="mess-invalid"></div>
                         </div>
                         <div class="d-flex flex-column justify-content-center align-items-start my-4 flex-wrap">
-                            <p class="card-text m-0 p-0 mx-4 my-2 text-start mb-3">Administratorem Pani/Pana danych osobowych jest PERFECT JOBS SP Z.O.O z siedzibą w Piekarach Śląskich przy ulicy Walentego Roździeńskiego 2a/20 NIP 4980269203</p>
+                            <p class="card-text m-0 p-0 mx-4 my-2 text-start mb-3">Administratorem Pani/Pana danych osobowych jest PERFECT JOBS SP Z.O.O z siedzibą w Piekarach Śląskich przy ulicy Sienkiewicza 1 NIP 4980269203</p>
                             <div class="form-check mb-3">
                                 <input class="form-check-input" type="checkbox" value="" id="check1" required>
                                 <label class="form-check-label" for="check1">

@@ -7,7 +7,11 @@
             <div class="col-12">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{route('index')}}">Strona główna</a></li>
-                    <li class="breadcrumb-item"><a href="{{route('invest')}}">Inwestucje</a></li>
+                    @if($table == 1)
+                    <li class="breadcrumb-item"><a href="{{route('invest')}}">Inwestycje {{$setting['naglowek_etap_1']}}</a></li>
+                    @else
+                    <li class="breadcrumb-item"><a href="{{route('invest.second')}}">Inwestycje {{$setting['naglowek_etap_2']}}</a></li>
+                    @endif
                 </ol>
             </div>
         </div>
