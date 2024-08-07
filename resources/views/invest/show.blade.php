@@ -82,8 +82,18 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.7/pdfobject.min.js"></script>
                 <div class="d-flex flex-column justify-content-center align-items-center h-100 pt-5 pb-2">
-                    <embed src="{{ asset('storage/'.$t->file_pdf) }}" type="application/pdf" width="100%" height="500px" />
+                    <div class="w-100 text-center" id="pdfViewer"></div>
+                    <script>
+                        var options = {
+                            height: "500px",
+                            pdfOpenParams: {
+                                view: 'FitH'
+                            }
+                        };
+                        PDFObject.embed("{{ asset('storage/'.$t->file_pdf) }}", "#pdfViewer", options);
+                    </script>
                 </div>
             </div>
         </div>

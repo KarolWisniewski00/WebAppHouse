@@ -87,5 +87,9 @@ class AppServiceProvider extends ServiceProvider
             }
             $view->with('floor_4', $floor_4);
         });
+        View::composer('*', function ($view) {
+            $table = 1;
+            $view->with('table', $table);
+        });
     }
 }

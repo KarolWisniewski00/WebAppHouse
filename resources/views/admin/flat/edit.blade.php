@@ -19,14 +19,14 @@
                             <i class="fa-solid fa-chevron-left me-2"></i>Powrót
                         </a>
                     </div>
-                    <form action="{{ route('dashboard.flat.update', $table->id) }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('dashboard.flat.update', $t->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div class="mb-6">
                             <h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">Piętro</h3>
                             <ul class="grid w-full gap-6 md:grid-cols-1">
                                 <li>
-                                    <input type="radio" id="floor-4" name="segment" value="floor-4" {{ $table->segment == 'floor-4' ? 'checked' : '' }} class="hidden peer" required>
+                                    <input type="radio" id="floor-4" name="segment" value="floor-4" {{ $t->segment == 'floor-4' ? 'checked' : '' }} class="hidden peer" required>
                                     <label for="floor-4" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         <div class="block">
                                             <div class="w-full text-lg font-semibold">Piętro 3</div>
@@ -34,7 +34,7 @@
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="floor-3" name="segment" value="floor-3" {{ $table->segment == 'floor-3' ? 'checked' : '' }} class="hidden peer">
+                                    <input type="radio" id="floor-3" name="segment" value="floor-3" {{ $t->segment == 'floor-3' ? 'checked' : '' }} class="hidden peer">
                                     <label for="floor-3" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         <div class="block">
                                             <div class="w-full text-lg font-semibold">Piętro 2</div>
@@ -42,7 +42,7 @@
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="floor-2" name="segment" value="floor-2" {{ $table->segment == 'floor-2' ? 'checked' : '' }} class="hidden peer">
+                                    <input type="radio" id="floor-2" name="segment" value="floor-2" {{ $t->segment == 'floor-2' ? 'checked' : '' }} class="hidden peer">
                                     <label for="floor-2" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         <div class="block">
                                             <div class="w-full text-lg font-semibold">Piętro 1</div>
@@ -50,7 +50,7 @@
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="floor-1" name="segment" value="floor-1" {{ $table->segment == 'floor-1' ? 'checked' : '' }} class="hidden peer">
+                                    <input type="radio" id="floor-1" name="segment" value="floor-1" {{ $t->segment == 'floor-1' ? 'checked' : '' }} class="hidden peer">
                                     <label for="floor-1" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         <div class="block">
                                             <div class="w-full text-lg font-semibold">Parter</div>
@@ -66,7 +66,7 @@
                             <h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">Pokoje</h3>
                             <ul class="grid w-full gap-6 md:grid-cols-2">
                                 <li>
-                                    <input type="radio" id="room-4" name="flat" value="room-4" {{ $table->flat == 'room-4' ? 'checked' : '' }} class="hidden peer" required>
+                                    <input type="radio" id="room-4" name="flat" value="room-4" {{ $t->flat == 'room-4' ? 'checked' : '' }} class="hidden peer" required>
                                     <label for="room-4" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         <div class="block">
                                             <div class="w-full text-lg font-semibold">4 Pokoje</div>
@@ -74,7 +74,7 @@
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="room-3" name="flat" value="room-3" {{ $table->flat == 'room-3' ? 'checked' : '' }} class="hidden peer">
+                                    <input type="radio" id="room-3" name="flat" value="room-3" {{ $t->flat == 'room-3' ? 'checked' : '' }} class="hidden peer">
                                     <label for="room-3" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         <div class="block">
                                             <div class="w-full text-lg font-semibold">3 Pokoje</div>
@@ -82,7 +82,7 @@
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="room-2" name="flat" value="room-2" {{ $table->flat == 'room-2' ? 'checked' : '' }} class="hidden peer">
+                                    <input type="radio" id="room-2" name="flat" value="room-2" {{ $t->flat == 'room-2' ? 'checked' : '' }} class="hidden peer">
                                     <label for="room-2" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         <div class="block">
                                             <div class="w-full text-lg font-semibold">2 Pokoje</div>
@@ -90,7 +90,7 @@
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="room-1" name="flat" value="room-1" {{ $table->flat == 'room-1' ? 'checked' : '' }} class="hidden peer">
+                                    <input type="radio" id="room-1" name="flat" value="room-1" {{ $t->flat == 'room-1' ? 'checked' : '' }} class="hidden peer">
                                     <label for="room-1" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         <div class="block">
                                             <div class="w-full text-lg font-semibold">1 Pokój</div>
@@ -104,7 +104,7 @@
                         </div>
                         <div class="mb-6">
                             <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Metraż</label>
-                            <input value="{{ old('surface') ? old('surface') : $table->surface }}" name="surface" type="number" step="0.01" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="m²" required id="surface">
+                            <input value="{{ old('surface') ? old('surface') : $t->surface }}" name="surface" type="number" step="0.01" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="m²" required id="surface">
                             @error('surface')
                             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                             @enderror
@@ -112,7 +112,7 @@
 
                         <div class="mb-6">
                             <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Cena za m²</label>
-                            <input value="{{ old('price_surface') ? old('price_surface') : $table->price_surface }}" name="price_surface" type="number" step="0.01" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Cena za m²" required id="price_surface">
+                            <input value="{{ old('price_surface') ? old('price_surface') : $t->price_surface }}" name="price_surface" type="number" step="0.01" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Cena za m²" required id="price_surface">
                             @error('price_surface')
                             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                             @enderror
@@ -151,7 +151,7 @@
                             <h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">Status</h3>
                             <ul class="grid w-full gap-6 md:grid-cols-2">
                                 <li>
-                                    <input type="radio" id="avaiable" name="status" value="avaiable" {{ $table->status == 'avaiable' ? 'checked' : '' }} class="hidden peer" required>
+                                    <input type="radio" id="avaiable" name="status" value="avaiable" {{ $t->status == 'avaiable' ? 'checked' : '' }} class="hidden peer" required>
                                     <label for="avaiable" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         <div class="block">
                                             <div class="w-full text-lg font-semibold">Dostępne</div>
@@ -159,7 +159,7 @@
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="sold" name="status" value="sold" {{ $table->status == 'sold' ? 'checked' : '' }} class="hidden peer">
+                                    <input type="radio" id="sold" name="status" value="sold" {{ $t->status == 'sold' ? 'checked' : '' }} class="hidden peer">
                                     <label for="sold" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         <div class="block">
                                             <div class="w-full text-lg font-semibold">Sprzedane</div>
@@ -167,7 +167,7 @@
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="reservation" name="status" value="reservation" {{ $table->status == 'reservation' ? 'checked' : '' }} class="hidden peer">
+                                    <input type="radio" id="reservation" name="status" value="reservation" {{ $t->status == 'reservation' ? 'checked' : '' }} class="hidden peer">
                                     <label for="reservation" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         <div class="block">
                                             <div class="w-full text-lg font-semibold">Rezerwacja</div>
@@ -175,7 +175,7 @@
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="disable" name="status" value="disable" {{ $table->status == 'disable' ? 'checked' : '' }} class="hidden peer">
+                                    <input type="radio" id="disable" name="status" value="disable" {{ $t->status == 'disable' ? 'checked' : '' }} class="hidden peer">
                                     <label for="disable" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         <div class="block">
                                             <div class="w-full text-lg font-semibold">Niedostępne</div>

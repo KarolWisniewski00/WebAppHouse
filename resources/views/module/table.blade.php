@@ -7,13 +7,14 @@
                 @if($clicked == 'floor--1')
                 <div class="col-12">
                     <div class="d-flex flex-column justify-content-center align-items-center h-100 pt-5 pb-2">
-                        <embed src="{{ asset('asset/-1.pdf') }}" type="application/pdf" width="100%" height="500px" />
+                        <img alt="" src="{{ asset('asset/garaz-2.png') }}" class="w-100 h-auto">
                     </div>
                 </div>
                 @elseif($clicked == 'floor-0')
                 <div class="col-12">
                     <div class="d-flex flex-column justify-content-center align-items-center h-100 pt-5 pb-2">
                         <embed src="{{ asset('asset/0.pdf') }}" type="application/pdf" width="100%" height="500px" />
+                        <img alt="" src="{{ asset('asset/garaz-1.png') }}" class="w-100 h-auto">
                     </div>
                 </div>
                 @else
