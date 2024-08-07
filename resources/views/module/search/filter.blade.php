@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                @if($table == 1)
+                @if($table2 == 1)
                 <h1>{{$setting['naglowek_etap_1']}}</h1>
                 @else
                 <h1>{{$setting['naglowek_etap_2']}}</h1>
@@ -14,6 +14,7 @@
                         <div class="position-absolute p-1px" id="segment-A1">
                             <div id="h1" class="segment-hover-3 segment-hover-2 s-neutral h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    @if(isset($setting['a2']) && $setting['a2'] === 'on')
                                     <form method="post" class="h-100 w-100" action="{{route('invest.filter.second')}}">
                                         @csrf
                                         <input type="hidden" name="floor" value="1">
@@ -21,6 +22,8 @@
                                             <div class="text-black h5">Etap 2</div>
                                         </button>
                                     </form>
+                                    @endif
+                                    @if(isset($setting['a1']) && $setting['a1'] === 'on')
                                     <form method="post" class="w-100 h-100" action="{{route('invest.filter')}}">
                                         @csrf
                                         <input type="hidden" name="floor" value="1">
@@ -28,12 +31,14 @@
                                             <div class="text-black h5">Etap 1</div>
                                         </button>
                                     </form>
+                                    @endif
                                 </div>
                             </div>
                         </div>
                         <div class="position-absolute p-1px" id="segment-A2">
                             <div id="h2" class="segment-hover-3 segment-hover-2 s-neutral h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    @if(isset($setting['a2']) && $setting['a2'] === 'on')
                                     <form method="post" class="h-100 w-100" action="{{route('invest.filter.second')}}">
                                         @csrf
                                         <input type="hidden" name="floor" value="2">
@@ -41,6 +46,8 @@
                                             <div class="text-black h5">Etap 2</div>
                                         </button>
                                     </form>
+                                    @endif
+                                    @if(isset($setting['a1']) && $setting['a1'] === 'on')
                                     <form method="post" class="w-100 h-100" action="{{route('invest.filter')}}">
                                         @csrf
                                         <input type="hidden" name="floor" value="2">
@@ -48,12 +55,14 @@
                                             <div class="text-black h5">Etap 1</div>
                                         </button>
                                     </form>
+                                    @endif
                                 </div>
                             </div>
                         </div>
                         <div class="position-absolute p-1px" id="segment-B1">
                             <div id="h3" class="segment-hover-3 segment-hover-2 s-neutral h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    @if(isset($setting['a2']) && $setting['a2'] === 'on')
                                     <form method="post" class="h-100 w-100" action="{{route('invest.filter.second')}}">
                                         @csrf
                                         <input type="hidden" name="floor" value="3">
@@ -61,6 +70,8 @@
                                             <div class="text-black h5">Etap 2</div>
                                         </button>
                                     </form>
+                                    @endif
+                                    @if(isset($setting['a1']) && $setting['a1'] === 'on')
                                     <form method="post" class="w-100 h-100" action="{{route('invest.filter')}}">
                                         @csrf
                                         <input type="hidden" name="floor" value="3">
@@ -68,12 +79,14 @@
                                             <div class="text-black h5">Etap 1</div>
                                         </button>
                                     </form>
+                                    @endif
                                 </div>
                             </div>
                         </div>
                         <div class="position-absolute p-1px" id="segment-B2">
                             <div id="h4" class="segment-hover-3 segment-hover-2 s-neutral h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    @if(isset($setting['a2']) && $setting['a2'] === 'on')
                                     <form method="post" class="h-100 w-100" action="{{route('invest.filter.second')}}">
                                         @csrf
                                         <input type="hidden" name="floor" value="4">
@@ -81,6 +94,8 @@
                                             <div class="text-black h5">Etap 2</div>
                                         </button>
                                     </form>
+                                    @endif
+                                    @if(isset($setting['a1']) && $setting['a1'] === 'on')
                                     <form method="post" class="h-100 w-100" action="{{route('invest.filter')}}">
                                         @csrf
                                         <input type="hidden" name="floor" value="4">
@@ -88,6 +103,7 @@
                                             <div class="text-black h5">Etap 1</div>
                                         </button>
                                     </form>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -103,7 +119,7 @@
                     <div class="h4 align-self-start">
                         Z zdjęcia lub z listy:
                     </div>
-                    @if($table == 1)
+                    @if($table2 == 1)
                     <form method="post" class="w-100" action="{{route('invest.filter')}}">
                         @csrf
                         <input type="hidden" name="floor" value="4">

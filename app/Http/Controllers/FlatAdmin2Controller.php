@@ -54,7 +54,8 @@ class FlatAdmin2Controller extends Controller
     }
     public function edit(Flat2 $table)
     {
-        return view('admin.second.edit', compact('table'));
+        $t = $table;
+        return view('admin.flat.edit', compact('t'));
     }
     public function update(EditFlatRequest $request, Flat2 $table)
     {

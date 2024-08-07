@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                @if($table == 1)
+                @if($table2 == 1)
                 <h1>{{$setting['naglowek_etap_1']}}</h1>
                 @else
                 <h1>{{$setting['naglowek_etap_2']}}</h1>
@@ -534,11 +534,10 @@
                                 </div>
                             </div>
                         </div>
-                        @elseif($t->id == 45)
                         <div class="s-neutral-b position-absolute p-1px @if($t->status == 'avaiable') {{'segment-success'}} @elseif ( $t->status == 'reservation' ) {{'segment-warning'}} @else {{'segment-danger'}} @endif" style="top: 11%;left: 64.5%;width: 11.5%;height: 35%;">
                             <div class="h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
-                                    <a href="{{route($table == 1 ? 'invest.show' : 'invest.show.second', 45)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                    <a href="{{route($table == 1 ? 'invest.show' : 'invest.show.second', 44)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
                                 </div>
                             </div>
                         </div>
@@ -546,7 +545,7 @@
                         <div class="s-neutral-b position-absolute p-1px @if($t->status == 'avaiable') {{'segment-success'}} @elseif ( $t->status == 'reservation' ) {{'segment-warning'}} @else {{'segment-danger'}} @endif" style="top: 58%;left: 53.5%;width: 11.5%;height: 23%;">
                             <div class="h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
-                                    <a href="{{route($table == 1 ? 'invest.show' : 'invest.show.second', 46)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                    <a href="{{route($table == 1 ? 'invest.show' : 'invest.show.second', 45)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
                                 </div>
                             </div>
                         </div>
@@ -554,7 +553,7 @@
                         <div class="s-neutral-b position-absolute p-1px @if($t->status == 'avaiable') {{'segment-success'}} @elseif ( $t->status == 'reservation' ) {{'segment-warning'}} @else {{'segment-danger'}} @endif" style="top: 46%;left: 64.5%;width: 11.5%;height: 35%;">
                             <div class="h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
-                                    <a href="{{route($table == 1 ? 'invest.show' : 'invest.show.second', 47)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                    <a href="{{route($table == 1 ? 'invest.show' : 'invest.show.second', 46)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
                                 </div>
                             </div>
                         </div>

@@ -15,11 +15,13 @@ class SettingAdminController extends Controller
     }
     public function edit(Setting $table)
     {
-        return view('admin.setting.edit', compact('table'));
+        $table1 = $table;
+        return view('admin.setting.edit', compact('table1'));
     }
     public function photo(Setting $table)
     {
-        return view('admin.setting.photo', compact('table'));
+        $table1 = $table;
+        return view('admin.setting.photo', compact('table1'));
     }
     public function update(Request $request, Setting $table)
     {

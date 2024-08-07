@@ -18,17 +18,17 @@
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        Mieszkania
+                        Mieszkania A1
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link href="{{ route('second') }}" :active="request()->routeIs('second')">
-                        Etap 2
+                        Mieszkania A2
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link href="{{ route('dashboard.floor') }}" :active="Str::startsWith(request()->path(), 'dashboard/floor')">
-                        Piętra
+                    <x-nav-link href="{{ route('third') }}" :active="request()->routeIs('third')">
+                        Mieszkania A3
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
@@ -162,13 +162,13 @@
                 Strona główna
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                Mieszkania
+                Mieszkania A1
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('second') }}" :active="request()->routeIs('second')">
-                Etap 2
+                Mieszkania A2
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="{{ route('dashboard.floor') }}" :active="Str::startsWith(request()->path(), 'dashboard/floor')">
-                Piętra
+            <x-responsive-nav-link href="{{ route('third') }}" :active="request()->routeIs('third')">
+                Mieszkania A3
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('dashboard.setting') }}" :active="Str::startsWith(request()->path(), 'dashboard/setting')">
                 Ustawienia

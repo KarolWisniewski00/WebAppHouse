@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function index(){
-        $table = 1;
-        return view('index', compact('table'));
+        $table2 = 1;
+        return view('index', compact('table2'));
     }
 }

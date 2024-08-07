@@ -41,8 +41,8 @@ class FilterController extends Controller
                 $tables = $tables_new;
             }
         }
-        $table = 1;
-        return view('invest.index', compact('tables', 'clicked', 'table'));
+        $table2 = 1;
+        return view('invest.index', compact('tables', 'clicked', 'table2'));
     }
     public function showSecond(Request $request)
     {
@@ -77,7 +77,7 @@ class FilterController extends Controller
                 $tables = $tables_new;
             }
         }
-        $table = 2;
-        return view('invest.index', compact('tables', 'clicked', 'table'));
+        $table2 = 2;
+        return view('invest.index', compact('tables', 'clicked', 'table2'));
     }
 }

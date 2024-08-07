@@ -6,6 +6,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FilesController;
 use App\Http\Controllers\FilterController;
 use App\Http\Controllers\FlatAdmin2Controller;
+use App\Http\Controllers\FlatAdmin3Controller;
 use App\Http\Controllers\FlatAdminController;
 use App\Http\Controllers\FloorAdminController;
 use App\Http\Controllers\GalleryController;
@@ -42,7 +43,10 @@ Route::prefix('invest')->group(function () {
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/rodo', [RodoController::class, 'index'])->name('rodo');
 Route::get('/about-invest', [AboutInvestController::class, 'index'])->name('about.invest');
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::prefix('contact')->group(function () {
+    Route::get('/', [ContactController::class, 'index'])->name('contact');
+    Route::post('/store', [ContactController::class, 'store'])->name('contact.form');
+});
 Route::post('/pin', [SettingAdminController::class, 'pin'])->name('pin');
 Route::get('/download', [FilesController::class, 'downloadAllFiles'])->name('downloadAllFiles');
 
@@ -68,6 +72,14 @@ Route::middleware([
             Route::get('/edit/{table}', [FlatAdmin2Controller::class, 'edit'])->name('second.flat.edit');
             Route::put('/update/{table}', [FlatAdmin2Controller::class, 'update'])->name('second.flat.update');
             Route::delete('/delete/{table}', [FlatAdmin2Controller::class, 'delete'])->name('second.flat.delete');
+        });
+        Route::prefix('third')->group(function () {
+            Route::get('/', [FlatAdmin3Controller::class, 'index'])->name('third');
+            Route::get('/create', [FlatAdmin3Controller::class, 'create'])->name('third.flat.create');
+            Route::post('/store', [FlatAdmin3Controller::class, 'store'])->name('third.flat.store');
+            Route::get('/edit/{table}', [FlatAdmin3Controller::class, 'edit'])->name('third.flat.edit');
+            Route::put('/update/{table}', [FlatAdmin3Controller::class, 'update'])->name('third.flat.update');
+            Route::delete('/delete/{table}', [FlatAdmin3Controller::class, 'delete'])->name('third.flat.delete');
         });
         Route::prefix('files')->group(function () {
             Route::get('/create', [FilesController::class, 'create'])->name('dashboard.files.create');

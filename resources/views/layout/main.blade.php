@@ -45,8 +45,17 @@
                             {{$setting['naglowek_osiedle_luxor_residence']}}
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{route('invest')}}">{{$setting['naglowek_etap_1']}}</a></li>
-                            <li><a class="dropdown-item" href="{{route('invest.second')}}">{{$setting['naglowek_etap_2']}}</a></li>
+                            @if(isset($setting['a1']) && $setting['a1'] === 'on')
+                            <li><a class="dropdown-item" href="{{ route('invest') }}">{{ $setting['naglowek_etap_1'] }}</a></li>
+                            @endif
+
+                            @if(isset($setting['a2']) && $setting['a2'] === 'on')
+                            <li><a class="dropdown-item" href="{{ route('invest.second') }}">{{ $setting['naglowek_etap_2'] }}</a></li>
+                            @endif
+
+                            @if(isset($setting['a3']) && $setting['a3'] === 'on')
+                            <li><span class="dropdown-item">{{ $setting['naglowek_etap_3'] }}</span></li>
+                            @endif
                         </ul>
                     </li>
                     <li class="nav-item mx-auto">
@@ -74,6 +83,11 @@
                             <a href="{{$setting['instagram_link_w_pasku_nawigacyjnym']}}" class="nav-link nav-hover"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </li>
+                    <li class="nav-item mx-auto">
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <a href="{{$setting['tiktok_link_w_pasku_nawigacyjnym']}}" class="nav-link nav-hover"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </li>
                 </ul>
             </header>
         </div>
@@ -81,20 +95,26 @@
     <!--END NAV-->
     <!--MAIN-->
     <main id="main">
-        <!--ALERTS
+        <!--ALERTS-->
         <section>
             <div class="container">
+                @if(session('success'))
                 <div class="alert alert-dismissible alert-success">
                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    <strong>Sukces!</strong> Pomyślnie zalogowano <a href="#" class="alert-link">zobacz konto</a>.
+                    {{ session('success') }}
                 </div>
+                @endif
+                @if($errors->any())
                 <div class="alert alert-dismissible alert-danger">
                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    <strong>Error!</strong> Coś poszło nie tak <a href="#" class="alert-link">zobacz</a>.
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
                 </div>
+                @endif
             </div>
         </section>
-        -->
+        <!---->
         @yield('content')
     </main>
     <!--END MAIN-->
@@ -109,6 +129,7 @@
                     <li class="nav-item"><a href="{{route('contact')}}" class="nav-link px-2 text-white">Kontakt</a></li>
                     <li class="nav-item"><a href="{{$setting['facebook_link_w_pasku_nawigacyjnym']}}" class="nav-link px-2 text-white"><i class="fa-brands fa-facebook"></i></a></li>
                     <li class="nav-item"><a href="{{$setting['instagram_link_w_pasku_nawigacyjnym']}}" class="nav-link px-2 text-white"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="nav-item"><a href="{{$setting['tiktok_link_w_pasku_nawigacyjnym']}}" class="nav-link px-2 text-white"><i class="fa-brands fa-tiktok"></i></a></li>
                 </ul>
                 <p class="text-center text-white">&copy; 2023 Nowe Inspiracje, desinged by Karol Wiśniewski</p>
             </footer>

@@ -11,13 +11,13 @@
                 <div class="p-6 lg:p-8 bg-white border-b border-gray-200">
                     @include('admin.module.alerts')
                     @if(count($tables) == 0)
-                    <div id="alert-4" class="flex items-center p-4 mb-4 text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300" role="alert">
+                    <div id="alert-4" class="flex items-center p-4 mb-4 text-yellow-800 rounded-lg bg-yellow-50" role="alert">
                         <i class="fa-solid fa-triangle-exclamation"></i>
                         <span class="sr-only">Info</span>
                         <div class="ml-3 text-sm font-medium">
                             Baza danych jest pusta, <a href="{{route('dashboard.flat.create')}}" class="font-semibold underline hover:no-underline">utwórz dane</a> aby zapewnić prawidłowe działanie.
                         </div>
-                        <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-yellow-50 text-yellow-500 rounded-lg focus:ring-2 focus:ring-yellow-400 p-1.5 hover:bg-yellow-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-yellow-300 dark:hover:bg-gray-700" onclick="closeAlertBox('#alert-4')" data-dismiss-target="#alert-4" aria-label="Close">
+                        <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-yellow-50 text-yellow-500 rounded-lg focus:ring-2 focus:ring-yellow-400 p-1.5 hover:bg-yellow-200 inline-flex items-center justify-center h-8 w-8" onclick="closeAlertBox('#alert-4')" data-dismiss-target="#alert-4" aria-label="Close">
                             <span class="sr-only">Close</span>
                             <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
@@ -35,8 +35,8 @@
                         </a>
                     </div>
                     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text-center">
+                        <table class="w-full text-sm text-left text-gray-500">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 text-center">
                                 <tr>
                                     <th scope="col" class="px-4 py-2">
                                         Numer
@@ -57,13 +57,13 @@
                                     </td>
                                     <td class="px-4 py-3">
                                         @if(Storage::exists('public/'.$table->file_pdf) && $table->file_pdf != null)
-                                        <a href="{{ asset('storage/'.$table->file_pdf) }}" download type="button" class="px-5 py-2.5 text-center mx-1 my-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-file-pdf"></i></a>
+                                        <a href="{{ asset('storage/'.$table->file_pdf) }}" download type="button" class="px-5 py-2.5 text-center mx-1 my-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200"><i class="fa-solid fa-file-pdf"></i></a>
                                         @else
                                         <p class="text-rose-400">Plik PDF nie istnieje.</p>
                                         @endif
                                     </td>
                                     <td class="px-4 py-3">
-                                        <a href="{{ route('dashboard.floor.edit', $table->id) }}" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-1 my-1 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800">
+                                        <a href="{{ route('dashboard.floor.edit', $table->id) }}" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-1 my-1 focus:outline-none">
                                             <i class="fa-solid fa-pen-to-square"></i>
                                         </a>
                                     </td>
