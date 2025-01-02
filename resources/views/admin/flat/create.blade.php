@@ -15,11 +15,27 @@
                         <h1 class="mt-8 mb-4 text-2xl font-medium text-gray-900">
                             Dodawanie nowego mieszkania
                         </h1>
+                        @if($view == 1)
                         <a href="{{ route('dashboard') }}" type="button" class="mt-8 mb-4 text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">
                             <i class="fa-solid fa-chevron-left me-2"></i>Powrót
                         </a>
+                        @elseif($view == 2)
+                        <a href="{{ route('second') }}" type="button" class="mt-8 mb-4 text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">
+                            <i class="fa-solid fa-chevron-left me-2"></i>Powrót
+                        </a>
+                        @elseif($view == 3)
+                        <a href="{{ route('third') }}" type="button" class="mt-8 mb-4 text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">
+                            <i class="fa-solid fa-chevron-left me-2"></i>Powrót
+                        </a>
+                        @endif
                     </div>
+                    @if($view == 1)
                     <form action="{{ route('dashboard.flat.store') }}" method="POST" enctype="multipart/form-data">
+                    @elseif($view == 2)
+                    <form action="{{ route('second.flat.store') }}" method="POST" enctype="multipart/form-data">
+                    @elseif($view == 3)
+                    <form action="{{ route('third.flat.store') }}" method="POST" enctype="multipart/form-data">
+                    @endif
                         @csrf
                         <div class="mb-6">
                             <h3 class="mb-5 text-lg font-medium text-gray-900">Piętro</h3>
@@ -194,9 +210,19 @@
                         <button type="submit" class="text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2">
                             <i class="fa-solid fa-floppy-disk mr-2"></i>Zapisz
                         </button>
-                        <a href="{{ route('dashboard') }}" class="text-red-500 hover:text-white border border-red-600 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">
+                        @if($view == 1)
+                        <a href="{{ route('dashboard') }}" class="text-red-500 hover:text-white border border-red-600 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
                             <i class="fa-solid fa-x mr-2"></i>Anuluj
                         </a>
+                        @elseif($view == 2)
+                        <a href="{{ route('second') }}" class="text-red-500 hover:text-white border border-red-600 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+                            <i class="fa-solid fa-x mr-2"></i>Anuluj
+                        </a>
+                        @elseif($view == 3)
+                        <a href="{{ route('third') }}" class="text-red-500 hover:text-white border border-red-600 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+                            <i class="fa-solid fa-x mr-2"></i>Anuluj
+                        </a>
+                        @endif
                     </form>
                 </div>
             </div>

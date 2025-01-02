@@ -8,7 +8,7 @@ class AboutController extends Controller
 {
     public function index()
     {
-        $table = 1;
-        return view('about', compact('table'));
+        $table2 = 1;
+        return view('about', compact('table2'));
     }
 }

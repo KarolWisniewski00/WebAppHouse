@@ -20,7 +20,8 @@ class FlatAdmin3Controller extends Controller
     }
     public function create()
     {
-        return view('admin.third.create');
+        $view = 3;
+        return view('admin.third.create', compact('view'));
     }
     public function store(CreateFlatRequest $request)
     {
@@ -41,7 +42,7 @@ class FlatAdmin3Controller extends Controller
         $table->surface = $request->surface;
         $table->price_surface = $request->price_surface;
         $table->status = $request->status;
-        $table->price = intval(intval($request->surface) * intval($request->price_surface));
+        $table->price = floatval(floatval($request->surface) * floatval($request->price_surface));
         $table->file_pdf = $file_pdf;
         $table->file_priv = $file_priv;
         $res = $table->save();
@@ -55,7 +56,8 @@ class FlatAdmin3Controller extends Controller
     public function edit(Flat3 $table)
     {
         $t = $table;
-        return view('admin.flat.edit', compact('t'));
+        $view = 3;
+        return view('admin.flat.edit', compact('t', 'view'));
     }
     public function update(EditFlatRequest $request, Flat3 $table)
     {
@@ -65,7 +67,7 @@ class FlatAdmin3Controller extends Controller
             'surface' => $request->surface,
             'price_surface' => $request->price_surface,
             'status' => $request->status,
-            'price' => intval(intval($request->surface) * intval($request->price_surface)),
+            'price' => floatval(floatval($request->surface) * floatval($request->price_surface)),
 
         ]);
         if ($request->hasFile('file_pdf') && $request->file('file_pdf')) {
