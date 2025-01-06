@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CallContactRequest;
 use App\Http\Requests\ContactRequest;
 use App\Mail\CallContactFormMail;
 use App\Mail\ContactFormMail;
@@ -18,7 +19,7 @@ class ContactController extends Controller
         Mail::to('sprzedazdgg@gmail.com')->send(new ContactFormMail($request->all()));
         return redirect()->back()->with('success',  'Pomyślnie wysłano wiadomość');
     }
-    public function call_store(Request $request)
+    public function call_store(CallContactRequest $request)
     {
         Mail::to('karol.wisniewski2901@gmail.com')->send(new CallContactFormMail($request->all()));
         return redirect()->back()->with('success',  'Pomyślnie wysłano wiadomość');
