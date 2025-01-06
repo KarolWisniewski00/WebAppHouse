@@ -103,7 +103,11 @@
                                 <p class="text-danger">Plik PDF nie istnieje.</p>
                                 @endif
                             </td>
-                            <td><a href="{{route($table == 1 ? 'invest.show' : 'invest.show.second', $t->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                            @if($table2 == 1)
+                            <td><a href="{{route('invest.show', $t->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                            @else
+                            <td><a href="{{route('invest.show.second', $t->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                            @endif
                         </tr>
                         @endforeach
                     </tbody>
@@ -192,7 +196,12 @@
                             <td>
                                 <a href="{{ route('downloadAllFiles') }}" download style="background-color: #0f4c64;" class="btn btn-primary  hover-1 download-button"><i class="fa-solid fa-cloud-arrow-down"></i></a>
                             </td>
-                            <td><a href="{{route($table == 1 ? 'invest.show' : 'invest.show.second', $t->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                            @if($table2 == 1)
+                            <td><a href="{{route('invest.show', $t->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                            @else
+                            <td><a href="{{route('invest.show.second', $t->id)}}" class="btn btn-primary hover-1 " style="background-color: #0f4c64;"><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                            @endif
+
                         </tr>
                         @endforeach
                     </tbody>

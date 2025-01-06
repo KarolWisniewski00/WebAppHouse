@@ -734,12 +734,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="s-neutral-b position-absolute p-1px @if($t->status == 'avaiable') {{'segment-success'}} @elseif ( $t->status == 'reservation' ) {{'segment-warning'}} @else {{'segment-danger'}} @endif" style="
                         @if($table2 == 1)
+                        <div class="s-neutral-b position-absolute p-1px @if($t->status == 'avaiable') {{'segment-success'}} @elseif ( $t->status == 'reservation' ) {{'segment-warning'}} @else {{'segment-danger'}} @endif" style="
                         top: 11%;left: 64.5%;width: 11.5%;height: 35%;
-                        @else
-                        top: 44%;left: 73%;width: 12%;height: 27%;
-                        @endif
                         ">
                             <div class="h-100 w-100">
                                 <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
@@ -747,12 +744,13 @@
                                 </div>
                             </div>
                         </div>
-                        @elseif($t->id == 46)
+                        @endif
+                        @elseif($t->id == 45)
                         <div class="s-neutral-b position-absolute p-1px @if($t->status == 'avaiable') {{'segment-success'}} @elseif ( $t->status == 'reservation' ) {{'segment-warning'}} @else {{'segment-danger'}} @endif" style="
                         @if($table2 == 1)
                         top: 58%;left: 53.5%;width: 11.5%;height: 23%;
                         @else
-                        top: 44%;left: 65%;width: 8%;height: 27%;
+                        top: 44%;left: 73%;width: 12%;height: 27%;
                         @endif
                         ">
                             <div class="h-100 w-100">
@@ -761,12 +759,12 @@
                                 </div>
                             </div>
                         </div>
-                        @elseif($t->id == 47)
+                        @elseif($t->id == 46)
                         <div class="s-neutral-b position-absolute p-1px @if($t->status == 'avaiable') {{'segment-success'}} @elseif ( $t->status == 'reservation' ) {{'segment-warning'}} @else {{'segment-danger'}} @endif" style="
                         @if($table2 == 1)
                         top: 46%;left: 64.5%;width: 11.5%;height: 35%;
                         @else
-                        top: 44%;left: 53%;width: 12%;height: 27%;
+                        top: 44%;left: 65%;width: 8%;height: 27%;
                         @endif
                         ">
                             <div class="h-100 w-100">
@@ -775,6 +773,19 @@
                                 </div>
                             </div>
                         </div>
+                        @elseif($t->id == 47)
+                        @if($table2 == 1)
+                        @else
+                        <div class="s-neutral-b position-absolute p-1px @if($t->status == 'avaiable') {{'segment-success'}} @elseif ( $t->status == 'reservation' ) {{'segment-warning'}} @else {{'segment-danger'}} @endif" style="
+                        top: 44%;left: 53%;width: 12%;height: 27%;
+                        ">
+                            <div class="h-100 w-100">
+                                <div class="d-flex flex-row justify-content-center align-items-center text-center h-100 btn-d">
+                                    <a href="{{route($table2 == 1 ? 'invest.show' : 'invest.show.second', 47)}}" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
                         @endif
                         @endforeach
                     </div>

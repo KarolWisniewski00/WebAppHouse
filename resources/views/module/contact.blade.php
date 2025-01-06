@@ -1,7 +1,7 @@
 <!--FORM CONTACT-->
 <section>
     <div class="position-relative" id="card-form-contact-container">
-        <div class="card border-primary mb-3 position-absolute top-100 start-50 translate-middle" id="card-form-contact">
+        <div class="card border-primary mb-3 position-absolute top-100 start-50 translate-middle col-12 col-md-8 col-lg-6" id="card-form-contact">
             <div class="card-header">Kontakt</div>
             <div class="card-body">
                 <div class="d-flex flex-column justify-content-center align-items-start mb-4 mx-2">
@@ -9,8 +9,8 @@
                     <label class="form-label">Dane</label>
                     <form id="contact-form" class="w-100" action="{{ route('contact.form') }}" method="POST">
                         @csrf
-                        <div class="row w-100">
-                            <div class="col-12 col-md-6">
+                        <div class="w-100 d-flex flex-row">
+                            <div class="col-6 pe-3">
                                 <div class="form-floating mb-3 w-100">
                                     <input type="text" class="form-control w-100" id="name" name="name">
                                     <label for="name">Imię</label>
@@ -19,7 +19,7 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6">
+                            <div class="col-6">
                                 <div class="form-floating mb-3 w-100">
                                     <input type="text" class="form-control w-100" id="surname" name="surname">
                                     <label for="surname">Nazwisko</label>
@@ -81,13 +81,28 @@
                                 @enderror
                             </div>
                         </div>
-                        <button class="btn btn-primary mb-3 w-100 hover-1" style="background-color: #0f4c64;" type="submit">Wyślij</button>
+                        <button class="btn btn-primary mb-3 w-100 hover-1" style="background-color: #0f4c64;" type="submit"><i class="fa-solid fa-paper-plane me-2"></i>Wyślij</button>
                     </form>
                 </div>
                 <div class="d-flex justify-content-center align-items-center my-4 flex-wrap">
                     <a href="tel:+48{{$setting['strona_kontaktowa_telefon_działu']}}" class="card-text m-0 p-0 mx-4 my-2 text-nowrap" style="text-decoration: none;">{{$setting['strona_kontaktowa_telefon_działu']}}</a>
                     <a href="mailto:{{$setting['strona_kontaktowa_email_działu']}}" class="card-text m-0 p-0 mx-4 my-2" style="text-decoration: none;">{{$setting['strona_kontaktowa_email_działu']}}</a>
                     <p class="card-text m-0 p-0 mx-4 my-2 text-center">{{$setting['strona_kontaktowa_napis_główny_ciemny']}} {{$setting['strona_kontaktowa_napis_główny_jasny']}} {{$setting['strona_kontaktowa_ulica']}}, {{$setting['strona_kontaktowa_miasto']}}</p>
+                </div>
+                <div class="d-flex flex-wrap my-2">
+                    <div class="col-12">
+                        <h4 class="card-title mb-4">Wybierz wykończenia wnętrz</h4>
+                    </div>
+                    <div class="col-6 pe-3">
+                        <a href="{{ asset('asset/Pakiet Premium.pdf') }}"  class="btn btn-extra w-100 my-auto hover-1" style="background-color: #0f4c64;">
+                            <i class="fa-solid fa-star me-2"></i>Premium
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="{{ asset('asset/Pakiet Classic.pdf') }}"  class="btn btn-extra w-100 my-auto hover-1">
+                            <i class="fa-solid fa-circle me-2"></i>Classic
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

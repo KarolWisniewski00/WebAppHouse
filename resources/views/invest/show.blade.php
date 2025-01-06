@@ -10,7 +10,7 @@
                     @if($table2 == 1)
                     <li class="breadcrumb-item"><a href="{{route('invest')}}">Inwestycje {{$setting['naglowek_etap_1']}}</a></li>
                     @else
-                    <li class="breadcrumb-item"><a href="{{route('invest')}}">Inwestycje {{$setting['naglowek_etap_2']}}</a></li>
+                    <li class="breadcrumb-item"><a href="{{route('invest.second')}}">Inwestycje {{$setting['naglowek_etap_2']}}</a></li>
                     @endif
                     <li class="breadcrumb-item"><a href="{{route('invest.show',$slug)}}">{{$t->flat}}</a></li>
                 </ol>
@@ -26,6 +26,7 @@
             </div>
             <div class="col-4">
                 <div class="d-flex flex-row justify-content-center align-items-center mb-3">
+                    @if($table2 == 1)
                     <form method="post" action="{{route('invest.filter')}}">
                         @csrf
                         @if($t->segment == 'floor-4')
@@ -39,6 +40,21 @@
                         @endif
                         <button type="submit" class="btn btn-lg btn-primary h-100" style="background-color: #0f4c64;">Plan Piętra</button>
                     </form>
+                    @else
+                    <form method="post" action="{{route('invest.filter.second')}}">
+                        @csrf
+                        @if($t->segment == 'floor-4')
+                        <input type="hidden" name="floor" value="4">
+                        @elseif($t->segment == 'floor-3')
+                        <input type="hidden" name="floor" value="3">
+                        @elseif($t->segment == 'floor-2')
+                        <input type="hidden" name="floor" value="2">
+                        @elseif($t->segment == 'floor-1')
+                        <input type="hidden" name="floor" value="1">
+                        @endif
+                        <button type="submit" class="btn btn-lg btn-primary h-100" style="background-color: #0f4c64;">Plan Piętra</button>
+                    </form>
+                    @endif
                 </div>
             </div>
             <div class="col-4">

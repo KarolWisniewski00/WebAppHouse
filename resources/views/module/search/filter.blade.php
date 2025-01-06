@@ -19,7 +19,7 @@
                                         @csrf
                                         <input type="hidden" name="floor" value="1">
                                         <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100">
-                                            <div class="text-black h5">Etap 2</div>
+                                            <div class="h5" style="color: white;">Etap 2</div>
                                         </button>
                                     </form>
                                     @endif
@@ -28,7 +28,7 @@
                                         @csrf
                                         <input type="hidden" name="floor" value="1">
                                         <button type="submit" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;">
-                                            <div class="text-black h5">Etap 1</div>
+                                            <div class="h5" style="color: white;">Etap 1</div>
                                         </button>
                                     </form>
                                     @endif
@@ -43,7 +43,7 @@
                                         @csrf
                                         <input type="hidden" name="floor" value="2">
                                         <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100">
-                                            <div class="text-black h5">Etap 2</div>
+                                            <div class="h5" style="color: white;">Etap 2</div>
                                         </button>
                                     </form>
                                     @endif
@@ -52,7 +52,7 @@
                                         @csrf
                                         <input type="hidden" name="floor" value="2">
                                         <button type="submit" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;">
-                                            <div class="text-black h5">Etap 1</div>
+                                            <div class="h5" style="color: white;">Etap 1</div>
                                         </button>
                                     </form>
                                     @endif
@@ -67,7 +67,7 @@
                                         @csrf
                                         <input type="hidden" name="floor" value="3">
                                         <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100">
-                                            <div class="text-black h5">Etap 2</div>
+                                            <div class="h5" style="color: white;">Etap 2</div>
                                         </button>
                                     </form>
                                     @endif
@@ -76,7 +76,7 @@
                                         @csrf
                                         <input type="hidden" name="floor" value="3">
                                         <button type="submit" class="btn btn-primary btn-sm h-100 w-100" style="background-color: transparent;">
-                                            <div class="text-black h5">Etap 1</div>
+                                            <div class="h5" style="color: white;">Etap 1</div>
                                         </button>
                                     </form>
                                     @endif
@@ -91,7 +91,7 @@
                                         @csrf
                                         <input type="hidden" name="floor" value="4">
                                         <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100">
-                                            <div class="text-black h5">Etap 2</div>
+                                            <div class="h5" style="color: white;">Etap 2</div>
                                         </button>
                                     </form>
                                     @endif
@@ -100,7 +100,7 @@
                                         @csrf
                                         <input type="hidden" name="floor" value="4">
                                         <button type="submit" style="background-color: transparent;" class="btn btn-primary btn-sm h-100 w-100">
-                                            <div class="text-black h5">Etap 1</div>
+                                            <div class="h5" style="color: white;">Etap 1</div>
                                         </button>
                                     </form>
                                     @endif

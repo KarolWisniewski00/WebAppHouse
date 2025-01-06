@@ -46,6 +46,7 @@ Route::get('/about-invest', [AboutInvestController::class, 'index'])->name('abou
 Route::prefix('contact')->group(function () {
     Route::get('/', [ContactController::class, 'index'])->name('contact');
     Route::post('/store', [ContactController::class, 'store'])->name('contact.form');
+    Route::post('/call/store', [ContactController::class, 'call_store'])->name('contact.call.store');
 });
 Route::post('/pin', [SettingAdminController::class, 'pin'])->name('pin');
 Route::get('/download', [FilesController::class, 'downloadAllFiles'])->name('downloadAllFiles');
