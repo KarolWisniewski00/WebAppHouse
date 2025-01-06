@@ -21,7 +21,7 @@ class ContactController extends Controller
     }
     public function call_store(CallContactRequest $request)
     {
-        Mail::to('karol.wisniewski2901@gmail.com')->send(new CallContactFormMail($request->all()));
+        Mail::to('sprzedazdgg@gmail.com')->send(new CallContactFormMail($request->all()));
         return redirect()->back()->with('success',  'Pomyślnie wysłano wiadomość');
     }
 }
