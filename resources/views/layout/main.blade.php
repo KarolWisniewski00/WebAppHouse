@@ -80,7 +80,7 @@
             align-items: center;
             bottom: 20px;
             left: 100px;
-            height: 60px;
+            min-height: 60px;
             clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 10px 100%, 0% 50%);
         }
 
