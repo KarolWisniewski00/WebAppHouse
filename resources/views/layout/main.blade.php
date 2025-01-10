@@ -85,7 +85,7 @@
         }
 
         .bubble-text {
-            margin-right: 10px;
+            margin-right: 5px;
             font-size: 16px;
             color: #333;
             color: #f5f7f9;
