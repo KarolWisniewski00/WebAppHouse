@@ -91,5 +91,9 @@ class AppServiceProvider extends ServiceProvider
             $table = 1;
             $view->with('table', $table);
         });
+        View::composer('*', function ($view) {
+            $currentTime = \Carbon\Carbon::now();
+            $view->with('currentTime', $currentTime);
+        });
     }
 }

@@ -193,12 +193,13 @@
 #card-form-apart{
     position: relative!important;
 }
-
+.mt-sm-custom{
+    margin-top: 8em!important;
+}
 @media (min-width: 576px) {
     .border-custom-left {
         border-left: 1px solid #d28f6f !important;
     }
-
     .border-custom-right {
         border-right: 1px solid #d28f6f !important;
     }
@@ -222,6 +223,12 @@
 }
 
 @media (min-width: 1200px) {
+    .mt-sm-custom{
+        margin-top: 0em!important;
+    }
+    .top-xl-0{
+        top: 0%!important;
+    }
     #card-form-apart{
         position: absolute!important;
     }

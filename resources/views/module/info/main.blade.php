@@ -1,5 +1,5 @@
 <!--INFO-->
-<section>
+<section class="mt-sm-custom">
     <div class="container">
         <div class="row my-4 py-4">
             <div class="col-12 col-xl-5">

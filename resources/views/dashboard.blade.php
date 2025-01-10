@@ -115,6 +115,41 @@
                     </table>
                     <div class="flex flex-row justify-between align-center items-center">
                         <h1 class="mt-8 mb-4 text-2xl font-medium text-gray-900">
+                            Zarządzaj aktywnością przycisku dzwonienia
+                        </h1>
+                    </div>
+                    <table class="w-full text-sm text-left text-gray-500">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Miejsce
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Zawartość
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Edycja
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-6 py-4">
+                                    Po kliknięciu dzowoń
+                                </td>
+                                <td class="px-6 py-4">
+                                    {{$setting['moduldzwonienie']}}
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="{{ route('dashboard') }}/setting/edit/341" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="flex flex-row justify-between align-center items-center">
+                        <h1 class="mt-8 mb-4 text-2xl font-medium text-gray-900">
                             Mieszkania A1
                         </h1>
                         <a href="{{route('dashboard.flat.create')}}" class="inline-flex items-center justify-center w-10 h-10 mr-2 text-green-100 transition-colors duration-150 bg-green-500 rounded-full focus:shadow-outline hover:bg-green-600">

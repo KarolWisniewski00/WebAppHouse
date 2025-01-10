@@ -1,9 +1,9 @@
 <!--FORM SEARCH-->
-<section>
+<section >
     <form method="post" action="{{route('invest.filter')}}" id="searchForm">
         @csrf
         <div class="position-relative" id="card-form-apart-container">
-            <div class="card border-primary mb-3 top-0 start-50 translate-middle" id="card-form-apart" style="
+            <div class="card border-primary mb-3 top-100 top-xl-0 start-50 translate-middle" id="card-form-apart" style="
         background-color:#f5f7f9;
         --bs-card-border-width:0!important;
         --bs-card-border-color:transparent!important;
