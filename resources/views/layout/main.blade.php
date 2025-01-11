@@ -189,24 +189,29 @@
                                     <a href="{{route('index')}}" class="nav-link nav-hover active" style="background-color: #0f4c64;"><i class="fa-solid fa-house me-2"></i>{{$setting['naglowek_strona_glowna']}}</a>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown mx-auto">
-                                <a class="nav-link dropdown-toggle nav-hover" href="{{route('invest')}}" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    {{$setting['naglowek_osiedle_luxor_residence']}}
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                                    @if(isset($setting['a1']) && $setting['a1'] === 'on')
-                                    <li><a class="dropdown-item" href="{{ route('invest') }}">{{ $setting['naglowek_etap_1'] }}</a></li>
-                                    @endif
-
-                                    @if(isset($setting['a2']) && $setting['a2'] === 'on')
-                                    <li><a class="dropdown-item" href="{{ route('invest.second') }}">{{ $setting['naglowek_etap_2'] }}</a></li>
-                                    @endif
-
-                                    @if(isset($setting['a3']) && $setting['a3'] === 'on')
-                                    <li><span class="dropdown-item">{{ $setting['naglowek_etap_3'] }}</span></li>
-                                    @endif
-                                </ul>
+                            @if(isset($setting['a1']) && $setting['a1'] === 'on')
+                            <li class="nav-item mx-auto">
+                                <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                    <a href="{{ route('invest') }}" class="nav-link nav-hover">Etap 1</a>
+                                </div>
                             </li>
+                            @endif
+
+                            @if(isset($setting['a2']) && $setting['a2'] === 'on')
+                            <li class="nav-item mx-auto">
+                                <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                    <a href="{{ route('invest.second') }}" class="nav-link nav-hover">Etap 2</a>
+                                </div>
+                            </li>
+                            @endif
+
+                            @if(isset($setting['a3']) && $setting['a3'] === 'on')
+                            <li class="nav-item mx-auto">
+                                <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                    <a href="" class="nav-link nav-hover">Etap 3</a>
+                                </div>
+                            </li>
+                            @endif
                             <li class="nav-item dropdown mx-auto">
                                 <button type="button" class="nav-link dropdown-toggle nav-hover" id="navbarDarkDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Wykończenia Wnętrz
@@ -285,7 +290,7 @@
                             <li class="nav-item"><a href="{{$setting['instagram_link_w_pasku_nawigacyjnym']}}" class="nav-link px-2 text-white"><i class="fa-brands fa-instagram"></i></a></li>
                             <li class="nav-item"><a href="{{$setting['tiktok_link_w_pasku_nawigacyjnym']}}" class="nav-link px-2 text-white"><i class="fa-brands fa-tiktok"></i></a></li>
                         </ul>
-                        <p class="text-center text-white">&copy; 2023 Nowe Inspiracje, desinged by Karol Wiśniewski</p>
+                        <p class="text-center text-white">&copy; {{ date('Y') }} Nowe Inspiracje, designed by Karol Wiśniewski</p>
                     </footer>
                 </div>
             </section>
