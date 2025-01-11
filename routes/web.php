@@ -60,6 +60,7 @@ Route::middleware([
     Route::prefix('dashboard')->group(function () {
         Route::prefix('/')->group(function () {
             Route::get('/', [FlatAdminController::class, 'index'])->name('dashboard');
+            Route::get('/flat', [FlatAdminController::class, 'flat'])->name('dashboard.flat');
             Route::get('/create', [FlatAdminController::class, 'create'])->name('dashboard.flat.create');
             Route::post('/store', [FlatAdminController::class, 'store'])->name('dashboard.flat.store');
             Route::get('/edit/{table}', [FlatAdminController::class, 'edit'])->name('dashboard.flat.edit');

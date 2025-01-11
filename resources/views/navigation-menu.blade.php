@@ -18,6 +18,11 @@
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                        Panel główny
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link href="{{ route('dashboard.flat') }}" :active="request()->routeIs('dashboard.flat')">
                         Mieszkania A1
                     </x-nav-link>
                 </div>
@@ -162,6 +167,9 @@
                 Strona główna
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                Panel główny
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('dashboard.flat') }}" :active="request()->routeIs('dashboard.flat')">
                 Mieszkania A1
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('second') }}" :active="request()->routeIs('second')">

@@ -150,132 +150,87 @@
                     </table>
                     <div class="flex flex-row justify-between align-center items-center">
                         <h1 class="mt-8 mb-4 text-2xl font-medium text-gray-900">
-                            Mieszkania A1
+                            Zarządzaj aktywnością wykończenia wnętrz
                         </h1>
-                        <a href="{{route('dashboard.flat.create')}}" class="inline-flex items-center justify-center w-10 h-10 mr-2 text-green-100 transition-colors duration-150 bg-green-500 rounded-full focus:shadow-outline hover:bg-green-600">
-                            <i class="fa-solid fa-plus"></i>
-                        </a>
                     </div>
-                    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                        <table class="w-full text-sm text-left text-gray-500">
-                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 text-center">
-                                <tr>
-                                    <th scope="col" class="px-4 py-2">
-                                        Numer
-                                    </th>
-                                    <th scope="col" class="px-4 py-2">
-                                        Piętro
-                                    </th>
-                                    <th scope="col" class="px-4 py-2">
-                                        Pokoje
-                                    </th>
-                                    <th scope="col" class="px-4 py-2">
-                                        Metraż
-                                    </th>
-                                    <th scope="col" class="px-4 py-2">
-                                        Cena za m²
-                                    </th>
-                                    <th scope="col" class="px-4 py-2">
-                                        Cena mieszkania
-                                    </th>
-                                    <th scope="col" class="px-4 py-2">
-                                        Status
-                                    </th>
-                                    <th scope="col" class="px-4 py-2">
-                                        Plik
-                                    </th>
-                                    <th scope="col" class="px-4 py-2">
-                                        Podgląd na stronie użytkownika
-                                    </th>
-                                    <th scope="col" class="px-4 py-2">
-                                        Edycja
-                                    </th>
-                                    <th scope="col" class="px-4 py-2">
-                                        Usuwanie
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-center">
-                                @foreach($tables as $key => $table)
-                                <tr>
-                                    <td class="px-4 py-2">
-                                        {{$table->id}}
-                                    </td>
-                                    <td class="px-4 py-2">
-                                        @if($table->segment == 'floor-4')
-                                        Piętro 3
-                                        @elseif($table->segment == 'floor-3')
-                                        Piętro 2
-                                        @elseif($table->segment == 'floor-2')
-                                        Piętro 1
-                                        @elseif($table->segment == 'floor-1')
-                                        Parter
-                                        @endif
-                                    </td>
-                                    <td class="px-4 py-2">
-                                        @if($table->flat == 'room-4')
-                                        4
-                                        @elseif($table->flat == 'room-3')
-                                        3
-                                        @elseif($table->flat == 'room-2')
-                                        2
-                                        @elseif($table->flat == 'room-1')
-                                        1
-                                        @endif
-                                    </td>
-                                    <td class="px-4 py-2">
-                                        {{$table->surface}}
-
-                                    </td>
-                                    <td class="px-4 py-2">
-                                        {{$table->price_surface}}
-                                    </td>
-                                    <td class="px-4 py-2">
-                                        {{$table->price}} <span style="font-size: xx-small;">zł</span>
-                                    </td>
-                                    <td class="px-4 py-2">
-                                        @if($table->status == 'avaiable')
-                                        <span class="text-emerald-400">Dostępne</span>
-                                        @elseif($table->status == 'reservation')
-                                        <span class="text-amber-400">Rezerwacja</span>
-                                        @elseif($table->status == 'sold')
-                                        <span class="text-rose-400">Sprzedane</span>
-                                        @else
-                                        <span class="text-rose-400">Niedostępne</span>
-                                        @endif
-                                    </td>
-                                    <td class="px-4 py-2">
-                                        @if(Storage::exists('public/'.$table->file_pdf))
-                                        <a href="{{ asset('storage/'.$table->file_pdf) }}" download class="px-5 py-2.5 text-center mx-1 my-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200"><i class="fa-solid fa-file-pdf"></i></a>
-                                        @else
-                                        <p class="text-rose-400">Plik PDF nie istnieje.</p>
-                                        @endif
-                                    </td>
-                                    <td class="px-4 py-2">
-                                        <a href="{{ route('invest.show', $table->id) }}" class="px-5 py-2.5 text-center mx-1 my-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-600 focus:z-10 focus:ring-4 focus:ring-gray-200"><i class="fa-solid fa-eye"></i></a>
-                                    </td>
-                                    <td class="px-4 py-2">
-                                        <a href="{{ route('dashboard.flat.edit', $table->id) }}" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-1 my-1  focus:outline-none ">
-                                            <i class="fa-solid fa-pen-to-square"></i>
-                                        </a>
-                                    </td>
-                                    <td class="px-4 py-2">
-                                        <form action="{{ route('dashboard.flat.delete', $table->id) }}" method="POST" onsubmit="return confirm('Czy na pewno chcesz to usunąć?')">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="text-red-500 hover:text-white border border-red-600 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-1 my-1 ">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-                                        </form>
-                                    </td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                        <div class="px-4 py-2">
-
-                        </div>
+                    <table class="w-full text-sm text-left text-gray-500">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Miejsce
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Zawartość
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Edycja
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-6 py-4">
+                                    Wykończenia wnętrz
+                                </td>
+                                <td class="px-6 py-4">
+                                    {{$setting['wykonczenia']}}
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="{{ route('dashboard') }}/setting/edit/342" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="flex flex-row justify-between align-center items-center">
+                        <h1 class="mt-8 mb-4 text-2xl font-medium text-gray-900">
+                            Zarządzaj aktywnością banneru
+                        </h1>
                     </div>
+                    <table class="w-full text-sm text-left text-gray-500">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Miejsce
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Zawartość
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Edycja
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-6 py-4">
+                                    Banner włącz wyłącz
+                                </td>
+                                <td class="px-6 py-4">
+                                    {{$setting['banner']}}
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="{{ route('dashboard') }}/setting/edit/343" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4">
+                                    Banner zdjęcie
+                                </td>
+                                <td class="px-6 py-4">
+                                    {{$setting['banner_photo']}}
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="{{ route('dashboard') }}/setting/edit/photo/344" class="text-white bg-emerald-500 hover:bg-emerald-600 focus:ring-4 focus:ring-emerald-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

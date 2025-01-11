@@ -51,21 +51,21 @@
             color: white;
         }
 
-        .modal-dialog {
+        .modal-dialog-custom {
             margin: 0;
             height: 100%;
             display: flex;
             align-items: flex-end;
         }
 
-        .modal-content {
+        .modal-content-custom {
             width: 100vw;
             height: 100%;
             border-radius: 0;
             padding: 15px;
         }
 
-        .modal-body p {
+        .modal-body-custom p {
             margin-bottom: 15px;
         }
     </style>
@@ -146,14 +146,14 @@
             </script>
             <!-- Modal -->
             <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
+                <div class="modal-dialog modal-dialog-custom">
+                    <div class="modal-content modal-content-custom">
                         <form class="mb-4" action="{{ route('contact.call.store') }}" method="POST">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="contactModalLabel">Kontakt</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body modal-body-custom">
                                 <h2 class="text-center mb-4">Żaden konsultant nie jest obecnie dostępny.<br><br>
                                     Czy chcesz żebyśmy zadzwonili w innym terminie?</h2>
                                 @csrf
@@ -176,11 +176,40 @@
                     </div>
                 </div>
             </div>
+            @if($setting['banner']=='on')
+            @if(isset($banner) && $banner == true)
+            <script>
+                $(document).ready(function() {
+                    $('#exampleModal2').modal({
+                        backdrop: 'static',
+                        keyboard: false
+                    });
+                    $('#exampleModal2').modal('show');
+                });
+            </script>
+
+            <div
+                class="modal fade"
+                id="exampleModal2"
+                tabindex="-1"
+                aria-labelledby="exampleModal2Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="ratio ratio-16x9">
+                            <img alt="" src="{{asset('asset/photo/'.$setting['banner_photo'])}}" class="filter w-100 h-100">
+                        </div>
+                        <button type="button" class="btn-close position-absolute top-0 end-0 m-2 bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+            @endif
+            @endif
             <!--NAV-->
             <section>
                 <div class="container">
                     <header class="d-flex flex-wrap justify-content-center py-4">
-                        <a href="{{route('index')}}" class="d-flex align-items-center justify-content-center me-md-auto text-dark text-decoration-none">
+                        <a href="{{route('index')}}" class="d-flex align-items-center justify-content-center me-xl-auto text-dark text-decoration-none">
                             <img alt="logo" src="{{asset('asset/photo/'.$setting['logo_w_pasku_nawigacyjnym'])}}" class="my-4 img-fluid bg-transparent" style="max-width: 10em;">
                         </a>
                         <ul class="nav nav-pills d-flex flex-row justify-content-center align-items-center flex-wrap">
@@ -212,6 +241,7 @@
                                 </div>
                             </li>
                             @endif
+                            @if($setting['wykonczenia']=='on')
                             <li class="nav-item dropdown mx-auto">
                                 <button type="button" class="nav-link dropdown-toggle nav-hover" id="navbarDarkDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Wykończenia Wnętrz
@@ -221,6 +251,7 @@
                                     <li><a class="dropdown-item" href="{{ asset('asset/Pakiet Classic.pdf') }}">Pakiet Classic</a></li>
                                 </ul>
                             </li>
+                            @endif
                             <li class="nav-item mx-auto">
                                 <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
                                     <a href="{{route('about.invest')}}" class="nav-link nav-hover">{{$setting['naglowek_o_inwestycji']}}</a>

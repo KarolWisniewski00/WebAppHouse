@@ -18,6 +18,14 @@ class FlatAdminController extends Controller
         $files = array_slice($files, 2);
         return view('dashboard', compact('tables', 'files'));
     }
+    public function flat()
+    {
+        $tables = Flat::orderBy('created_at')->get();
+        $storagePath = storage_path('app/public/files');
+        $files = scandir($storagePath);
+        $files = array_slice($files, 2);
+        return view('first', compact('tables', 'files'));
+    }
     public function create()
     {
         $view = 1;
