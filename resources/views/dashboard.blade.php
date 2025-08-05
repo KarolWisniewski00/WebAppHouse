@@ -141,7 +141,7 @@
                                     {{$setting['moduldzwonienie']}}
                                 </td>
                                 <td class="px-6 py-4">
-                                    <a href="{{ route('dashboard') }}/setting/edit/341" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
+                                    <a href="{{ route('dashboard') }}/setting/edit/342" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
                                         <i class="fa-solid fa-pen-to-square"></i>
                                     </a>
                                 </td>
@@ -176,7 +176,7 @@
                                     {{$setting['wykonczenia']}}
                                 </td>
                                 <td class="px-6 py-4">
-                                    <a href="{{ route('dashboard') }}/setting/edit/342" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
+                                    <a href="{{ route('dashboard') }}/setting/edit/343" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
                                         <i class="fa-solid fa-pen-to-square"></i>
                                     </a>
                                 </td>
@@ -211,7 +211,7 @@
                                     {{$setting['banner']}}
                                 </td>
                                 <td class="px-6 py-4">
-                                    <a href="{{ route('dashboard') }}/setting/edit/343" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
+                                    <a href="{{ route('dashboard') }}/setting/edit/344" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
                                         <i class="fa-solid fa-pen-to-square"></i>
                                     </a>
                                 </td>
@@ -224,7 +224,7 @@
                                     {{$setting['banner_photo']}}
                                 </td>
                                 <td class="px-6 py-4">
-                                    <a href="{{ route('dashboard') }}/setting/edit/photo/344" class="text-white bg-emerald-500 hover:bg-emerald-600 focus:ring-4 focus:ring-emerald-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
+                                    <a href="{{ route('dashboard') }}/setting/edit/photo/345" class="text-white bg-emerald-500 hover:bg-emerald-600 focus:ring-4 focus:ring-emerald-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
                                         <i class="fa-solid fa-pen-to-square"></i>
                                     </a>
                                 </td>

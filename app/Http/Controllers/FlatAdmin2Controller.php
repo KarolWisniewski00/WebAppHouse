@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateFlatRequest;
 use App\Http\Requests\EditFlatRequest;
 use App\Models\Flat2;
+use App\Models\ProductPrice;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -61,6 +62,14 @@ class FlatAdmin2Controller extends Controller
     }
     public function update(EditFlatRequest $request, Flat2 $table)
     {
+        ProductPrice::create([
+            'flat_id' => null,
+            'flat2_id' => $table->id,
+            'flat3_id' => null,
+            'old_price' => $table->price,
+            'new_price' => floatval(floatval($request->surface) * floatval($request->price_surface)),
+            'changed_by' => 'admin',
+        ]);
         $res = $table->update([
             'segment' => $request->segment,
             'flat' => $request->flat,

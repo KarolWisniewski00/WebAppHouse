@@ -35,6 +35,7 @@
                             <th scope="col">Metraż</th>
                             <th scope="col">Cena za m²</th>
                             <th scope="col">Cena</th>
+                            <th scope="col">Najniższa cena z ostatnich 30 dni</th>
                             <th scope="col">Status</th>
                             <th scope="col"><i class="fa-solid fa-file-pdf me-2"></i>Plik</th>
                             <th scope="col"></i>Umowa</th>
@@ -77,6 +78,9 @@
                             </td>
                             <td>
                                 {{$t->price}} <span style="font-size: xx-small;">zł</span>
+                            </td>
+                            <td>
+                                {{$t->lowestPriceLast30Days()}} <span style="font-size: xx-small;">zł</span>
                             </td>
                             <td class="px-6 py-4">
                                 @if($t->status == 'avaiable')
@@ -132,6 +136,7 @@
                             <th scope="col">Metraż</th>
                             <th scope="col">Cena za m²</th>
                             <th scope="col">Cena</th>
+                            <th scope="col">Najniższa cena z ostatnich 30 dni</th>
                             <th scope="col">Status</th>
                             <th scope="col"><i class="fa-solid fa-file-pdf me-2"></i>Plik</th>
                             <th scope="col"></i>Umowa</th>
@@ -174,6 +179,9 @@
                             </td>
                             <td>
                                 {{$t->price}} <span style="font-size: xx-small;">zł</span>
+                            </td>
+                            <td>
+                                {{$t->lowestPriceLast30Days()}} <span style="font-size: xx-small;">zł</span>
                             </td>
                             <td class="px-6 py-4">
                                 @if($t->status == 'avaiable')
