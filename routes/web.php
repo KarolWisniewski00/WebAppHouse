@@ -3,6 +3,8 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AboutInvestController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ExportController;
+use App\Http\Controllers\ExtraController;
 use App\Http\Controllers\FilesController;
 use App\Http\Controllers\FilterController;
 use App\Http\Controllers\FlatAdmin2Controller;
@@ -58,6 +60,8 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::prefix('dashboard')->group(function () {
+        Route::get('/export-csv', [ExportController::class, 'export'])->name('export.csv');
+
         Route::prefix('/')->group(function () {
             Route::get('/', [FlatAdminController::class, 'index'])->name('dashboard');
             Route::get('/flat', [FlatAdminController::class, 'flat'])->name('dashboard.flat');
@@ -66,6 +70,13 @@ Route::middleware([
             Route::get('/edit/{table}', [FlatAdminController::class, 'edit'])->name('dashboard.flat.edit');
             Route::put('/update/{table}', [FlatAdminController::class, 'update'])->name('dashboard.flat.update');
             Route::delete('/delete/{table}', [FlatAdminController::class, 'delete'])->name('dashboard.flat.delete');
+        });
+        Route::prefix('extra')->group(function () {
+            Route::get('/create', [ExtraController::class, 'create'])->name('dashboard.extra.create');
+            Route::post('/store', [ExtraController::class, 'store'])->name('dashboard.extra.store');
+            Route::get('/edit/{extra}', [ExtraController::class, 'edit'])->name('dashboard.extra.edit');
+            Route::put('/update/{extra}', [ExtraController::class, 'update'])->name('dashboard.extra.update');
+            Route::delete('/delete/{extra}', [ExtraController::class, 'delete'])->name('dashboard.extra.delete');
         });
         Route::prefix('second')->group(function () {
             Route::get('/', [FlatAdmin2Controller::class, 'index'])->name('second');

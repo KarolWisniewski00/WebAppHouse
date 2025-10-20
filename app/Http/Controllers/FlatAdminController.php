@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateFlatRequest;
 use App\Http\Requests\EditFlatRequest;
+use App\Models\Extra;
 use App\Models\Flat;
 use App\Models\ProductPrice;
 use Illuminate\Http\Request;
@@ -17,7 +18,8 @@ class FlatAdminController extends Controller
         $storagePath = storage_path('app/public/files');
         $files = scandir($storagePath);
         $files = array_slice($files, 2);
-        return view('dashboard', compact('tables', 'files'));
+        $extras = Extra::orderBy('created_at')->get();
+        return view('dashboard', compact('tables', 'files', 'extras'));
     }
     public function flat()
     {
@@ -70,6 +72,16 @@ class FlatAdminController extends Controller
     }
     public function update(EditFlatRequest $request, Flat $table)
     {
+        if (floatval(floatval($request->surface) * floatval($request->price_surface)) > $table->price) {
+            ProductPrice::create([
+                'flat_id' => $table->id,
+                'flat2_id' => null,
+                'flat3_id' => null,
+                'old_price' => $table->price,
+                'new_price' => $table->price,
+                'changed_by' => 'admin',
+            ]);
+        }
         ProductPrice::create([
             'flat_id' => $table->id,
             'flat2_id' => null,

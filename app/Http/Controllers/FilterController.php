@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Extra;
 use App\Models\Flat;
 use App\Models\Flat2;
 use Illuminate\Http\Request;
@@ -42,7 +43,8 @@ class FilterController extends Controller
             }
         }
         $table2 = 1;
-        return view('invest.index', compact('tables', 'clicked', 'table2'));
+        $extras = Extra::orderBy('created_at')->get();
+        return view('invest.index', compact('tables', 'clicked', 'table2', 'extras'));
     }
     public function showSecond(Request $request)
     {
@@ -78,6 +80,7 @@ class FilterController extends Controller
             }
         }
         $table2 = 2;
-        return view('invest.index', compact('tables', 'clicked', 'table2'));
+        $extras = Extra::orderBy('created_at')->get();
+        return view('invest.index', compact('tables', 'clicked', 'table2', 'extras'));
     }
 }

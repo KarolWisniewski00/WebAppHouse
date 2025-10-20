@@ -62,6 +62,16 @@ class FlatAdmin3Controller extends Controller
     }
     public function update(EditFlatRequest $request, Flat3 $table)
     {
+        if (floatval(floatval($request->surface) * floatval($request->price_surface)) > $table->price) {
+            ProductPrice::create([
+                'flat_id' => null,
+                'flat2_id' => null,
+                'flat3_id' => $table->id,
+                'old_price' => $table->price,
+                'new_price' => $table->price,
+                'changed_by' => 'admin',
+            ]);
+        }
         ProductPrice::create([
             'flat_id' => null,
             'flat2_id' => null,

@@ -5,17 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Flat2 extends Model
+class Extra extends Model
 {
     protected $fillable = [
-        'segment',
-        'flat',
-        'surface',
-        'price_surface',
-        'status',
+        'name',
         'price',
-        'file_pdf',
-        'file_priv'
     ];
     public function lowestPriceLast30Days()
     {
@@ -30,6 +24,6 @@ class Flat2 extends Model
 
     public function prices()
     {
-        return $this->hasMany(ProductPrice::class);
+        return $this->hasMany(ExtraPrice::class);
     }
 }

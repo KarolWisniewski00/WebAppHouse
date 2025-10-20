@@ -43,6 +43,37 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($extras as $key => $extra)
+                        <tr class="table-success">
+                            <td>
+                                {{$key + 1}}
+                            </td>
+                            <td>
+                                {{ $extra->name }}
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                {{$extra->price}} <span style="font-size: xx-small;">zł</span>
+                            </td>
+                            <td>
+                                {{$extra->lowestPriceLast30Days()}} <span style="font-size: xx-small;">zł</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <span class="text-success">W cenie mieszkania</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        @endforeach
                         @foreach($tables as $key => $t)
                         <tr>
                             <td>
@@ -144,6 +175,37 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($extras as $key => $extra)
+                        <tr class="table-success">
+                            <td>
+                                {{$key + 1}}
+                            </td>
+                            <td>
+                                {{ $extra->name }}
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                {{$extra->price}} <span style="font-size: xx-small;">zł</span>
+                            </td>
+                            <td>
+                                {{$extra->lowestPriceLast30Days()}} <span style="font-size: xx-small;">zł</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <span class="text-success">W cenie mieszkania</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        @endforeach
                         @foreach($tables as $key => $t)
                         <tr>
                             <td>

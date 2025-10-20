@@ -20,8 +20,10 @@ class Flat extends Model
     public function lowestPriceLast30Days()
     {
         $minPrice = $this->prices()
-            ->where('created_at', '>=', now()->subDays(30))
-            ->min('new_price');
+        ->where('created_at', '>=', now()->subDays(30))
+        ->selectRaw('LEAST(COALESCE(old_price, new_price), COALESCE(new_price, old_price)) as min_price')
+        ->orderBy('min_price', 'asc')
+        ->value('min_price');
 
         return $minPrice ?? $this->price;
     }
