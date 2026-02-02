@@ -16,11 +16,13 @@ class ExtraController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
+            'status' => 'nullable|string|max:255',
             'price' => 'required|numeric|min:0',
         ]);
         $table = new Extra();
         $table->name = $request->name;
         $table->price = $request->price;
+        $table->status = $request->status;
         $res = $table->save();
 
         ExtraPrice::create([
@@ -44,6 +46,7 @@ class ExtraController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
+            'status' => 'nullable|string|max:255',
             'price' => 'required|numeric|min:0',
         ]);
         if (floatval($request->price) > $extra->price) {
@@ -63,6 +66,7 @@ class ExtraController extends Controller
 
         $res = $extra->update([
             'name' => $request->name,
+            'status' => $request->status,
             'price' => $request->price,
         ]);
 

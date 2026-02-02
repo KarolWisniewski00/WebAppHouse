@@ -41,7 +41,7 @@
                     <hr class="my-12">
                     <div class="flex flex-row justify-between align-center items-center">
                         <h1 class="mt-8 mb-4 text-2xl font-medium text-gray-900">
-                        Dodaki
+                            Dodaki
                         </h1>
                         <a href="{{route('dashboard.extra.create')}}" class="inline-flex items-center justify-center w-10 h-10 mr-2 text-green-100 transition-colors duration-150 bg-green-500 rounded-full focus:shadow-outline hover:bg-green-600">
                             <i class="fa-solid fa-plus"></i>
@@ -59,6 +59,9 @@
                                     </th>
                                     <th scope="col" class="px-4 py-2">
                                         Cena
+                                    </th>
+                                    <th scope="col" class="px-4 py-2">
+                                        Status
                                     </th>
                                     <th scope="col" class="px-4 py-2">
                                         Edycja
@@ -79,6 +82,9 @@
                                     </td>
                                     <td class="px-4 py-2">
                                         {{$table->price}}
+                                    </td>
+                                    <td class="px-4 py-2">
+                                        {{$table->status}}
                                     </td>
                                     <td class="px-4 py-2">
                                         <a href="{{ route('dashboard.extra.edit', $table->id) }}" class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-1 my-1 focus:outline-none">

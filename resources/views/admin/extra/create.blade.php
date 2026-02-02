@@ -26,14 +26,46 @@
                                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Nazwa</label>
                                 <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 @error('name') is-invalid @enderror" value="{{ old('name') }}" required>
                                 @error('name')
-                                    <div class="mt-2 text-sm text-red-600">{{ $message }}</div>
+                                <div class="mt-2 text-sm text-red-600">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div>
                                 <label for="price" class="block mb-2 text-sm font-medium text-gray-900">Cena</label>
                                 <input type="number" step="0.01" id="price" name="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 @error('price') is-invalid @enderror" value="{{ old('price') }}" required>
                                 @error('price')
-                                    <div class="mt-2 text-sm text-red-600">{{ $message }}</div>
+                                <div class="mt-2 text-sm text-red-600">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <!-- STATUS -->
+                            <div class="md:col-span-2">
+                                <label for="status" class="block mb-2 text-sm font-medium text-gray-900">Status</label>
+
+                                <!-- Pole tekstowe -->
+                                <input type="text" id="status" name="status"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 mb-3 @error('status') is-invalid @enderror"
+                                    value="{{ old('status') }}">
+
+                                <div class="p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50" role="alert">
+                                    Status "W cenie mieszkania" ma kolor zielony - pozostałe neutralny
+                                </div>
+
+                                <!-- Przyciski pod inputem -->
+                                <div class="flex gap-3">
+                                    <button type="button"
+                                        class="status-btn bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg text-sm px-4 py-2.5"
+                                        data-value="W cenie mieszkania">
+                                        W cenie mieszkania
+                                    </button>
+
+                                    <button type="button"
+                                        class="status-btn bg-gray-400 hover:bg-gray-500 text-white font-medium rounded-lg text-sm px-4 py-2.5"
+                                        data-value="Dodatkowo płatne">
+                                        Dodatkowo płatne
+                                    </button>
+                                </div>
+
+                                @error('status')
+                                <div class="mt-2 text-sm text-red-600">{{ $message }}</div>
                                 @enderror
                             </div>
                         </div>
@@ -44,6 +76,14 @@
                             <i class="fa-solid fa-x mr-2"></i>Anuluj
                         </a>
                     </form>
+                    <script>
+                        $(function() {
+                            $('.status-btn').on('click', function() {
+                                const val = $(this).data('value');
+                                $('#status').val(val).trigger('input');
+                            });
+                        });
+                    </script>
                 </div>
             </div>
         </div>

@@ -9,6 +9,7 @@ class Extra extends Model
 {
     protected $fillable = [
         'name',
+        'status',
         'price',
     ];
     public function lowestPriceLast30Days()

@@ -63,9 +63,15 @@
                             <td>
                                 {{$extra->lowestPriceLast30Days()}} <span style="font-size: xx-small;">zł</span>
                             </td>
+                            @if($extra->status == "W cenie mieszkania")
                             <td class="px-6 py-4">
-                                <span class="text-success">W cenie mieszkania</span>
+                                <span class="text-success">{{$extra->status}}</span>
                             </td>
+                            @else
+                            <td class="px-6 py-4">
+                                <span>{{$extra->status}}</span>
+                            </td>
+                            @endif
                             <td>
                             </td>
                             <td>
@@ -195,9 +201,15 @@
                             <td>
                                 {{$extra->lowestPriceLast30Days()}} <span style="font-size: xx-small;">zł</span>
                             </td>
+                            @if($extra->status == "W cenie mieszkania")
                             <td class="px-6 py-4">
-                                <span class="text-success">W cenie mieszkania</span>
+                                <span class="text-success">{{$extra->status}}</span>
                             </td>
+                            @else
+                            <td class="px-6 py-4">
+                                <span>{{$extra->status}}</span>
+                            </td>
+                            @endif
                             <td>
                             </td>
                             <td>

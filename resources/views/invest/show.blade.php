@@ -65,10 +65,14 @@
             <div class="col-12 col-md-6">
                 <div class="d-flex flex-column justify-content-center align-items-center h-100 pt-5 pb-2">
                     <h1>Apartament NR. {{$t->id}}</h1>
-                    @if($t->status == 'available')
-                    <h6 class="text-danger">Niedostępne</h6>
-                    @else
+                    @if($t->status == 'avaiable')
                     <h6 class="text-success">Dostępne</h6>
+                    @elseif($t->status == 'reservation')
+                    <h6 class="text-warning">Rezerwacja</h6>
+                    @elseif($t->status == 'sold')
+                    <h6 class="text-danger">Sprzedane</h6>
+                    @else
+                    <h6 class="text-danger">Niedostępne</h6>
                     @endif
                     <p> @if($t->segment == 'floor-4')
                         Piętro 3

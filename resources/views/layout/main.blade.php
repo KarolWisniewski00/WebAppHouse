@@ -655,6 +655,15 @@
                             </li>
                             <li class="nav-item mx-auto d-flex">
                                 <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                    <button type="button" class="nav-link dropdown-toggle nav-hover" id="prospect" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="prospect">
+                                        <li><a class="dropdown-item" href="{{ asset('asset/PROSPEKT informacyjny LUXOR Residence 29.07.2024.pdf') }}">Prospekt Etap 1</a></li>
+                                        <li><a class="dropdown-item" href="{{ asset('asset/PROSPEKT A2 informacyjny LUXOR ZADANIE II 22.11.2024 .pdf') }}">Prospekt Etap 2</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
                                     <a href="{{$setting['facebook_link_w_pasku_nawigacyjnym']}}" class="nav-link nav-hover"><i class="fa-brands fa-facebook"></i></a>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
